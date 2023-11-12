@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="Author" content="Group Five">
   <meta name="Description" content="Articles Page">
@@ -52,12 +53,17 @@
   <!--CSS TEST-->
 
 </head>
+
 <body>
 
-<!--Practice for the Box Modeling project-->
+  <!--Practice for the Box Modeling project-->
 
   <div class="header">
     <a href="#default" class="logo">Criticine Logo</a>
+    <a href="default" class="Home">Home</a>
+    <a href="default" class="Movies">Movies</a>
+    <a href="default" class="News">News</a>
+    <a href="default" class="Login">Login</a>
     <div class="search__box">
       <input type="text" placeholder="Search an article">
     </div>
@@ -69,86 +75,113 @@
   </div>
 
   <main id="article__section">
-      <article class="a1">
-        <div class="fblock">
-          <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-          <h1><b>Fast And Furious</b></h1> <!--CSS Bold (later)-->
-          <img class="faf" src="#">
-        </div>
-        <p>About the Movie</p>
-        <p class="faf__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+    <article class="a1">
+      <div class="fblock">
+        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
+        <h1><b>Fast And Furious</b></h1> <!--CSS Bold (later)-->
+        <img class="faf" src="#">
+      </div>
+      <p>About the Movie</p>
+      <p class="faf__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+        Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+        atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+        consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+        iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+      <div>
+        <p><i>Posted by Unknown</i></p>
+        <a href="www.google.com">Referemce Source</a>
+      </div>
+    </article>
+
+    <br><br>
+
+    <article class="a2">
+      <div class="fblock">
+        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
+        <h1><b>Interstellar</b></h1> <!--CSS Bold (later)-->
+        <img class="faf" src="#">
+      </div>
+      <p>About the Movie</p>
+      <p class="int__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+        Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+        atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+        consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+        iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+      <div>
+        <p><i>Posted by Unknown</i></p>
+        <a href="www.google.com">Referemce Source</a>
+      </div>
+    </article>
+
+    <br><br>
+
+    <article class="a3">
+      <div class="fblock">
+        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
+        <h1><b>Django Unchained</b></h1> <!--CSS Bold (later)-->
+        <img class="faf" src="#">
+      </div>
+      <p>About the Movie</p>
+      <p class="du__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+        Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+        atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+        consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+        iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+      <div>
+        <p><i>Posted by Unknown</i></p>
+        <a href="www.google.com">Referemce Source</a>
+      </div>
+    </article>
+
+    <br><br>
+
+    <article class="a4">
+      <div class="fblock">
+        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
+        <h1><b>The Hunger Games: Catching Fire</b></h1> <!--CSS Bold (later)-->
+        <img class="faf" src="#">
+      </div>
+      <p>About the Movie</p>
+      <p class="thg__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+        Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+        atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+        consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+        iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+      <div>
+        <p><i>Posted by Unknown</i></p>
+        <a href="www.google.com">Referemce Source</a>
+      </div>
+    </article>
+  </main>
+
+  <section>
+    <footer class="footer">
+      <fieldset>
+        <legend class="criticine"><b>Criticine Articles</b></legend>
         <div>
-          <p><i>Posted by Unknown</i></p>
-          <a href="www.google.com">Referemce Source</a>
+          <label>Home &#8594;</label><br>
+          <label>Articles &#8594;</label><br>
+          <label>News &#8594;</label><br>
+          <label>Critics &#8594;</label><br>
+          <label>Subscription &#8594;</label><br>
         </div>
-      </article>
-
-      <br><br>
-      
-      <article class="a2">
-        <div class="fblock">
-          <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-          <h1><b>Interstellar</b></h1> <!--CSS Bold (later)-->
-          <img class="faf" src="#">
-        </div>
-        <p>About the Movie</p>
-        <p class="int__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-        <div>
-          <p><i>Posted by Unknown</i></p>
-          <a href="www.google.com">Referemce Source</a>
-        </div>
-      </article>
-
-      <br><br>
-
-      <article class="a3">
-        <div class="fblock">
-          <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-          <h1><b>Django Unchained</b></h1> <!--CSS Bold (later)-->
-          <img class="faf" src="#">
-        </div>
-        <p>About the Movie</p>
-        <p class="du__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-        <div>
-          <p><i>Posted by Unknown</i></p>
-          <a href="www.google.com">Referemce Source</a>
-        </div>
-      </article>
-
-      <br><br>
-
-      <article class="a4">
-        <div class="fblock">
-          <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-          <h1><b>The Hunger Games: Catching Fire</b></h1> <!--CSS Bold (later)-->
-          <img class="faf" src="#">
-        </div>
-        <p>About the Movie</p>
-        <p class="thg__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-        <div>
-          <p><i>Posted by Unknown</i></p>
-          <a href="www.google.com">Referemce Source</a>
-        </div>
-      </article>
-    </main>
-
-    <section>
-      <footer class="footer">
-        <fieldset>
-          <legend class="criticine"><b>Criticine Articles</b></legend>
-          <div>
-            <label>Home &#8594;</label><br>
-            <label>Articles &#8594;</label><br>
-            <label>News &#8594;</label><br>
-            <label>Critics &#8594;</label><br>
-            <label>Subscription &#8594;</label><br>
-          </div>
-        </fieldset> 
-        <p class="powered"><i>Powered by Group Five</i></p>
-      </footer>
-    </section>
+      </fieldset>
+      <p class="powered"><i>Powered by Group Five</i></p>
+    </footer>
+  </section>
 
   <!--CSS (fieldset) DISPLAY-->
 
 </body>
+
+<footer>
+  <div class="footer">
+      <p><strong>Footer</strong></p>
+      <a href="#default" class="logo">Criticine Logo</a>
+      <p>2024 - Criticine</p>
+      <input class="voltarAoTopo" type="button" value="Voltar ao topo">
+  </div>
+
+</footer>
+
 </html>
