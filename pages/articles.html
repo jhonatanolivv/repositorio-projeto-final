@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles Page</title>
+  <link rel="stylesheet" href="/css/style_header.css">
   <!--FAVICON TEST-->
   <!-- <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></link> -->
   <!-- <link rel="stylesheet" href="code.css"> -->
@@ -56,21 +57,26 @@
 
   <!--Practice for the Box Modeling project-->
 
-  <div class="header">
-    <a href="#default" class="logo">Criticine Logo</a>
-    <a href="default" class="Home">Home</a>
-    <a href="default" class="Movies">Movies</a>
-    <a href="default" class="News">News</a>
-    <a href="default" class="Login">Login</a>
-    <div class="search__box">
-      <input type="text" placeholder="Search an article">
+  <header class="header">
+    <div class="header__div_logo">
+        <a href="index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
     </div>
-    <header>
-      <h1 class="maintitle">Film Articles</h1>
-      <h2 class="subtitle">Explore the world of cinema</h2>
-      <h3 class="reminder">Stay Tuned!</h3>
-    </header>
-  </div>
+    <div class="header__search-box">
+        <input type="text" placeholder="Pesquise um Filme...">
+    </div>
+    <nav>
+        <a href="#" class="header__nav--pages"><span>Home</span></a>
+        <a href="./Pages/movies.html" class="header__nav--pages">Movies</a>
+        <a href="./Pages/news.html" class="header__nav--pages">News</a>
+        <a href="./Pages/login.html" class="header__nav--pages">Login</a>
+    </nav>
+
+    <div class="div_social-medias">
+        <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png" class="social-medias"></a>
+        <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png" class="social-medias"></a>
+        <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
+    </div>
+</header>
 
   <main id="article__section">
     <article class="a1">
@@ -156,12 +162,12 @@
 
 </body>
 
-<footer> 
+<footer>
   <div class="footer">
-      <p><strong>Footer</strong></p>
-      <a href="#default" class="logo">Criticine Logo</a>
-      <p>2024 - Criticine</p>
-      <input class="voltarAoTopo" type="button" value="Voltar ao topo">
+    <p><strong>Footer</strong></p>
+    <a href="#default" class="logo">Criticine Logo</a>
+    <p>2024 - Criticine</p>
+    <input class="voltarAoTopo" type="button" value="Voltar ao topo">
   </div>
 </footer>
 
