@@ -40,6 +40,7 @@ body {
     left: 67%;
     box-sizing: border-box;
 }
+
 .header__search-box input {
     width: 15rem;
     height: 1.3rem;
@@ -65,6 +66,23 @@ body {
     margin-left: 2rem;
     text-decoration: none;
     color: black;
+    transition: all 100ms;
+}
+
+.header__nav--pages:hover {
+    opacity: 0.8;
+    font-size: 1.4rem;
+    padding: 2px;
+
+    color: orangered;
+    text-shadow: 0 0 10px hsl(0, 0%, 72%),      
+                 0 0 20px hsl(0, 0%, 72%),      
+                 0 0 40px hsl(0, 0%, 72%),     
+                 0 0 80px hsl(0, 0%, 72%);      
+}
+
+.header__nav--pages:active {
+    opacity: 0.4;
 }
 
 .header .div_social-medias {
@@ -73,6 +91,7 @@ body {
     position: absolute;
     left: 82%;
     box-sizing: border-box;
+    margin-left: 10vh;
 }
 
 .div_social-medias .social-medias {
