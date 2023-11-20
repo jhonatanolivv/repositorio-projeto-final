@@ -3,6 +3,7 @@ body {
     margin: 0px;
     font-size: 1.2rem;
     padding-top: 5%;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .header {
@@ -66,7 +67,8 @@ body {
     margin-left: 2rem;
     text-decoration: none;
     color: black;
-    transition: all 100ms;
+    transition: text-shadow 600ms,
+                font-size 200ms;
 }
 
 .header__nav--pages:hover {
@@ -98,7 +100,7 @@ body {
     width: 1.2rem;
     margin: 0.25rem 0.5rem 0rem;
     border-radius: 25%;
-    /* transition: transform 200ms; */
+    transition: box-shadow 500ms;
 }
 
 .div_social-medias .social-medias:hover {
@@ -118,6 +120,14 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+/*-------------- ARTICLES --------------*/ 
+
+.poster-pic {
+    display: flex;
+    width: 200px;
+    object-fit: cover;
 }
 
 
