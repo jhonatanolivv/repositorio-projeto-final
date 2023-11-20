@@ -75,10 +75,10 @@ body {
     padding: 2px;
 
     color: orangered;
-    text-shadow: 0 0 10px hsl(0, 0%, 72%),      
-                 0 0 20px hsl(0, 0%, 72%),      
-                 0 0 40px hsl(0, 0%, 72%),     
-                 0 0 80px hsl(0, 0%, 72%);      
+    text-shadow: 0 0 5px hsl(0, 0%, 76%),      
+                 0 0 15px hsl(0, 0%, 76%),      
+                 0 0 30px hsl(0, 0%, 76%),     
+                 0 0 60px hsl(0, 0%, 76%);      
 }
 
 .header__nav--pages:active {
@@ -106,9 +106,9 @@ body {
     opacity: 0.8;  
 
     border-radius: 50%;
-    box-shadow: 0 0 5px hsl(0, 0%, 72%),      
-                0 0 15px hsl(0, 0%, 72%),      
-                0 0 30px hsl(0, 0%, 72%);         
+    box-shadow: 0 0 5px hsl(0, 0%, 79%),      
+                0 0 15px hsl(0, 0%, 79%),      
+                0 0 30px hsl(0, 0%, 79%);         
 }     
 
 @keyframes rotation {
