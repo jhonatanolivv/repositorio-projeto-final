@@ -98,4 +98,27 @@ body {
     width: 1.2rem;
     margin: 0.25rem 0.5rem 0rem;
     border-radius: 25%;
+    /* transition: transform 200ms; */
 }
+
+.div_social-medias .social-medias:hover {
+    animation: rotation 400ms ease-out;
+    opacity: 0.8;  
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px hsl(0, 0%, 72%),      
+                0 0 15px hsl(0, 0%, 72%),      
+                0 0 30px hsl(0, 0%, 72%);         
+}     
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
