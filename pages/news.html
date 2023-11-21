@@ -8,36 +8,40 @@
     <meta description="Página de novidades e críticas de filmes">
     <title>News - Criticine</title>
     <link rel="stylesheet" href="/css/style_header.css">
-    <link rel="stylesheet" href="/css/style_header.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__div_logo">
-            <a href="index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
-        </div>
-        <div class="header__search-box">
-            <input type="text" placeholder="Pesquise um Filme...">
-        </div>
-        <nav>
-            <a href="./index.html" class="header__nav--pages">Home</a>
-            <a href="./movies.html" class="header__nav--pages">Movies</a>
-            <a href="#" class="header__nav--pages"><span>News</span></a>
-            <a href="./login.html" class="header__nav--pages">Login</a>
-        </nav>
-
-        <div class="div_social-medias">
-            <a href="https://www.facebook.com/" target="_blank"><img src="/Assets/images/logo_facebook.png"
-                    class="social-medias"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/Assets/images/logo_instagram.png"
-                    class="social-medias"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="/Assets/images/logo_x.png"
-                    class="social-medias"></a>
-        </div>
+        <section class="header__flex">
+            <section class="flex__1">
+                <div class="header__div_logo">
+                    <a href="/index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
+                </div>
+                <nav>
+                    <a href="/index.html" class="header__nav--pages">Home</a>
+                    <a href="./articles.html" class="header__nav--pages">Artigos</a>
+                    <a href="./movies.html" class="header__nav--pages">Movies</a>
+                    <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
+                    <a href="./login.html" class="header__nav--pages">Login</a>
+                </nav>
+            </section>
+            <section class="flex__2">
+                <div class="header__search-box">
+                    <input type="text" placeholder="Pesquise um Filme...">
+                </div>
+                <div class="div_social-medias">
+                    <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png"
+                            class="social-medias"></a>
+                    <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png"
+                            class="social-medias"></a>
+                    <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
+                </div>
+            </section>
+        </section>
     </header>
     <section class="anuncio1">
-        <a href="link/da/pagina" target="_blank" style="text-decoration: none;"><img src="/assets/images/news1.png" alt="FIVE NIGHTS"
-                class="img__anuncio1"></a>
+        <a href="link/da/pagina" target="_blank" style="text-decoration: none;"><img src="/assets/images/news1.png"
+                alt="FIVE NIGHTS" class="img__anuncio1"></a>
         <p class="date__anuncio"><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembre de 2023</p>
         <a href="link/da/pagina" target="_blank ">
             <p class="texto__anuncio1"><strong>FIVE NIGHTS AT FREDDY'S - O PESADELO SEM FIM</strong></p>
@@ -102,10 +106,11 @@
             <a href="link/da/pagina" target="_blank" style="text-decoration: none;">
                 <p class="news4__artigo"><strong>Talk to ME</strong></p>
             </a>
-            <p class="news4__Artigo">Um grupo de amigos descobre uma mão embalsamada que lhes permite conjurar espíritos.
+            <p class="news4__Artigo">Um grupo de amigos descobre uma mão embalsamada que lhes permite conjurar
+                espíritos.
                 Viciado na emoção, um deles vai longe demais e abre a porta para o mundo espiritual.</p>
-                <p class="date__anuncio--5"><strong class="color__anuncio--5">Notícia</strong> Domingo 19 de novembre de
-                    2023</p>
+            <p class="date__anuncio--5"><strong class="color__anuncio--5">Notícia</strong> Domingo 19 de novembre de
+                2023</p>
         </div>
     </section>
 
@@ -161,13 +166,28 @@
     </div>
 
     <footer>
-        <div class="footer">
-            <p><strong>Footer</strong></p>
-            <a href="#default" class="logo">Criticine Logo</a>
-            <p>2024 - Criticine</p>
-            <input class="voltarAoTopo" type="button" value="Voltar ao topo">
-        </div>
-
+        <section class="footer__flex">
+            <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e condições |
+                Política de privacidade</section>
+            <hr>
+            <section class="footer__flex--2">
+                <div class="flex--2--1"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></div>
+                <div class="flex--2--2">
+                    <div>&copy; 2024 - CritiCine</div>
+                    <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
+                </div>
+                <div class="flex--2--3">
+                    <div>Siga a gente!</div>
+                    <div>
+                        <div class="div_social-medias">
+                            <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png" class="social-medias"></a>
+                            <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png" class="social-medias"></a>
+                            <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </footer>
 </body>
 
