@@ -6,7 +6,12 @@
   <meta name="Description" content="Articles Page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:pages/articles.html
+  <title>Articles Page</title>
+  <link rel="stylesheet" href="/css/style_header.css">
+=======
   <title>Article - Criticine</title>
+>>>>>>> 606a2e4efd0f68250c8d8915af6eb1e31294090e:Articles/articles.html
   <!--FAVICON TEST-->
   <!-- <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></link> -->
   <!-- <link rel="stylesheet" href="code.css"> -->
@@ -54,7 +59,6 @@
 
 <body>
 
-  <!--Practice for the Box Modeling project-->
   <header class="header">
     <div class="header__div_logo">
         <a href="index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
@@ -63,10 +67,11 @@
         <input type="text" placeholder="Pesquise um Filme...">
     </div>
     <nav>
-        <a href="#" class="header__nav--pages"><span>Home</span></a>
-        <a href="./Pages/movies.html" class="header__nav--pages">Movies</a>
-        <a href="./Pages/news.html" class="header__nav--pages">News</a>
-        <a href="./Pages/login.html" class="header__nav--pages">Login</a>
+        <a href="../index.html" class="header__nav--pages">Home</a>
+        <a href="#" class="header__nav--pages"><span>Artigos</span></a>
+        <a href="./movies.html" class="header__nav--pages">Movies</a>
+        <a href="./news.html" class="header__nav--pages">News</a>
+        <a href="./login.html" class="header__nav--pages">Login</a>
     </nav>
 
     <div class="div_social-medias">
@@ -78,10 +83,10 @@
 
   <main id="article__section">
     <article class="a1">
-      <div class="fblock">
-        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-        <h1><b>Fast And Furious</b></h1> <!--CSS Bold (later)-->
-        <img class="faf" src="#">
+      <div class="main-block">
+        <h1><b>Fast And Furious X</b></h1> 
+        <p><strong>Directed by:</strong><i> Louis Leterrier</i></p> 
+        <img class="poster-pic" src="../assets/images/articles/fast-and-furious-x.jpg">
       </div>
       <p>About the Movie</p>
       <p class="faf__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
@@ -98,10 +103,10 @@
     <br><br>
 
     <article class="a2">
-      <div class="fblock">
-        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-        <h1><b>Interstellar</b></h1> <!--CSS Bold (later)-->
-        <img class="faf" src="#">
+      <div class="main-block">
+        <h1><b>Interstellar</b></h1> 
+        <p><strong>Directed by:</strong><i> Christopher Nolan</i></p> 
+        <img class="poster-pic" src="../assets/images/articles/interstellar-poster.jpg">
       </div>
       <p>About the Movie</p>
       <p class="int__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
@@ -118,10 +123,10 @@
     <br><br>
 
     <article class="a3">
-      <div class="fblock">
-        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-        <h1><b>Django Unchained</b></h1> <!--CSS Bold (later)-->
-        <img class="faf" src="#">
+      <div class="main-block">
+        <h1><b>Django Unchained</b></h1> 
+        <p><strong>Directed by:</strong><i> Quentin Tarantino</i></p> 
+        <img class="poster-pic" src="../assets/images/articles/django-unchained-poster.jpg">
       </div>
       <p>About the Movie</p>
       <p class="du__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
@@ -138,10 +143,10 @@
     <br><br>
 
     <article class="a4">
-      <div class="fblock">
-        <p><i>Movie Author</i></p> <!--Italic (maybe CSS, maybe not)-->
-        <h1><b>The Hunger Games: Catching Fire</b></h1> <!--CSS Bold (later)-->
-        <img class="faf" src="#">
+      <div class="main-block">
+        <h1><b>The Hunger Games: The Ballad of Songbirds & Snakes</b></h1> 
+        <p><strong>Directed by:</strong><i>Francis Lawrence</i></p> 
+        <img class="poster-pic" src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp">
       </div>
       <p>About the Movie</p>
       <p class="thg__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
@@ -156,15 +161,13 @@
     </article>
   </main>
 
-  <!--CSS (fieldset) DISPLAY-->
-
 </body>
 
 <footer>
   <div class="footer">
     <p><strong>Footer</strong></p>
     <a href="#default" class="logo">Criticine Logo</a>
-    <p>2024 - Criticine</p>
+    <p>Criticine - <span class="underline">&copy; Copyrigth 2024</span></p>
     <input class="voltarAoTopo" type="button" value="Voltar ao topo">
   </div>
 </footer>

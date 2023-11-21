@@ -3,8 +3,12 @@ body {
     margin: 0px;
     font-size: 1.2rem;
     padding-top: 5%;
+<<<<<<< HEAD
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+=======
+    font-family: Roboto, Arial, sans-serif;
+>>>>>>> a0ca4011c65429cd25a7c848f11dbb8ae8ad2536
 }
 
 .header {
@@ -43,6 +47,7 @@ body {
     left: 67%;
     box-sizing: border-box;
 }
+
 .header__search-box input {
     width: 15rem;
     height: 1.3rem;
@@ -68,9 +73,30 @@ body {
     margin-left: 2rem;
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
     font-weight: normal;
     font-size: 20px;
     
+=======
+    transition: text-shadow 600ms,
+                font-size 200ms;
+}
+
+.header__nav--pages:hover {
+    opacity: 0.8;
+    font-size: 1.4rem;
+    padding: 2px;
+
+    color: orangered;
+    text-shadow: 0 0 5px hsl(0, 0%, 76%),      
+                 0 0 15px hsl(0, 0%, 76%),      
+                 0 0 30px hsl(0, 0%, 76%),     
+                 0 0 60px hsl(0, 0%, 76%);      
+}
+
+.header__nav--pages:active {
+    opacity: 0.4;
+>>>>>>> a0ca4011c65429cd25a7c848f11dbb8ae8ad2536
 }
 
 .header .div_social-medias {
@@ -79,13 +105,18 @@ body {
     position: absolute;
     left: 88%;
     box-sizing: border-box;
+<<<<<<< HEAD
     height: auto;
+=======
+    margin-left: 10vh;
+>>>>>>> a0ca4011c65429cd25a7c848f11dbb8ae8ad2536
 }
 
 .div_social-medias .social-medias {
     width: 1.2rem;
     margin: 0.25rem 0.5rem 0rem;
     border-radius: 25%;
+<<<<<<< HEAD
 }
 
 /* Página news */
@@ -246,10 +277,41 @@ body {
 .news4 .color__anuncio--5 {
     color: #ff8c00;
     font-size: 15px;
+=======
+    transition: box-shadow 500ms;
+}
+
+.div_social-medias .social-medias:hover {
+    animation: rotation 400ms ease-out;
+    opacity: 0.8;  
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px hsl(0, 0%, 79%),      
+                0 0 15px hsl(0, 0%, 79%),      
+                0 0 30px hsl(0, 0%, 79%);         
+}     
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------- ARTICLES --------------*/ 
+
+.poster-pic {
+    display: flex;
+    width: 200px;
+    object-fit: cover;
+>>>>>>> a0ca4011c65429cd25a7c848f11dbb8ae8ad2536
 }
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -261,3 +323,5 @@ body {
 
 
 
+=======
+>>>>>>> a0ca4011c65429cd25a7c848f11dbb8ae8ad2536
