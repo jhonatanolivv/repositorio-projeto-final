@@ -6,39 +6,48 @@
   <meta name="Description" content="Articles Page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artigos - Criticine</title>
+  <title>Article - Criticine</title>
   <link rel="stylesheet" href="/css/style_header.css">
-
-  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png"></link>
-  <link rel="stylesheet" href="code.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--FAVICON TEST-->
+  <!-- <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></link> -->
+  <!-- <link rel="stylesheet" href="code.css"> -->
+  
 </head>
 
 <body>
 
   <header class="header">
-    <div class="header__div_logo">
-        <a href="index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
-    </div>
-    <div class="header__search-box">
-        <input type="text" placeholder="Pesquise um Filme...">
-    </div>
-    <nav>
-        <a href="../index.html" class="header__nav--pages">Home</a>
-        <a href="#" class="header__nav--pages"><span>Artigos</span></a>
-        <a href="./movies.html" class="header__nav--pages">Movies</a>
-        <a href="./news.html" class="header__nav--pages">News</a>
-        <a href="./login.html" class="header__nav--pages">Login</a>
-    </nav>
-
-    <div class="div_social-medias">
-        <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png" class="social-medias"></a>
-        <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png" class="social-medias"></a>
-        <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
-    </div>
-</header>
+    <section class="header__flex">
+      <section class="flex__1">
+        <div class="header__div_logo">
+          <a href="/index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
+        </div>
+        <nav>
+          <a href="/index.html" class="header__nav--pages">Home</a>
+          <a href="#" class="header__nav--pages"><span class="span--laranja">Artigos</span></a>
+          <a href="./movies.html" class="header__nav--pages">Movies</a>
+          <a href="./news.html" class="header__nav--pages">News</a>
+          <a href="./login.html" class="header__nav--pages">Login</a>
+        </nav>
+      </section>
+      <section class="flex__2">
+        <div class="header__search-box">
+          <input type="text" placeholder="Pesquise um Filme...">
+        </div>
+        <div class="div_social-medias">
+          <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png" class="social-medias"></a>
+          <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png" class="social-medias"></a>
+          <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
+        </div>
+      </section>
+    </section>
+  </header>
 
   <main id="article__section">
-
+    
     <div class="articlesTittle">
       <h1>Artigos</h1>
       <p>Saiba mais sobre os filmes que você mais gosta!</p>
@@ -48,6 +57,7 @@
       <div class="horizontal-box">           <!--HORIZONTAL ELEMENTS-->         
         <h1><b>Fast And Furious X</b></h1> 
         <p><strong>Directed by:</strong><i> Louis Leterrier</i></p> 
+
         <img class="poster-pic" src="../assets/images/articles/fast-and-furious-x.jpg">
         <a href="www.google.com">Referemce Source</a>
         <p>About the Movie</p>         <!--VERTICAL ELEMENTS-->
@@ -62,6 +72,7 @@
       <div class="horizontal-box">
         <h1><b>Interstellar</b></h1> 
         <p><strong>Directed by:</strong><i> Christopher Nolan</i></p> 
+
         <img class="poster-pic" src="../assets/images/articles/interstellar-poster.jpg">
         <a href="www.google.com">Referemce Source</a>
         <p>About the Movie</p>
@@ -80,6 +91,7 @@
       <div class="horizontal-box">
         <h1><b>Django Unchained</b></h1> 
         <p><strong>Directed by:</strong><i> Quentin Tarantino</i></p> 
+
         <img class="poster-pic" src="../assets/images/articles/django-unchained-poster.jpg">
         <a href="www.google.com">Referemce Source</a>
         <p>About the Movie</p>
@@ -98,6 +110,7 @@
       <div class="horizontal-box">
         <h1><b>The Hunger Games: The Ballad of Songbirds & Snakes</b></h1> 
         <p><strong>Directed by:</strong><i> Francis Lawrence</i></p> 
+
         <img class="poster-pic" src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp">
         <a href="www.google.com">Referemce Source</a>
         <p>About the Movie</p>
@@ -114,12 +127,28 @@
 </body>
 
 <footer>
-  <div class="footer">
-    <p><strong>Footer</strong></p>
-    <a href="#default" class="logo">Criticine Logo</a>
-    <p>Criticine - <span class="underline">&copy; Copyrigth 2024</span></p>
-    <input class="voltarAoTopo" type="button" value="Voltar ao topo">
-  </div>
+  <section class="footer__flex">
+      <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e condições |
+          Política de privacidade</section>
+      <hr>
+      <section class="footer__flex--2">
+          <div class="flex--2--1"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></div>
+          <div class="flex--2--2">
+              <div>&copy; 2024 - CritiCine</div>
+              <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
+          </div>
+          <div class="flex--2--3">
+              <div>Siga a gente!</div>
+              <div>
+                  <div class="div_social-medias">
+                      <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png" class="social-medias"></a>
+                      <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png" class="social-medias"></a>
+                      <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </section>
 </footer>
 
 </html>
