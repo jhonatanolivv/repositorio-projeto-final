@@ -124,11 +124,27 @@ body {
 
 /*-------------- ARTICLES --------------*/ 
 
+.articlesTittle {
+    margin-left: 16vh;
+}
+
 .poster-pic {
     display: flex;
     width: 200px;
     object-fit: cover;
 }
 
+.horizontal-box {
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    margin-top: 4vh;
+    margin-left: 16vh;
+    width: 70%;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    /* border: 1px solid lightgray; */
+}
 
-
+.vertical-box {
+    display: inline-block;
+}
