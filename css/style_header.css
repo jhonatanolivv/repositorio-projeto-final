@@ -278,9 +278,94 @@ body {
 
 /*-------------- ARTICLES --------------*/ 
 
-.articlesTittle {
-    margin-left: 16vh;
+#search-icon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
 }
+
+#search-icon:hover {
+   transform: scale(1.2);
+}
+
+.main-tittle {
+
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    /* background-color: #FFA944; */
+    font-family: Roboto, Arial, sans-serif;
+
+    background-image: linear-gradient(to bottom, #FFA944, rgb(248, 118, 67));
+    box-shadow: 0 6px 6px hsl(0, 0%, 88%);
+    
+}
+
+                            /*---Horizontal Layout---*/
+.movie-name {
+    display: flex;
+    flex-direction: row;
+    font-size: 6vh;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    
+    text-decoration: underline wavy orange;
+    font-family: Bebas Neue, Arial, sans-serif;
+}
+
+.minor-info {
+    display: inline-block;
+    width: 250px;
+}
+.major-info {
+    display: inline-block;
+    width: 100vh;
+}
+
+.artigos {
+    display: inline-block;
+    font-size: 1.6rem;
+}
+.saiba-mais {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+}
+
+#dot {
+    margin: 2vh;
+}
+
+#icone-artigos:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
 
 .poster-pic {
     display: flex;
@@ -288,10 +373,9 @@ body {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-.horizontal-box {
+.article-content {
     display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, .2); */
     margin-top: 4vh;
     margin-left: 16vh;
     width: 70%;
@@ -303,7 +387,6 @@ body {
 .vertical-box {
     display: inline-block;
 }
-=======
 /* -------------- LOGIN -------------- */
 
 .cadastro-anuncio {
@@ -359,7 +442,7 @@ footer {
     height: 200px;
     min-width: 800px;
     bottom: 0;
-    position: absolute;
+    /* position: absolute; */
 
     
 }
@@ -390,4 +473,3 @@ footer hr {
     width: 70%;
 }
 
->>>>>>> d134b8ee4ab21b26e23786438c779fe0706bdaac

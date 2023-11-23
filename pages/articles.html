@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
   <!--FAVICON TEST-->
   <!-- <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></link> -->
   <!-- <link rel="stylesheet" href="code.css"> -->
@@ -18,7 +22,6 @@
 </head>
 
 <body>
-
   <header class="header">
     <section class="header__flex">
       <section class="flex__1">
@@ -34,6 +37,9 @@
         </nav>
       </section>
       <section class="flex__2">
+        <div id="search-icon">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaklEQVR4nL2Vv08UQRTHN0IUoxQ2JmAsDNKotVEs1tv3FowU2FzsrDFnJKDWRP8REqO3M3OcgcbCBhUSKhLDYYL4LxiN2AgGvmbejOeJd8PeeXGTSfbHzHze+76334miFhfM6HkYegRFGoqX3SANzQ/tt+hfL8zzMDRVoXgfmtF0KN6H4krHQKjkFhR/85utw/AUyoWLeJqekGHv7TtNNT9nGxlNtA/RtAdF32H4LmZnj7Sca4o90GkJinZkTV6YyGUzsRCVFHIHZ9JEYDazPDJKTZz+k3khvy4YvudlrEQ5srHFXQ/JFZRR8YbskRWGWk+07WojMjwlz8/HT7UN0zTts3oQmmQcKLkgz4qfYCnubQuk0ksepAKTeFkmLYz0e/Abu7At0MJIv6/x2/wgxZtQ9LgzEK0EQGIrjdK9guIvqKanO5Cukr8ZNE+6RfQac3FfW81gaCYKmqf4GtWkVU3xKDS981KsBls2qrf3e3GIeR4OR2QNUjZOS25xcgaa13yBd6H5GQzdhkkuozo2cCCb+16BF4en7rLaFjvJmOTdUtwLRXeca9Cq+w3SEsyV478DJJZArH2Z9NyhIFmU0YQ31R2xFVPsCcqlJZNd3wSfYOiqZPzyxrF8MJuZW7whRbYdZeKTMuSeZlxNpIZfoenzn+cV1Q7KG5KxEjz4NO2JlNnoWWR0vcnBuJkL5rIrDFnvgubM/dS04pqGphs7ESq91iKgDyjzYC5YroDm4r76iftXZrRlO7h7sOrYgMj1X2BlHgzAFrsGiuow2moCW+sqSGDWVRR9bOjAHzA83nVQA2xRbEzxTfvyJxFzqY1eFf75AAAAAElFTkSuQmCC">
+        </div>
         <div class="header__search-box">
           <input type="text" placeholder="Pesquise um Filme...">
         </div>
@@ -47,82 +53,125 @@
   </header>
 
   <main id="article__section">
-    
-    <div class="articlesTittle">
-      <h1>Artigos</h1>
-      <p>Saiba mais sobre os filmes que você mais gosta!</p>
+
+    <div class="main-tittle">
+      <div class="tittle-box">
+        <img id="icone-artigos" width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/article--v1.png" alt="article--v1"/>
+      </div>
+      <div class="icon-box">
+        <h1 class="artigos">Artigos</h1>
+        <p class="saiba-mais"><span id="dot">&#183; </span>Saiba mais sobre os seus filmes favoritos!</p>
+      </div>
     </div>
 
     <article class="articleBox">
-      <div class="horizontal-box">           <!--HORIZONTAL ELEMENTS-->         
-        <h1><b>Fast And Furious X</b></h1> 
-        <p><strong>Directed by:</strong><i> Louis Leterrier</i></p> 
+      <div class="article-content">    
+        
+        <div class="movie-name">
+          <h1><b>Fast And Furious X</b></h1> 
+        </div>
 
-        <img class="poster-pic" src="../assets/images/articles/fast-and-furious-x.jpg">
-        <a href="www.google.com">Referemce Source</a>
-        <p>About the Movie</p>         <!--VERTICAL ELEMENTS-->
-        <p class="articleContent">"Velozes e Furiosos 10" acompanha Dom Toretto em mais uma jornada de proteção à sua família contra um novo inimigo. Apesar de momentos intensos e emocionantes, o filme peca ao repetir falhas já conhecidas da franquia, como a conexão forçada com capítulos anteriores. A falta de exploração adequada da cultura brasileira e do funk, além da participação limitada da cantora Ludmilla, deixam uma sensação de oportunidades perdidas. Embora mantenha a essência de ação, a narrativa poderia ter se beneficiado de uma abordagem mais inovadora e inclusiva para atender às expectativas dos fãs mais exigentes.</p>
-        <p><i>Posted by Unknown</i></p>
+        <div class="minor-info">
+          <img class="poster-pic" src="../assets/images/articles/fast-and-furious-x.jpg">
+          <a href="www.google.com">Referemce Source</a>
+        </div>
+        <div class="major-info">
+          <p><strong>Directed by:</strong><i> Louis Leterrier</i></p> 
+          <p>About the Movie</p>       
+          <p class="articleContent">
+            "Velozes e Furiosos 10" acompanha Dom Toretto em mais uma   jornada de proteção à sua família contra um novo inimigo. Apesar de momentos intensos e emocionantes, o filme peca ao repetir falhas já conhecidas da franquia, como a conexão forçada com capítulos anteriores. A falta de exploração adequada da cultura brasileira e do funk, além da participação limitada da cantora Ludmilla, deixam uma sensação de oportunidades perdidas. Embora mantenha a essência de ação, a narrativa poderia ter se beneficiado de uma abordagem mais inovadora e inclusiva para atender às expectativas dos fãs mais exigentes.
+          </p>
+          <p><i>Posted by Unknown</i></p>
+        </div>  
+
       </div>
     </article>
 
-    <br><br>
+    <br><hr>
 
     <article class="articleBox">
-      <div class="horizontal-box">
-        <h1><b>Interstellar</b></h1> 
-        <p><strong>Directed by:</strong><i> Christopher Nolan</i></p> 
+      <div class="article-content"> 
 
-        <img class="poster-pic" src="../assets/images/articles/interstellar-poster.jpg">
-        <a href="www.google.com">Referemce Source</a>
-        <p>About the Movie</p>
+        <div class="movie-name">
+          <h1><b>Interstellar</b></h1> 
+        </div>
+
+        <div class="minor-info">
+          <img class="poster-pic" src="../assets/images/articles/interstellar-poster.jpg">
+          <a href="www.google.com">Referemce Source</a>
+        </div>
+        <div class="major-info">
+          <p><strong>Directed by:</strong><i> Christopher Nolan</i></p> 
+          <p>About the Movie</p>
+          <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+            Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+            atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+            iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+            <p><i>Posted by Unknown</i></p>
+        </div>
+
+      </div>
+    </article>
+
+    <br><hr>
+
+    <article class="articleBox">
+      <div class="article-content"> 
+
+        <div class="movie-name">
+          <h1><b>Django Unchained</b></h1> 
+        </div>
+
+        <div class="minor-info">
+          <img class="poster-pic" src="../assets/images/articles/django-unchained-poster.jpg">
+          <a href="www.google.com">Referemce Source</a>
+        </div>
+        <div class="major-info">
+          <p><strong>Directed by:</strong><i> Quentin Tarantino</i></p> 
+          <p>About the Movie</p>
+          <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
+            Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
+            atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
+            iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
+            <p><i>Posted by Unknown</i></p>
+        </div>
+      </div>
+    </article>
+
+    <br><hr>
+
+    <article class="articleBox">
+      <div class="article-content"> 
+
+        <div class="movie-name">
+          <h1><b>The Hunger Games: The Ballad of Songbirds & Snakes</b></h1> 
+        </div>
+
+        <div class="minor-info">
+          <img class="poster-pic" src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp">
+          <a href="www.google.com">Referemce Source</a>
+        </div>
+        <div class="major-info">
+          <p><strong>Directed by:</strong><i> Francis Lawrence</i></p> 
+          <p>About the Movie</p>
         <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
           Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
           atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
           consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
           iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
           <p><i>Posted by Unknown</i></p>
-      </div>
-    </article>
+        </div>
 
-    <br><br>
+    
 
-    <article class="articleBox">
-      <div class="horizontal-box">
-        <h1><b>Django Unchained</b></h1> 
-        <p><strong>Directed by:</strong><i> Quentin Tarantino</i></p> 
-
-        <img class="poster-pic" src="../assets/images/articles/django-unchained-poster.jpg">
-        <a href="www.google.com">Referemce Source</a>
-        <p>About the Movie</p>
-        <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
-          Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
-          atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
-          iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-          <p><i>Posted by Unknown</i></p>
-      </div>
-    </article>
-
-    <br><br>
-
-    <article class="articleBox">
-      <div class="horizontal-box">
-        <h1><b>The Hunger Games: The Ballad of Songbirds & Snakes</b></h1> 
-        <p><strong>Directed by:</strong><i> Francis Lawrence</i></p> 
-
-        <img class="poster-pic" src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp">
-        <a href="www.google.com">Referemce Source</a>
-        <p>About the Movie</p>
-        <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
-          Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
-          atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
-          iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-          <p><i>Posted by Unknown</i></p>
+        
       </div>
     </article>
   </main>
+
+  <br><hr>
 
 </body>
 
