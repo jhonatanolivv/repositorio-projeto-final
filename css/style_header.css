@@ -2,7 +2,6 @@ body {
     font-size: 62.5%;
     margin: 0px;
     font-size: 1.2rem;
-    padding-top: 100px;
 
 }
 
@@ -13,7 +12,7 @@ body {
     min-width: 800px;
     height: 100px;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     box-sizing: border-box;
     background-color: #F4F4F4;
     align-items: center;
@@ -413,6 +412,11 @@ body {
     color: white;
     border: 1px none ;
     border-radius: 30px;
+    transition: scale 0.2s;
+    font-weight: bold;
+}
+.button-cadastrar-novo:hover {
+    scale: 1.7;
 
 }
 .login-form {
@@ -423,7 +427,7 @@ body {
     
 }
 #form-login {
-    height: 30%;
+    height: 35%;
     background-color: #FBFBFB;
     padding: 2.3rem;
     border-radius: 20px;
