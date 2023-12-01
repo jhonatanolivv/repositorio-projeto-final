@@ -294,6 +294,7 @@ body {
 
     display: flex;
     height: 100px;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 12px;
