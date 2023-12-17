@@ -125,13 +125,13 @@ body {
     left: 15%;
     min-width: 22rem;
 }
-.span--laranja {
+/* .span--laranja {
     color: #ff8c00;
     text-decoration: underline;
     text-decoration-color: rgb(110, 0, 212);
     text-decoration-thickness: 2px;
-}
-.header__nav--pages {
+} */
+/* .header__nav--pages {
     margin-left: 1vw;
     text-decoration: none;
     color: black;
@@ -139,6 +139,12 @@ body {
 .header__nav--pages:hover {
     color: #ff8c00;
    
+} */
+
+/*MENU COM FRAMEWORK*/
+
+.btn-custom:hover {
+    background-color: #ff7b00;
 }
 
 .header .div_social-medias {
@@ -683,4 +689,5 @@ footer hr {
     text-decoration-color: #ff7b00;
     text-decoration-thickness: 2px;
 }
+
 

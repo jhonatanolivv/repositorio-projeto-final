@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Criticine</title>
     <link rel="stylesheet" href="/css/style_header.css">
+
+    <!--CDN do Boostrap do CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--CDN do JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,13 +30,20 @@
                 <div class="header__div_logo">
                     <a href="/index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
                 </div>
-                <nav>
+                <!-- MENU SEM BOOSTRAP <nav>
                     <a href="/index.html" class="header__nav--pages">Home</a>
                     <a href="./articles.html" class="header__nav--pages">Artigos</a>
                     <a href="./movies.html" class="header__nav--pages">Movies</a>
-                    <a href="./news.html" class="header__nav--pages">News</a>
-                    <a href="#" class="header__nav--pages"><span class="span--laranja">Login</span></a>
-                </nav>
+                    <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
+                    <a href="./login.html" class="header__nav--pages">Login</a>
+                </nav> -->
+                <!--MENU COM BOOSTRAP-->
+                <a href="/index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                <a href="/pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                <a href="/pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                <a href="/pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                <a href="#"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+
             </section>
             <section class="flex__2">
                 <div class="header__search-box">
