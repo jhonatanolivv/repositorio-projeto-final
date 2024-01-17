@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #ffedd8;
+    --main-color: #FF8c00;
+}
+
 body {
     font-size: 62.5%;
     margin: 0px;
@@ -493,6 +506,31 @@ body {
 .vertical-box {
     display: inline-block;
 }
+
+.minor-info a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    letter-spacing: -.5px;
+}
+.minor-info button {
+    background: linear-gradient(-30deg, #FFA944, #ff7b00);
+    padding: .5rem 2.45rem;
+    border: none;
+    margin-top: 1rem;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+.minor-info button:hover {
+    border-bottom: .45rem solid orangered;
+    border-radius: 6px 6px;
+    box-shadow: 0 1px 6px #333;
+    opacity: .8;
+}
+.minor-info button:active {
+    opacity: .4;
+}
+
 /* -------------- LOGIN -------------- */
 
 .main-login {
