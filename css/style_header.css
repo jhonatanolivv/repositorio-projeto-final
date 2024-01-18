@@ -215,10 +215,11 @@ body {
 
 .card1 {
     grid-area: card1;
-    /* background-color: lightcyan; */
-    height: 450px;
-    width: 800px;
+    background-color: cyan;
+    height: 400px;
+    width: 720px;
     font-size: 16px;
+    margin-bottom: 15%;
 }
 
 .sideBar {
@@ -227,7 +228,7 @@ body {
     flex-direction: column;
     background-color: lightpink;
     height: 1050px;
-    width: 300px;
+    width: 400px;
     margin-left: 5%;
 }
 
@@ -239,16 +240,15 @@ body {
 
 .img__hbo {
     border-radius: 5%;
-    width: 300px;
-    height: 160px;
-    object-fit: fill;
+    width: 400px;
+    height: auto;
 }
 
 .sideBar1 img {
     border-radius: 5%;
     box-shadow: 5% black;
-    width: 300px;
-    height: 156px;
+    width: 400px;
+    height: auto;
 }
 
 .text_conteudo {
@@ -288,16 +288,17 @@ body {
     display: flex;
     grid-area: conteudo1;
     background-color: lightsalmon;
-    margin-top: -115px;
-    height: 300px;
+    margin-top: -100px;
+    height: 320px;
 }
 
 .item img {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     border-radius: 5%;
-    box-shadow: 5px;
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     
 }
 
@@ -315,17 +316,18 @@ body {
     display: flex;
     grid-area: conteudo2;
     background-color: lightskyblue;
-    margin-top: 15%;
-    margin-left: 5%;
-    height: 300Xpx;
-    width: 800px;
+    margin-top: 21.5%;
+    margin-left: 6%;
+    height: 320px;
+    width: 722px;
 }
 
 .conteudo2 img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 320px;
     border-radius: 5%;
-    box-shadow: 5px;
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     object-fit: fill;
 }
 
@@ -335,10 +337,10 @@ body {
     grid-area: conteudo3;
     background-color: lightslategray;
     margin-top: 15px;
-    margin-left: 63px;
-    width: 800px;
+    margin-left: 75px;
+    width: 723px;
     height: 383px;
-    gap: 5%;
+    gap: 2%;
 }
 
 .card-text {
@@ -351,23 +353,31 @@ body {
 
 .conteudo4 {
     background-color: #FFA944;
-    height: 300px;
-    width: 800px;
+    height: 305px;
+    width: 727px;
     margin-top: 1%;
-    margin-left: 63px;
+    margin-left: 75px;
 }
 
-.conteudo4 .no-inherit {
-    all: unset;
+.conteudo4--row {
     display: flex;
+    gap: 5%;
+}
+
+.conteudo4--row img {
+    width: 13rem;
+    height: 260px;
+    border-radius: 5%;
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .img__anuncio {
-    width: 798px;
-    height: 250px;
+    width: 720px;
+    height: 230px;
     object-fit: fill;
     border-radius: 2%;
-    box-shadow: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .color__anuncio {
