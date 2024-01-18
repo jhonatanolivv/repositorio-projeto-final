@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #ffedd8;
+    --main-color: #FF8c00;
+}
+
 body {
     font-size: 62.5%;
     margin: 0px;
@@ -33,7 +46,7 @@ body {
     position: sticky;
     box-sizing: border-box;
     background-color: #F4F4F4;
-    align-items: center;
+    align-items: center;    
     z-index: 1000;
 
 }
@@ -79,12 +92,13 @@ body {
 
 .header__search-box {
     width: auto;
+    height: auto;
 
 }
 .header__search-box form {
     display: flex;
     width: 13rem;
-    height: 1.5rem;
+    height: 1.6rem;
     border: 3px solid orange;
     border-radius: 8px;
 
@@ -99,6 +113,12 @@ body {
     border-bottom-right-radius: 0px;
     background-color: #F4F4F4;
     overflow: hidden;
+    
+}
+.header__search-box input::placeholder {
+    font-size: 0.9rem;
+    
+
 }
 .header__search-box input:focus {
     box-shadow: 0 0 0 0;
@@ -147,10 +167,33 @@ body {
 }
 
 .social-medias {
-    width: 1.2rem;
+    width: 1.5rem;
     margin: 0.25rem 0.5rem 0rem;
     border-radius: 25%;
     text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 30%;
+
+}
+/* Página movies */
+
+#movies-main {
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "slide"
+    "topicos";
+
+}
+
+#movies-main__slide {
+    grid-area: slide;
+
+}
+
+#movies-main__topicos {
+    grid-area: topicos;
+
 }
 /* Página news */
 
@@ -404,6 +447,7 @@ body {
 
     display: flex;
     height: 100px;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -497,6 +541,31 @@ body {
 .vertical-box {
     display: inline-block;
 }
+
+.minor-info a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    letter-spacing: -.5px;
+}
+.minor-info button {
+    background: linear-gradient(-30deg, #FFA944, #ff7b00);
+    padding: .5rem 2.45rem;
+    border: none;
+    margin-top: 1rem;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+.minor-info button:hover {
+    border-bottom: .45rem solid orangered;
+    border-radius: 6px 6px;
+    box-shadow: 0 1px 6px #333;
+    opacity: .8;
+}
+.minor-info button:active {
+    opacity: .4;
+}
+
 /* -------------- LOGIN -------------- */
 
 .main-login {
@@ -520,13 +589,19 @@ body {
 
 }
 .cadastro-anuncio--1 {
+    padding-top: 0.5rem;
     width: 350px;
+    height: auto;
     font-size: x-large;
-    line-height: 2.2rem;
+    
+}
+.cadastro-anuncio--1 p {
+    height: 100%;
+
 }
 .button-cadastrar-novo {
-    scale: 1.5;
-    padding: 0.5rem 1rem;
+    scale: 1.5; 
+    padding: 0.2rem 1rem;
     background-color: rgb(255, 136, 0);
     border: 1px none;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.63);
@@ -534,9 +609,10 @@ body {
     border-radius: 30px;
     transition: scale 0.2s;
     font-weight: bold;
+    font-size: 1rem;
 }
 .button-cadastrar-novo:hover {
-    scale: 1.7;
+    scale: 1.6;
 
 }
 .login-form {
@@ -560,7 +636,7 @@ body {
     box-shadow: 5px 6px 15px rgb(99, 99, 99);
 }
 #form-login {
-    height: 50%;
+    height: 70%;
     padding: 2rem;
     padding-top: 1.5rem;
 }
@@ -578,11 +654,17 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     transition: all 0.15s;
-} 
 
-#form-lolgin input:focus {
-    box-shadow: 1 1 1 1 #ff7b00;
-    outline: 1;
+    
+}
+#form-login input::placeholder {
+    font-size: 0.9rem;
+}
+
+#form-login input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
 }
 
 #form-login button {
@@ -608,7 +690,7 @@ body {
 
 }  */
 .esqueceu-senha {
-    height: 20%;
+    height: 15%;
     text-align: center;
 }
 .esqueceu-senha a {
@@ -619,21 +701,11 @@ body {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.criar-conta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    background-color: #ff7b00;
-    border-radius: 19px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-}
 .criar-conta--a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25%;
+    height: 15%;
     background-color: #ff7b00;
     border-radius: 19px;
     border-top-right-radius: 0px;
@@ -654,10 +726,7 @@ footer {
     width: 100%;
     height: 200px;
     min-width: 800px;
-    bottom: 0;
-    /* position: absolute; */
-
-    
+   
 }
 .footer__flex {
     margin: auto;
@@ -693,6 +762,7 @@ footer hr {
     color: black;
     text-decoration-color: #ff7b00;
     text-decoration-thickness: 2px;
+    
 }
 
 .btn-custom:hover {
