@@ -215,7 +215,7 @@ body {
 
 .card1 {
     grid-area: card1;
-    background-color: cyan;
+    /* background-color: cyan; */
     height: 400px;
     width: 720px;
     font-size: 16px;
@@ -226,33 +226,39 @@ body {
     grid-area: sideBar;
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
-    height: 1050px;
+    /* background-color: lightpink; */
+    height: 1550px;
     width: 400px;
     margin-left: 5%;
 }
 
 .sideBar h4 {
     font-size: 22px;
-    margin-top: 12%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .img__hbo {
-    border-radius: 5%;
+    /* border-radius: 5%; */
     width: 400px;
-    height: auto;
+    height: 200px;
+    box-shadow: 5% black;
+}
+
+.sidebBar--row {
+    display: flex;
 }
 
 .sideBar1 img {
     border-radius: 5%;
-    box-shadow: 5% black;
-    width: 400px;
-    height: auto;
+    width: 160px;
+    height: 250px;
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .text_conteudo {
-    margin-top: 3%;
+    margin-left: 2%;
 }
 
 .text__conteudo {
@@ -267,13 +273,16 @@ body {
 .sideBar2 img {
     border-radius: 5%;
     box-shadow: 5% black;
-    width: 300px;
-    height: 167px;
+    width: 160px;
+    height: 270px;
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sideBar3 {
-    display: grid;
-    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
 }
 
 .sideBar3 img {
@@ -287,7 +296,7 @@ body {
 .conteudo1 {
     display: flex;
     grid-area: conteudo1;
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     margin-top: -100px;
     height: 320px;
 }
@@ -315,7 +324,7 @@ body {
 .conteudo2 {
     display: flex;
     grid-area: conteudo2;
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
     margin-top: 21.5%;
     margin-left: 6%;
     height: 320px;
@@ -335,7 +344,7 @@ body {
     display: flex;
     flex-direction: row;
     grid-area: conteudo3;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     margin-top: 15px;
     margin-left: 75px;
     width: 723px;
@@ -349,11 +358,12 @@ body {
 
 .card-img-top--modificada {
     height: 162px;
+    width: 350px;
 }
 
 .conteudo4 {
-    background-color: #FFA944;
-    height: 305px;
+    /* background-color: #FFA944; */
+    height: 320px;
     width: 727px;
     margin-top: 1%;
     margin-left: 75px;
@@ -361,15 +371,16 @@ body {
 
 .conteudo4--row {
     display: flex;
-    gap: 5%;
+    gap: 3%;
 }
 
 .conteudo4--row img {
-    width: 13rem;
+    width: 12rem;
     height: 260px;
     border-radius: 5%;
     border: 2px solid whitesmoke;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
 }
 
 .img__anuncio {
