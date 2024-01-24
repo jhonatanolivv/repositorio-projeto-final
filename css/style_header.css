@@ -517,6 +517,46 @@ body {
 }
 
 /*-------------- ARTICLES --------------*/ 
+.carousel-item {
+    width: 100%;
+    height: 495px;
+    overflow: hidden;
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: all 40ms linear;
+}
+
+.carousel-control-prev {
+    background: transparent;
+    border: none; 
+}
+.carousel-control-next {
+    background: transparent;
+    border: none; 
+}
+.visually-hidden {
+    color: orangered;
+    font-weight: bolder;
+    background-color: #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 40ms ease-in-out;
+}
+.visually-hidden:hover {
+    scale: 1.1;
+    box-shadow: 0 3px 1px;
+}
+.visually-hidden:active {
+    scale: 1;
+    background-color: #FFA944;
+    color: #683200;
+}
+
 .banner {
     display: flex;
     height: 2.5rem;
@@ -539,6 +579,7 @@ body {
 
 .banner h4 {
     font-size: 1rem;
+    margin-top: .45rem;
 }
 
 .banner i {
@@ -560,9 +601,30 @@ body {
 /* Content */
 #articles {
     display: flex;
-    justify-content: space-around;
-    padding: 0 4%;
+    justify-content: space-between;
+    padding: 0 7%;
     margin-top: 4rem;
+}
+
+.article-flex {
+    margin-bottom: 1rem;
+}
+
+.pagination a {
+    color: orangered;
+}
+.pagination a:hover {
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: #FFA944;
+}
+.pagination a:visited {
+    color:black;
+}
+
+.page-item--selected a {
+    background-color: orange;
+    color: #000000;
 }
 
 .top-info {
@@ -574,6 +636,10 @@ body {
     display: flex;
     margin-bottom: 4rem;
     gap: 2rem;
+    border-bottom: 2.5px #FF8c00 solid;
+    border-radius: 10px;
+    background: linear-gradient(120deg, white, rgba(255, 197, 90, 0.329));
+    padding: 1.5rem 1rem;
 }
 
 .article__content {
@@ -595,7 +661,9 @@ body {
 }
 
 .article-text p {
-    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35rem;
     text-align: justify;
     font-size: 14px;
 }
@@ -644,6 +712,27 @@ body {
     object-fit: cover;
 }
 
+/* Aside CSS */
+
+.aside__ads {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;    
+}
+.aside__ads img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+    cursor: pointer;
+}
+.aside__ads img:hover {
+    opacity: .8;
+}
+.aside__ads img:active {
+    opacity: .6;
+}
+
 .ads-container {
     display: flex;
     flex-direction: column;
@@ -662,11 +751,11 @@ body {
     transition: all 30ms linear;
 }
 
-.ads:hover {
+.ads img:hover {
     opacity: .8;
 }
 
-.ads:active {
+.ads img:active {
     opacity: .4;
 }
 
@@ -748,6 +837,28 @@ body {
     grid-template-rows: repeat(2, 2.5rem);
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 16rem;
+}
+
+.card-unity p {
+    position: absolute;
+    text-align: center;
+    width: 10rem;
+    margin-top: 15rem;
+    color: #000000;
+    border-radius: 8px 8px 38% 38%; 
+    padding: .2rem auto;
+    font-size: 14px;
+    opacity: .8;
+    transition: all .2s ease-in-out;
+}
+
+.card-unity p:hover {
+    font-weight: bold;
+    text-shadow: 0 6px 8px #ccc;
+    scale: 1.1;
+    color: #ff7b00;
+    opacity: 1;
 }
 
 .card__options {
@@ -772,7 +883,66 @@ body {
     transition: all .2s ease;
     opacity: 0;
 }
+.card-content button {
+    border: none;
+    background-color: #ff7b00;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: all 40ms ease-in-out;
+}
+
+.card-content button:hover {
+    background-color: #FF8c00;
+    box-shadow: 0 2px 1px orangered;
+    scale: 1.1;
+}
+
+.card-content button:active {
+    background-color: #FFA944;
+    border: none;
+    scale: 1;
+}
+.card-content--faf button {
+    border: none;
+    background-color: #ff7b00;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: all 40ms ease-in-out;
+}
+
+.card-content--faf button:hover {
+    background-color: #FF8c00;
+    box-shadow: 0 2px 1px orangered;
+    scale: 1.1;
+}
+
+.card-content--faf button:active {
+    background-color: #FFA944;
+    border: none;
+    scale: 1;
+}
+
 .card-content--faf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 12rem;
+    height: 14rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, .6);
+    transition: all .2s ease;
+    opacity: 0;
+}
+.card-content--hg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -805,11 +975,23 @@ body {
     text-align: center;
     transition: all .2s ease;
 }
+.card-content--hg h1 {
+    background-color: #ff7b00;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    transition: all .2s ease;
+}
 
 .card-content:hover {
     opacity: 1;
 }
 .card-content--faf:hover {
+    opacity: 1;
+}
+.card-content--hg:hover {
     opacity: 1;
 }
 .card-content h1:hover {
@@ -820,6 +1002,7 @@ body {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .card-unity img {
@@ -828,6 +1011,15 @@ body {
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
+    border: 2px #ccc outset;
+}
+
+.review-title {
+    font-weight: bold;
+    /* margin-left: 6rem; */
+    margin-bottom: 3.5rem;
+    text-align: center;
+
 }
 
 /* -------------- LOGIN -------------- */
@@ -986,6 +1178,7 @@ body {
 /* -------------- FOOTER -------------- */
 
 footer {
+    box-shadow: 0 -2px 8px #ccc;
     background-color: #F4F4F4;
     width: 100%;
     height: 200px;
