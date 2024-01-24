@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Article - Criticine</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style_header.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +20,13 @@
   <!-- <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/originals/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg"></link> -->
   <!-- <link rel="stylesheet" href="code.css"> -->
 
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
+
   <!--CDN do Boostrap do CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
 
@@ -74,138 +78,190 @@
     </section>
   </header>
 
-  <main id="article__section">
-
-    <div class="main-tittle">
-      <div class="tittle-box">
-        <img id="icone-artigos" width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/article--v1.png" alt="article--v1"/>
-      </div>
-      <div class="icon-box">
-        <h1 class="artigos">Artigos</h1>
-        <p class="saiba-mais"><span id="dot">&#183; </span>Saiba mais sobre os seus filmes favoritos!</p>
-      </div>
+  <section id="article__section">
+    <div class="banner">
+      <i class="fa-solid fa-newspaper"></i>
+      <h4>Artigos</h4>
     </div>
 
-    <article class="articleBox">
-      <div class="article-content">    
-        
-        <div class="movie-name">
-          <h1><b>Fast And Furious X</b></h1> 
-        </div>
-
-        <div class="minor-info">
-          <img class="poster-pic" src="../assets/images/articles/fast-and-furious-x.jpg">
-          <button onclick="checker()" id="reference">
-            <a href="www.google.com" target="_blank">
-              Reference Source
-            </a>
-          </button>
-        </div>
-        <div class="major-info">
-          <p><strong>Directed by:</strong><i> Louis Leterrier</i></p> 
-          <p>About the Movie</p>       
-          <p class="articleContent">
-            "Velozes e Furiosos 10" acompanha Dom Toretto em mais uma   jornada de proteção à sua família contra um novo inimigo. Apesar de momentos intensos e emocionantes, o filme peca ao repetir falhas já conhecidas da franquia, como a conexão forçada com capítulos anteriores. A falta de exploração adequada da cultura brasileira e do funk, além da participação limitada da cantora Ludmilla, deixam uma sensação de oportunidades perdidas. Embora mantenha a essência de ação, a narrativa poderia ter se beneficiado de uma abordagem mais inovadora e inclusiva para atender às expectativas dos fãs mais exigentes.
-          </p>
-          <p><i>Posted by Unknown</i></p>
-        </div>  
-
-      </div>
-    </article>
-
-    <br><hr>
-
-    <article class="articleBox">
-      <div class="article-content"> 
-
-        <div class="movie-name">
-          <h1><b>Interstellar</b></h1> 
-        </div>
-
-        <div class="minor-info">
-          <img class="poster-pic" src="../assets/images/articles/interstellar-poster.jpg">
-          <button onclick="checker()" id="reference">
-            <a href="www.google.com" target="_blank">
-              Reference Source
-            </a>
-          </button>
-        </div>
-        <div class="major-info">
-          <p><strong>Directed by:</strong><i> Christopher Nolan</i></p> 
-          <p>About the Movie</p>
-          <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
-            Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
-            atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
-            iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-            <p><i>Posted by Unknown</i></p>
-        </div>
-
-      </div>
-    </article>
-
-    <br><hr>
-
-    <article class="articleBox">
-      <div class="article-content"> 
-
-        <div class="movie-name">
-          <h1><b>Django Unchained</b></h1> 
-        </div>
-
-        <div class="minor-info">
-          <img class="poster-pic" src="../assets/images/articles/django-unchained-poster.jpg">
-          <button onclick="checker()" id="reference">
-            <a href="www.google.com" target="_blank">
-              Reference Source
-            </a>
-          </button>
-        </div>
-        <div class="major-info">
-          <p><strong>Directed by:</strong><i> Quentin Tarantino</i></p> 
-          <p>About the Movie</p>
-          <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
-            Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
-            atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
-            iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-            <p><i>Posted by Unknown</i></p>
+    <div class="ads-container">
+      <div class="ads">
+        <a href="https://www.hbomax.com/br/pt" target="_blank">
+          <img src="../assets/images/articles/ad3.jpg" alt="">
+        </a>
+        <div class="sponsor">
+          <p>Sponsored by CritiCine.</p>
         </div>
       </div>
-    </article>
+    </div>
+    
+    <div class="articles__menu">
+      <h4>Novidades</h4>
+    </div>
+    <div class="banner--articles">
+      <a href="https://www.netflix.com/" target="_blank">
+        <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" alt="killers of the flower moon">
+      </a>
+    </div>
+    <div class="articles__menu">
+      <h4>Todos os Artigos</h4>
+      <p class="page-info">Página 1/6 | Mostrando Resultados 1 - 16 of 80</p>
+    </div>
+  </section>
 
-    <br><hr>
+  <main id="articles">
+    <article class="article-flex">
 
-    <article class="articleBox">
-      <div class="article-content"> 
-
-        <div class="movie-name">
-          <h1><b>The Hunger Games: The Ballad of Songbirds & Snakes</b></h1> 
+      <div class="article__container">
+        <div class="card-unity">
+          <img src="../assets/images/articles/fast-and-furious.jpg" alt="">
+          <div class="card-content--faf">
+            <h1>Velozes e Furiosos X</h1>
+          </div>
         </div>
+        <div class="article-info">
+          <div class="top-info">
+            <p>About the Movie</p>       
+            <p><strong>Directed by: </strong><a href="https://en.wikipedia.org/wiki/Louis_Leterrier" target="_blank">Louis Leterrier</p></a>
+          </div>
+          <div class="article-text">
+            <p>
+              "Velozes e Furiosos 10" acompanha Dom Toretto em mais uma   jornada de proteção à sua família contra um novo inimigo. Apesar de momentos intensos e emocionantes, o filme peca ao repetir falhas já conhecidas da franquia, como a conexão forçada com capítulos anteriores. A falta de exploração adequada da cultura brasileira e do funk, além da participação limitada da cantora Ludmilla, deixam uma sensação de oportunidades perdidas. Embora mantenha a essência de ação, a narrativa poderia ter se beneficiado de uma abordagem mais inovadora e inclusiva para atender às expectativas dos fãs mais exigentes.
+            </p>
+            <p class="posted"><i>Posted by <span>CritiCine</span></i></p>
+          </div>
+        </div> 
+      </div>
 
-        <div class="minor-info">
-          <img class="poster-pic" src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp">
-          <button onclick="checker()" id="reference">
-            <a href="www.google.com" target="_blank">
-              Reference Source
-            </a>
-          </button>
+      <div class="article__container">
+        <div class="card-unity">
+          <img src="../assets/images/articles/interstellar-poster.jpg" alt="">
+          <div class="card-content">
+            <h1>Interstellar</h1>
+          </div>
         </div>
-        <div class="major-info">
-          <p><strong>Directed by:</strong><i> Francis Lawrence</i></p> 
-          <p>About the Movie</p>
-        <p class="articleContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consequuntur nisi iste.
-          Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem iure voluptates iste
-          atque voluptatem nobis. Omnis, voluptas et?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-          consequuntur nisi iste. Repellendus nulla ratione cupiditate architecto dicta itaque inventore. Exercitationem
-          iure voluptates iste atque voluptatem nobis. Omnis, voluptas et?</p>
-          <p><i>Posted by Unknown</i></p>
+        <div class="article-info">
+          <div class="top-info">
+            <p>About the Movie</p>       
+            <p><strong>Directed by: </strong><a href="https://en.wikipedia.org/wiki/Christopher_Nolan" target="_blank">Christopher Nolan</p></a>
+          </div>
+          <div class="article-text">
+            <p>
+              "Interestelar", dirigido por Christopher Nolan, é uma epopeia espacial lançada em 2014 que transcende os limites da ficção científica. O filme segue a jornada de Joseph Cooper e sua equipe em busca de um novo lar para a humanidade, explorando conceitos científicos complexos, como buracos de minhoca e dilatação temporal. Além dos visuais impressionantes, o filme aborda temas filosóficos, como a natureza do tempo, e destaca a força do amor como elemento central. Com um elenco estelar, "Interestelar" é uma obra-prima que combina espetáculo visual com uma narrativa emocionalmente envolvente. Christopher Nolan mais uma vez deixa sua marca no cinema contemporâneo.
+            </p>
+            <p class="posted"><i>Posted by <span>CritiCine</span></i></p>
+          </div>
+        </div> 
+      </div>
+
+      <div class="article__container">
+        <div class="card-unity">
+          <img src="../assets/images/articles/django-unchained-poster.jpg" alt="">
+          <div class="card-content">
+            <h1>Django Livre</h1>
+          </div>
         </div>
+        <div class="article-info">
+          <div class="top-info">
+            <p>About the Movie</p>       
+            <p><strong>Directed by: </strong><a href="https://pt.wikipedia.org/wiki/Quentin_Tarantino" target="_blank">Quentin Tarantino</p></a>
+          </div>
+          <div class="article-text">
+            <p>
+              "Django Livre", dirigido por Quentin Tarantino em 2012, é um faroeste revisionista que aborda corajosamente temas de escravidão e racismo nos Estados Unidos do século XIX. A história segue Django, um escravo liberto, e o caçador de recompensas alemão Dr. King Schultz em uma missão para resgatar a esposa de Django. O filme destaca-se pela narrativa provocativa, enfrentando a brutalidade da época e oferecendo uma crítica contundente. Django, como herói negro, representa resistência e emancipação. A trilha sonora envolvente e a cinematografia impressionante complementam a visão singular de Tarantino sobre um capítulo sombrio da história americana, estabelecendo-o como um filme ousado e inovador.
+            </p>
+            <p class="posted"><i>Posted by <span>CritiCine</span></i></p>
+          </div>
+        </div> 
+      </div>
+
+      <div class="article__container">
+        <div class="card-unity">
+          <img src="../assets/images/articles/the-ballad-of-songbirds-&-snakes-poster.webp" alt="">
+          <div class="card-content">
+            <h1>Jogos Vorazes</h1>
+          </div>
+        </div>
+        <div class="article-info">
+          <div class="top-info">
+            <p>About the Movie</p>       
+            <p><strong>Directed by: </strong><a href="https://pt.wikipedia.org/wiki/Francis_Lawrence" target="_blank">Francis Lawrence</p></a>
+          </div>
+          <div class="article-text">
+            <p>
+              Em "A Cantiga dos Pássaros e das Serpentes" (2020), dirigido por Francis Lawrence, o filme prelúdio da trilogia "Jogos Vorazes", exploramos as origens do presidente Snow em Panem. A trama se desenrola antes dos eventos da série, mostrando Snow como um estudante ambicioso mentorando a tributo Lucy Gray Baird nos primeiros Jogos Vorazes. Lawrence cria uma narrativa envolvente, mergulhando nas origens dos Jogos e destacando elementos políticos e sociais fundamentais. A performance destacada de Donald Sutherland como jovem Snow e a dinâmica complexa entre os personagens contribuem para uma experiência cinematográfica rica e aprofundada. O filme, sob a direção de Lawrence, expande o universo sombrio de Panem, oferecendo uma perspectiva fascinante sobre a transformação do futuro presidente.
+            </p>
+            <p class="posted"><i>Posted by <span>CritiCine</span></i></p>
+          </div>
+        </div> 
+      </div>
+      <div class="article__container">
+        <div class="card-unity">
+          <img src="../assets/images/articles/uncharted-poster-full-1642086040683.jpg" alt="">
+          <div class="card-content">
+            <h1>Uncharted</h1>
+          </div>
+        </div>
+        <div class="article-info">
+          <div class="top-info">
+            <p>About the Movie</p>       
+            <p><strong>Directed by: </strong><a href="https://pt.wikipedia.org/wiki/Francis_Lawrence" target="_blank">Francis Lawrence</p></a>
+          </div>
+          <div class="article-text">
+            <p>
+              Em "A Cantiga dos Pássaros e das Serpentes" (2020), dirigido por Francis Lawrence, o filme prelúdio da trilogia "Jogos Vorazes", exploramos as origens do presidente Snow em Panem. A trama se desenrola antes dos eventos da série, mostrando Snow como um estudante ambicioso mentorando a tributo Lucy Gray Baird nos primeiros Jogos Vorazes. Lawrence cria uma narrativa envolvente, mergulhando nas origens dos Jogos e destacando elementos políticos e sociais fundamentais. A performance destacada de Donald Sutherland como jovem Snow e a dinâmica complexa entre os personagens contribuem para uma experiência cinematográfica rica e aprofundada. O filme, sob a direção de Lawrence, expande o universo sombrio de Panem, oferecendo uma perspectiva fascinante sobre a transformação do futuro presidente.
+            </p>
+            <p class="posted"><i>Posted by <span>CritiCine</span></i></p>
+          </div>
+        </div> 
       </div>
     </article>
+    <aside>
+      <div class="aside__ads">
+        <img src="../assets/images/articles/ad1.PNG" alt="prime video ad">
+        <div class="sponsor">
+          <p>Sponsored by CritiCine.</p>
+        </div>
+      </div>
+    </aside>
   </main>
 
-  <br><hr>
+  <section>
+    <div class="cards">
+        <div class="card__options">
+          <div class="card-unity">
+            <img src="../assets/images/guardioes-da-galaxia.jpeg" alt="">
+            <div class="card-content">
+              <h1>Review</h1>
+            </div>
+          </div>
+          <div class="card-unity">
+            <img src="../assets/images/gato-de-botas.jpeg" alt="">
+            <div class="card-content">
+              <h1>Review</h1>
+            </div>
+          </div>
+          <div class="card-unity">
+            <img src="../assets/images/avatar-2.jpeg" alt="">
+            <div class="card-content">
+              <h1>Review</h1>
+            </div>
+          </div>
+          <div class="card-unity">
+            <img src="../assets/images/TUDO-AO-MESMO-TEMPO.jpeg" alt="">
+            <div class="card-content">
+              <h1>Review</h1>
+            </div>
+          </div>
+          <div class="card-unity">
+            <img src="../assets/images/Oppenheimer.jpeg" alt="">
+            <div class="card-content">
+              <h1>Review</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
   <footer>
     <section class="footer__flex">
