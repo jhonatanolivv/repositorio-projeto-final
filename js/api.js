@@ -1,44 +1,43 @@
-const config = {
-  method: "GET", 
-  headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ACCESS_TOKEN'
-  }
+const apiKey = 'a2975156';
+const frmPesquisa = document.querySelector(".search-box");
+
+function resetForm() {
+  document.getElementsByClassName(".search-box").reset();
 }
-fetch("https://jsonplaceholder.typicode.com/posts", config)
-  .then(async response => {
-    const data = await response.json()
-    console.log(data);
-  })
 
-  fetch('http://www.omdbapi.com/?i=tt3896198&apikey=a2975156')
+frmPesquisa.onsubmit = (ev) => {
+  ev.preventDefault();
+
+  const pesquisa = ev.target.pesquisa.value;
+
+  if (pesquisa == "") {
+    alert ('Preencha o campo!');
+    return;
+  }
+
+  fetch(`https://www.omdbapi.com/?s=${pesquisa}&apikey=${apiKey}`)
     .then(result => result.json())
-    .then(response => response.json())
-    .then(data => console.log(data))
+    .then(json => carregaLista(json));
+}
 
-    const loadList = (json) => {
-      const list = document.querySelector('#submit');
-      list.innerHTML = '';
+const carregaLista = (json) => {
+  const lista = document.querySelector("div.list");
+  lista.innerHTML = "";
 
-      let item = document.createElement('div');
-      item.classList.add('item');
+  if (json.Response == 'False') {
+    alert('Nenhum filme encontrado.');
+    return;
+  }
 
-      item.innerHTML = `<img src="${element.Poster}" /><h2>${element.Title}</h2>`
+  json.Search.forEach(element => {
+    console.log(element);
 
-      list.appendChild('item');
-    }
+    let item = document.createElement("div");
+    item.classList.add("item");
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      body: JSON.stringify({
-        title: 'foo',
-        body: 'bar',
-        userId: 1,
-      }),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
-    
+    item.innerHTML = `<img src="${element.Poster}" /> <h2>${element.Title}</h2>`
+
+    lista.appendChild(item);
+  });
+}
+

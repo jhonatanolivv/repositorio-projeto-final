@@ -644,10 +644,15 @@ body {
 }
 
 .top-3 h3 {
-    text-decoration: underline;
     text-align: center;
     margin: 3rem 0;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: #ff7b00;
+    padding: .75rem;
+    background-color: whitesmoke;
+    border: 1.5px solid #ccc;
+    border-radius: 50px;
 }
 
 .article__container {
@@ -736,6 +741,80 @@ body {
 }
 
 /* Aside CSS */
+.api-form .list {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: space-evenly;
+    top: 6.5rem;    
+    left: 0;
+    gap: 2rem;
+}
+
+.list div {
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.829);
+    border: 2px #ccc outset;
+    padding: .8rem 1rem;
+}
+
+.list img {
+    width: 200px;
+    border-radius: 10px;
+    max-height: 280px;
+    cursor: pointer;
+}
+
+.list h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 12rem;
+    color: orangered;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list h2:hover {
+    color: #FF8c00;
+}
+
+.search-box {
+    display: flex;
+    margin: .8rem 0;
+    background-color: #ffbd72;
+    border-radius: 12px;
+}
+
+.search-box input {
+    all: unset;
+    padding: .55rem 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.search-box button {
+    border: none;
+    color: #803e00;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    max-height: 100%;
+    border-radius: 0 12px 12px 0;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    opacity: .8;
+}
+.search-box button:active {
+    opacity: .4;
+}
+
 .aside__ads {
     width: 100%;
     overflow: hidden;
