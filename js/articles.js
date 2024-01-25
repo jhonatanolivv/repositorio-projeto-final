@@ -23,13 +23,3 @@ slide[0].style.left = 0;
 slide[1].style.left = slideWidth + 'px';
 slide[2].style.left = slideWidth * 2 + 'px';
 
-//toast
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
-
-if (toastTrigger) {
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-  toastTrigger.addEventListener('click', () => {
-    toastBootstrap.show()
-  })
-}
