@@ -1,10 +1,6 @@
 const apiKey = 'a2975156';
 const frmPesquisa = document.querySelector(".search-box");
 
-function resetForm() {
-  document.getElementsByClassName(".search-box").reset();
-}
-
 frmPesquisa.onsubmit = (ev) => {
   ev.preventDefault();
 
