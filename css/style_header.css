@@ -578,12 +578,14 @@ body {
 }
 
 .banner h4 {
-    font-size: 1rem;
-    margin-top: .45rem;
+    font-size: 1.2rem;
+    margin-top: .50rem;
+    color: #000000;
 }
 
 .banner i {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #000000;
 }
 
 .movie-name {
@@ -602,8 +604,17 @@ body {
 #articles {
     display: flex;
     justify-content: space-between;
-    padding: 0 7%;
+    padding: 0 8%;
     margin-top: 4rem;
+    padding-right: 4rem;
+}
+
+.carousel-indicators button {
+    padding: .3rem;
+    border: none;
+    border-radius: 50%;
+    margin: 1rem;
+    background-color: orangered;
 }
 
 .article-flex {
@@ -632,13 +643,20 @@ body {
     justify-content: space-between;
 }
 
+.top-3 h3 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: bold;
+}
+
 .article__container {
     display: flex;
     margin-bottom: 4rem;
     gap: 2rem;
     border-bottom: 2.5px #FF8c00 solid;
     border-radius: 10px;
-    background: linear-gradient(120deg, white, rgba(255, 197, 90, 0.329));
+    background: linear-gradient(120deg, white, rgba(255, 184, 53, 0.13), white);
     padding: 1.5rem 1rem;
 }
 
@@ -713,12 +731,30 @@ body {
 }
 
 /* Aside CSS */
-
 .aside__ads {
     width: 100%;
     overflow: hidden;
     height: 300px;    
 }
+
+#indiana {
+    object-fit: cover;
+    object-position: 0 -4rem;
+}
+#haunted {
+    object-fit: cover;
+    object-position: 0 -9.5rem;
+}
+#nun {
+    object-fit: cover;
+    object-position: 0 -1rem;
+}
+
+.card-text span {
+    color: #ff7b00;
+    font-weight: bold;
+}
+
 .aside__ads img {
     max-width: 100%;
     display: block;
@@ -740,6 +776,7 @@ body {
     align-items: center;
     margin: 1rem;
     background-color: #e9e9e9;
+    
     height: 15.7rem;
 }
 
@@ -787,6 +824,8 @@ body {
     align-items: center;
     line-height: .1px;
     background-color: #ff7b00;
+    padding-top: .5rem;
+    box-shadow: 0 4px 6px #ccc;
 }
 
 .articles__menu h4 {
@@ -830,6 +869,11 @@ body {
 }
 
 /* Cards CSS */
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .cards {
     display: grid;
@@ -838,6 +882,16 @@ body {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 16rem;
+}
+
+.card--top3 img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px #ccc;
+}
+
+.card-body p {
+    text-align: center;
 }
 
 .card-unity p {
