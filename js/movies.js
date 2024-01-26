@@ -1,18 +1,31 @@
-const carouselTopicos = document.getElementById('carousel-topicos');
-let currentIndexTopicos = 0;
-
-function showCardTopicos(index) {
-    const cardWidth = document.querySelector('.card-topicos').offsetWidth + 10;
-    carouselTopicos.style.transform = `translateX(-${index * cardWidth}px)`;
-    currentIndexTopicos = index;
-}
-
-function nextCardTopicos() {
-    currentIndexTopicos = Math.min(currentIndexTopicos + 1, carouselTopicos.children.length - 2);
-    showCardTopicos(currentIndexTopicos);
-}
-
-function prevCardTopicos() {
-    currentIndexTopicos = Math.max(currentIndexTopicos - 1, 0);
-    showCardTopicos(currentIndexTopicos);
-}
+var multipleCardCarousel = document.querySelector(
+    "#carouselExampleControls"
+  );
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+      interval: false,
+    });
+    var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+    var cardWidth = $(".carousel-item").width();
+    var scrollPosition = 0;
+    $("#carouselExampleControls .carousel-control-next").on("click", function () {
+      if (scrollPosition < carouselWidth - cardWidth * 4) {
+        scrollPosition += cardWidth;
+        $("#carouselExampleControls .carousel-inner").animate(
+          { scrollLeft: scrollPosition },
+          600
+        );
+      }
+    });
+    $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        $("#carouselExampleControls .carousel-inner").animate(
+          { scrollLeft: scrollPosition },
+          600
+        );
+      }
+    });
+  } else {
+    $(multipleCardCarousel).addClass("slide");
+  }

@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style_header.css">
 
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    </link>
+
     <!--CDN do Boostrap do CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -23,106 +26,214 @@
 <body>
     <header class="header">
         <section class="header__flex">
-            <section class="flex__1">
-                <div class="header__div_logo">
-                    <a href="/index.html"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></a>
+          <section class="flex__1">
+            <div class="header__div_logo">
+              <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
+            </div>
+            <!-- MENU SEM BOOSTRAP <nav>
+                        <a href="/index.html" class="header__nav--pages">Home</a>
+                        <a href="./articles.html" class="header__nav--pages">Artigos</a>
+                        <a href="./movies.html" class="header__nav--pages">Movies</a>
+                        <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
+                        <a href="./login.html" class="header__nav--pages">Login</a>
+                    </nav> -->
+                    <!--MENU COM BOOSTRAP-->
+                    <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                    <a href="/pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                    <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                    <a href="/pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                    <a href="/pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+    
+          </section>
+          <section class="flex__2">
+            <div class="api-form">
+              <form class="search-box">
+                <input name="pesquisa" placeholder="Pesquise aqui...">
+                <button>
+                  <i class="fa-solid fa-film"></i>
+                </button>
+              </form>
+              <!-- <div class="list">
+                <div class="item-api">
+    
                 </div>
-                <!-- MENU SEM BOOSTRAP <nav>
-                    <a href="/index.html" class="header__nav--pages">Home</a>
-                    <a href="./articles.html" class="header__nav--pages">Artigos</a>
-                    <a href="./movies.html" class="header__nav--pages">Movies</a>
-                    <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
-                    <a href="./login.html" class="header__nav--pages">Login</a>
-                </nav> -->
-                <!--MENU COM BOOSTRAP-->
-                <a href="/index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                <a href="/pages/articles.html"><button type="button"
-                        class="btn btn-light btn-custom">Artigos</button></a>
-                <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                <a href="/pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                <a href="/pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-
-            </section>
-            <section class="flex__2">
-                <div class="header__search-box">
-                    <form action="/pages/movies.html" method="get">
-                        <input type="text" name="search" autofocus required placeholder="Pesquise um Filme...">
-                        <button type="submit"><img
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaklEQVR4nL2Vv08UQRTHN0IUoxQ2JmAsDNKotVEs1tv3FowU2FzsrDFnJKDWRP8REqO3M3OcgcbCBhUSKhLDYYL4LxiN2AgGvmbejOeJd8PeeXGTSfbHzHze+76334miFhfM6HkYegRFGoqX3SANzQ/tt+hfL8zzMDRVoXgfmtF0KN6H4krHQKjkFhR/85utw/AUyoWLeJqekGHv7TtNNT9nGxlNtA/RtAdF32H4LmZnj7Sca4o90GkJinZkTV6YyGUzsRCVFHIHZ9JEYDazPDJKTZz+k3khvy4YvudlrEQ5srHFXQ/JFZRR8YbskRWGWk+07WojMjwlz8/HT7UN0zTts3oQmmQcKLkgz4qfYCnubQuk0ksepAKTeFkmLYz0e/Abu7At0MJIv6/x2/wgxZtQ9LgzEK0EQGIrjdK9guIvqKanO5Cukr8ZNE+6RfQac3FfW81gaCYKmqf4GtWkVU3xKDS981KsBls2qrf3e3GIeR4OR2QNUjZOS25xcgaa13yBd6H5GQzdhkkuozo2cCCb+16BF4en7rLaFjvJmOTdUtwLRXeca9Cq+w3SEsyV478DJJZArH2Z9NyhIFmU0YQ31R2xFVPsCcqlJZNd3wSfYOiqZPzyxrF8MJuZW7whRbYdZeKTMuSeZlxNpIZfoenzn+cV1Q7KG5KxEjz4NO2JlNnoWWR0vcnBuJkL5rIrDFnvgubM/dS04pqGphs7ESq91iKgDyjzYC5YroDm4r76iftXZrRlO7h7sOrYgMj1X2BlHgzAFrsGiuow2moCW+sqSGDWVRR9bOjAHzA83nVQA2xRbEzxTfvyJxFzqY1eFf75AAAAAElFTkSuQmCC"
-                                width="18px"></button>
-                    </form>
-                </div>
-                <div class="div_social-medias">
-                    <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png"
-                            class="social-medias"></a>
-                    <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png"
-                            class="social-medias"></a>
-                    <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png" class="social-medias"></a>
-                </div>
-            </section>
+              </div> -->
+            </div>
+            <div class="div_social-medias">
+              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
+              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
+              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+            </div>
+          </section>
         </section>
-    </header>
-    <main id="movies-main"> 
-        <div id="movies-main__slide">
-            <div class="tamanho-carrosel">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 img-carousel"
-                                src="https://br.web.img3.acsta.net/pictures/210/462/21046206_2013100218032359.jpg"
-                                alt="Primeiro Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-carousel"
-                                src="https://lh3.googleusercontent.com/-29d2MqgJ0aQ/TXPkoJcjFlI/AAAAAAAAEv4/WZpWxlj6tTE/s1600/Banner-04Fev2011.jpg"
-                                alt="Segundo Slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 img-carousel"
-                                src="https://br.web.img3.acsta.net/pictures/210/567/21056777_20131112081605649.jpg"
-                                alt="Terceiro Slide">
-                        </div>
-                        
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Próximo</span>
-                    </a>
+      </header>
+    <main id="movies-main">
+        <section id="movies-main__slide">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
+                        alt="killers of the moon banner">
                 </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
+                        alt="society of the snow">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100" alt="the nun II">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
+                        alt="indiana jones banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
+                        alt="haunted mansion">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <section id="movies-main__topicos">
+        <div class="topicos">
+            <div class="articles__menu">
+                <h4>Destaques</h4>
+            </div>
+            <div id="carouselExampleControls" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 4</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 5</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 6</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 7</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 8</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 9</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        <section id="movies-main__topicos">
-
-
-            <div class="topicos">
-                <h1 id=>Destaques</h1>
-
-                <section id="topicos--cards">
-                    <div id="carousel-container">
-                        <button id="prevBtn" onclick="prevCard()">&#8249;</button>
-                        <div id="carousel-topicos">
-                            <div class="card-topicos">Card 1</div>
-                            <div class="card-topicos">Card 2</div>
-                            <div class="card-topicos">Card 3</div>
-                            <div class="card-topicos">Card 4</div>
-                            <div class="card-topicos">Card 5</div>
-                        </div>
-                        <button id="nextBtn" onclick="nextCard()">&#8250;</button>
-                    </div>
-                </section>
-            </div>
-            
-            
-        </section>
+    </section>
         <script src="movies.js"></script>
     </main>
     <footer>
@@ -131,7 +242,7 @@
                 Política de privacidade</section>
             <hr>
             <section class="footer__flex--2">
-                <div class="flex--2--1"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></div>
+                <div class="flex--2--1"><img src="../assets/images/logo.png" class="header__div_logo--logo"></div>
                 <div class="flex--2--2">
                     <div>&copy; 2024 - CritiCine</div>
                     <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
@@ -140,11 +251,11 @@
                     <div>Siga a gente!</div>
                     <div>
                         <div class="div_social-medias">
-                            <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png"
+                            <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
                                     class="social-medias"></a>
-                            <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png"
+                            <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
                                     class="social-medias"></a>
-                            <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png"
+                            <a href="https://twitter.com/"><img src="../assets/images/logo_x.png"
                                     class="social-medias"></a>
                         </div>
                     </div>
@@ -156,7 +267,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        
+    <script src="../js/api.js"></script>
+    <script src="../js/articles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
