@@ -10,9 +10,7 @@
     <!--CDN do Boostrap do CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
 
     <!--CDN do JQUERY-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -40,7 +38,8 @@
                 </nav> -->
                 <!--MENU COM BOOSTRAP-->
                 <a href="#"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                <a href="/pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                <a href="/pages/articles.html"><button type="button"
+                        class="btn btn-light btn-custom">Artigos</button></a>
                 <a href="/pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
                 <a href="/pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
                 <a href="/pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
@@ -65,158 +64,85 @@
             </section>
         </section>
     </header>
-    <span id="voltar"></span>
-
-
-    <br>
-    <div>
-        <div>
-
-            <section>
-
-
-                <div class="titulocartaz">
-                    <h1 class="noticiaNews1"><strong>Filmes em cartaz</strong></h1><strong>
-                    </strong>
-                </div><strong>
-
-                    <br><br>
-
-                    <div class="filmescartaz">
-
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-
-                    </div>
-
-                    <br><br>
-
-                    <div class="filmescartaz">
-
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-
-                    </div>
-
-                    <br><br>
-
-                    <div class="filmescartaz">
-
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-
-                        <p class="titulonoticiahome1">Lorem ipsum</p>
-                        <p class="frasenoticiahome1">Dolor sit amet, consectetur adipiscing elit. Integer magna
-                            odio,
-                            venenatis ac facilisis ac, euismod at magna.</p>
-                        <a href="http://eepurl.com/bUDMID">CTA</a>
-
-
-                    </div>
-
-                    <div class="filmescartaz">
-
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-
-                        <p class="titulonoticiahome1">Lorem ipsum</p>
-                        <p class="frasenoticiahome1">Dolor sit amet, consectetur adipiscing elit. Integer magna
-                            odio,
-                            venenatis ac facilisis ac, euismod at magna.</p>
-                        <a href="http://eepurl.com/bUDMID">CTA</a>
-
-
-                    </div>
-
-                    <br><br>
-
-
-                </strong>
-            </section>
-            <strong>
-
-                <br><br>
-
-                <!-- Lateral página  -->
-
-                <header class="anúncio2">
-                    <h2><strong>Noticias</strong></h2>
-                </header>
-
-                <div class="Noticias">
-                    <img src="caminho/da/imagem.jpg" alt="Descrição da imagem1">
-                    <h2 class="noticiaNews5"><strong>Lorem ipsum<h2>
-                                <p>Vestibulum semper sem et sem sollicitudin dignissim</p>
-                            </h2></strong></h2>
-                </div>
-                <strong>
-                    <hr>
-                    <div class="Noticias">
-                        <img src="caminho/da/imagem.jpg" alt="Descrição da imagem2">
-                        <h2 class="noticiaNews5"><strong>Lorem ipsum<h2>
-                                    <p>Vestibulum semper sem et sem sollicitudin dignissim</p>
-                                </h2></strong></h2>
-                    </div>
-                    <strong>
-                        <hr>
-                        <div class="Noticias">
-                            <img src="caminho/da/imagem.jpg" alt="Descrição da imagem3">
-                            <h2 class="noticiaNews5"><strong>Lorem ipsum<h2>
-                                        <p>Vestibulum semper sem et sem sollicitudin dignissim</p>
-                                    </h2></strong></h2>
-                        </div>
-                        <strong>
-                            <hr>
-                            <div class="Noticias">
-                                <img src="caminho/da/imagem.jpg" alt="Descrição da imagem4">
-                                <h2 class="noticiaNews5"><strong>Lorem ipsum<h2>
-                                            <p>Vestibulum semper sem et sem sollicitudin dignissim</p>
-                                        </h2></strong></h2>
+    <main class="home-main">
+        <section class="home-main--esquerda">
+            <div class="home-main--esquerda--carousel">
+                <section class="carousel__index">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 imgs-carousel"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn7twMjBSdWVNmQtZvzzqv3UHJZrYEPr5MxA&usqp=CAU"
+                                    width="500px" alt="Primeiro Slide">
                             </div>
-                            <strong>
-                                <hr>
-                                <div class="Noticias">
-                                    <img src="caminho/da/imagem.jpg" alt="Descrição da imagem5">
-                                    <h2 class="noticiaNews5"><strong>Lorem ipsum<h2>
-                                                <p>Vestibulum semper sem et sem sollicitudin dignissim</p>
-                                            </h2></strong></h2>
-                                </div>
-                                <br><br>
-                            </strong>
-                        </strong>
-                    </strong>
-                </strong>
-            </strong>
-            </div>
-            <footer>
-                <section class="footer__flex">
-                    <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e
-                        condições |
-                        Política de privacidade</section>
-                    <hr>
-                    <section class="footer__flex--2">
-                        <div class="flex--2--1"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></div>
-                        <div class="flex--2--2">
-                            <div>&copy; 2024 - CritiCine</div>
-                            <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 imgs-carousel"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKYYtbiPfWNKW9i7-NzsSKrENii8k4ECOacM4tFkqqidGBrygSics8o1dBPrOXLdzEves&usqp=CAU"
+                                    width="500px" alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 imgs-carousel"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm4ouR0-r6ktL0d6t4fs6NAX5W2FgKovNYbXCismsGLGZkI_Di7Xmkh9rP7uBaL0SdGLo&usqp=CAU"
+                                    width="500px" alt="Terceiro Slide">
                             </div>
                         </div>
-                        <div class="flex--2--3">
-                            <div>Siga a gente!</div>
-                            <div>
-                                <div class="div_social-medias">
-                                    <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png"
-                                            class="social-medias"></a>
-                                    <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png"
-                                            class="social-medias"></a>
-                                    <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png"
-                                            class="social-medias"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
                 </section>
-            </footer>
+            </div>
+            <div class="home-main--esquerda--filmes"></div>
+            <div class="home-main--esquerda--criticas"></div>
+        </section>
+        <section class="home-main--direita">
 
+        </section>
+    </main>
+        <footer>
+            <section class="footer__flex">
+                <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e
+                    condições |
+                    Política de privacidade</section>
+                <hr>
+                <section class="footer__flex--2">
+                    <div class="flex--2--1"><img src="/Assets/images/logo.png" class="header__div_logo--logo"></div>
+                    <div class="flex--2--2">
+                        <div>&copy; 2024 - CritiCine</div>
+                        <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a>
+                        </div>
+                    </div>
+                    <div class="flex--2--3">
+                        <div>Siga a gente!</div>
+                        <div>
+                            <div class="div_social-medias">
+                                <a href="https://www.facebook.com/"><img src="/Assets/images/logo_facebook.png"
+                                        class="social-medias"></a>
+                                <a href="https://www.instagram.com/"><img src="/Assets/images/logo_instagram.png"
+                                        class="social-medias"></a>
+                                <a href="https://twitter.com/"><img src="/Assets/images/logo_x.png"
+                                        class="social-medias"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </footer>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
