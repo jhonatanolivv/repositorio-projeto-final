@@ -255,6 +255,7 @@ body {
 
 #movies-main__slide {
     width: 100%;
+    min-height: 385px;
     max-height: 475px;
 }
 
@@ -1834,17 +1835,21 @@ footer hr {
 
 /*media responsivo*/
 
+@media only screen and (max-width: 1117px) {
+    /* #header-link-home */
+    #header-link-artigos,
+    #header-link-movies,
+    #header-link-news,
+    #header-link-login {
+        display: none;
+    }
+    #header-botao-abrir:onclick + #header-link-artigos +
+    #header-link-movies +
+    #header-link-news +
+    #header-link-login  {
+        display: inline-block;
+    }
+}
 /* Estilos para telas pequenas (smartphones) */
-@media only screen and (max-width: 600px) {
-    /* Insira seus estilos aqui */
-}
-
-/* Estilos para telas médias (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Insira seus estilos aqui */
-}
-
-/* Estilos para telas grandes (desktops) */
-@media only screen and (min-width: 1025px) {
-    /* Insira seus estilos aqui */
+@media only screen and (max-width: 768px) {
 }
