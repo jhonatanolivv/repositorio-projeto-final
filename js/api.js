@@ -1,4 +1,4 @@
-const apiKey = 'a2975156';
+const apiKey = '8167cc74';
 const frmPesquisa = document.querySelector(".search-box");
 
 function resetForm() {
@@ -62,6 +62,7 @@ function carregarImagemInicial() {
     index_filme_escolhido = randomico_inteiro(0, lista_filmes_destaques_intime.length - 1);
     filme_escolhido = lista_filmes_destaques_intime[index_filme_escolhido];
     filmes_escolhidos.push(filme_escolhido);
+    console.log(filme_escolhido)
     lista_filmes_destaques_intime.splice(index_filme_escolhido, 1); // Remove o filme escolhido do array
     fetch(`https://www.omdbapi.com/?t=${filme_escolhido}&apikey=${apiKey}`)
       .then(result => result.json())
