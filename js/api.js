@@ -1,4 +1,4 @@
-const apiKey = 'a2975156';
+const apiKey = '8167cc74';
 const frmPesquisa = document.querySelector(".search-box");
 
 function resetForm() {
@@ -62,6 +62,7 @@ function carregarImagemInicial() {
     index_filme_escolhido = randomico_inteiro(0, lista_filmes_destaques_intime.length - 1);
     filme_escolhido = lista_filmes_destaques_intime[index_filme_escolhido];
     filmes_escolhidos.push(filme_escolhido);
+    console.log(filme_escolhido)
     lista_filmes_destaques_intime.splice(index_filme_escolhido, 1); // Remove o filme escolhido do array
     fetch(`https://www.omdbapi.com/?t=${filme_escolhido}&apikey=${apiKey}`)
       .then(result => result.json())
@@ -129,7 +130,7 @@ function exibirImagemInicial(json, index) {
 var filmes_escolhidoss = carregarImagemInicial();
 
 function showChild(childId) {
-  let childDiv = document.getElementById("child");
+  var childDiv = document.getElementById("child");
   childDiv.style.display = "block";
 
   function showChildInfos(json, filmes) {
@@ -150,14 +151,6 @@ function showChild(childId) {
 }
 
 function hideChild() {
-  let childDiv = document.getElementById('child');
+  var childDiv = document.getElementById('child');
   childDiv.style.display = "none";
-}
-
-function f_header() {
-  let btn_artigos = Document.getElementById('header-link-artigos'),
-  btn_movies = Document.getElementById('header-link-movies'),
-  btn_news = Document.getElementById('header-link-news'),
-  btn_login = Document.getElementById('header-link-artigos');
-  
 }

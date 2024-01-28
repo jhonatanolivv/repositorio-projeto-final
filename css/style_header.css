@@ -255,7 +255,6 @@ body {
 
 #movies-main__slide {
     width: 100%;
-    min-height: 385px;
     max-height: 475px;
 }
 
@@ -322,7 +321,7 @@ body {
     flex-flow: row nowrap;
     max-height: 500px;
     justify-content: space-evenly;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 .imagem-inicial img {
@@ -755,6 +754,152 @@ body {
 }
 
 /*final página news*/
+
+/*filmesMaisBuscados pág News*/
+
+.container2 {
+    display: grid;
+    grid-template-columns: 0.75fr 0.75fr 0.75fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "conteudoNews1 conteudoNews1 conteudoNews1 sideBarNews"
+        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
+        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
+        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
+        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews";
+    padding: 5%;
+    gap: 10px;
+}
+
+.sideBarNews {
+    display: flex;
+    grid-area: sideBarNews;
+    background-color: lightsalmon;
+    height: 3624px;
+    width: 400px;
+    margin-left: 5%;
+}
+
+.trailer-tittle--md {
+    position: relative;
+    padding-left: 20px;
+    font-size: 30px;
+
+}
+
+.trailer-tittle--md::before {
+    content: '';
+    position: absolute;
+    left: 3%;
+    height: 100%;
+    width: 6px;
+    background-color: #FF8c00;
+    border-radius: 10%;
+    margin-top: 2%;
+}
+
+.trailer-flex {
+    display: flex;
+    gap: 3%;
+}
+
+.trailer-flex iframe {
+    border-radius: 5%;
+}
+
+.trailer-flex p {
+    font-size: 25px;
+}
+
+.conteudoNews1 {
+    display: grid;
+    grid-area: conteudoNews1;
+    /* background-color: lightcoral; */
+    height: 410px;
+    width: 720px;
+}
+
+.conteudoNews1 img {
+    height: 250px;
+    width: 720px;
+}
+
+.conteudoNews1 h3 {
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.conteudoNews1 p {
+    font-size: 20px;
+}
+
+.conteudoNews2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: conteudoNews2;
+    background-color: lightgreen;
+    height: 3190px;
+    width: 720px;
+    margin-top: -40%;
+}
+
+.conteudoNews2 h3 {
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+.conteudoNews2 h4 {
+    font-size: 20px;
+}
+
+.conteudoNews2 h6 {
+    font-size: 15px;
+    margin-top: 2%;
+}
+
+.conteudoNews2 img {
+    margin-top: 5%;
+}
+
+.conteudoNews2 p {
+    margin-top: 2%;
+    font-size: 22px;
+}
+
+.conteudoNews2--anuncio {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudoNews2--anuncio img {
+    width: 350px;
+    height: auto;
+}
+
+.paragrafo-italic {
+    font-style: italic;
+    color: blueviolet;
+}
+
+.videoTrailer {
+    text-align: center;
+}
+
+.conteudoNews2--img {
+    width: 680px;
+    height: auto;
+    margin-left: 2.7%;
+}
+
+
+
+
+
+
+
+/*filmesMaisBuscados pág News*/
+
+
 
 
 .div_social-medias .social-medias:hover {
@@ -1468,7 +1613,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     width: auto;
-    height: 150px;
+    height: 100px;
     background-image: linear-gradient(to bottom, #FFA944, rgb(248, 118, 67));
     align-items: center;
     justify-content: center;
@@ -1517,7 +1662,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .login-form--div {
@@ -1690,23 +1834,17 @@ footer hr {
 
 /*media responsivo*/
 
-/* Estilos para telas grandes (tablets) */
-@media only screen and (max-width: 1117px) {
-    /* #header-link-home */
-    #header-link-artigos,
-    #header-link-movies,
-    #header-link-news,
-    #header-link-login {
-        display: none;
-    }
-    #header-botao-abrir:onclick + #header-link-artigos +
-    #header-link-movies +
-    #header-link-news +
-    #header-link-login  {
-        display: inline-block;
-    }
-}
 /* Estilos para telas pequenas (smartphones) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+    /* Insira seus estilos aqui */
+}
+
+/* Estilos para telas médias (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Insira seus estilos aqui */
+}
+
+/* Estilos para telas grandes (desktops) */
+@media only screen and (min-width: 1025px) {
     /* Insira seus estilos aqui */
 }

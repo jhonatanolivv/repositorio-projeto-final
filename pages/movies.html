@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
-    <meta name="keywords"
-        content="filmes, críticas, lançamentos, gêneros, ação, comédia, drama, terror, ficção científica">
-    <meta description="Página de críticas de filmes">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/style_header.css">
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
-    </link>
+
 
     <!--CDN do Boostrap do CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -63,230 +60,1031 @@
                         <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
                         <a href="./login.html" class="header__nav--pages">Login</a>
                     </nav> -->
-                    <!--MENU COM BOOSTRAP-->
-                    <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                    <button type="button" id="header-botao-abrir" class="btn btn-light btn-custom" onclick="f_header(abrir)"></button>
-                    <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                    <a id="header-link-movies" href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                    <a id="header-link-news" href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                    <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-    
-          </section>
-          <section class="flex__2">
-            <div class="api-form">
-              <form class="search-box">
-                <input name="pesquisa" placeholder="Pesquise aqui...">
-                <button>
-                  <i class="fa-solid fa-film"></i>
-                </button>
-              </form>
-              <!-- <div class="list">
+                <!--MENU COM BOOSTRAP-->
+                <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                <a href="/pages/articles.html"><button type="button"
+                        class="btn btn-light btn-custom">Artigos</button></a>
+                <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                <a href="/pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                <a href="/pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+
+            </section>
+            <section class="flex__2">
+                <div class="api-form">
+                    <form class="search-box">
+                        <input name="pesquisa" placeholder="Pesquise aqui...">
+                        <button>
+                            <i class="fa-solid fa-film"></i>
+                        </button>
+                    </form>
+                    <!-- <div class="list">
                 <div class="item-api">
     
                 </div>
               </div> -->
-            </div>
-            <div class="div_social-medias">
-              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
-              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
-              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
-            </div>
-          </section>
+                </div>
+                <div class="div_social-medias">
+                    <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
+                            class="social-medias"></a>
+                    <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
+                            class="social-medias"></a>
+                    <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+                </div>
+            </section>
         </section>
     </header>
     <main id="movies-main">
         <section id="movies-main__slide">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
-                        alt="killers of the moon banner">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
-                        alt="society of the snow">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100" alt="the nun II">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
-                        alt="indiana jones banner">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
-                        alt="haunted mansion">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
-    <section id="movies-main__topicos">
-        <div class="topicos">
-            <div class="articles__menu">
-                <h4>Destaques</h4>
-            </div>
-            <div id="carouselExampleControls" class="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 1</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                        <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
+                            alt="killers of the moon banner">
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 2</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                        <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
+                            alt="society of the snow">
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 3</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                        <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100"
+                            alt="the nun II">
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 4</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                        <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
+                            alt="indiana jones banner">
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 5</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 6</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 7</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 8</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title 9</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                        <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
+                            alt="haunted mansion">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                    <span class="visually-hidden">Prev</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
-    </section>
-        <script src="movies.js"></script>
+            </div>
+        </section>
+        <section id="movies-main__topicos">
+            <div class="topicos">
+                <div class="articles__menu articles__menu--hover">
+                    <h4>Melhores Filmes</h4>
+                </div>
+                <div id="carouselExampleControls" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('1')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-1"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films1">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('2')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-2"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films2">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('3')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-3"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films3">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('4')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-4"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films4">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('5')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-5"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films5">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('6')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-6"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films6">
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('7')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-7"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films7">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('8')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-8"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films8">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('9')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-9"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films9">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('10')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-10"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films10">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('11')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-11"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films11">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('12')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-12"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films12">
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('13')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-13"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films13">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('14')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-14"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films14">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('15')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-15"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films15">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('16')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-16"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films16">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('17')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-17"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films17">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('18')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-18"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films18">
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('19')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-19"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films19">
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('20')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-20"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films20">
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('21')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-21"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films21">
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('22')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-22"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films22">
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('23')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-23"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films23">
+
+                                    </ul>
+
+                                </div>
+
+
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('24')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-24"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films24">
+
+                                    </ul>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev prevv_e_next" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next prev_e_nextt" type="button"
+                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="topicos">
+                <div class="articles__menu articles__menu--hover">
+                    <h4>Melhores Séries</h4>
+                </div>
+                <div id="carouselExampleControls2" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('25')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-25"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films25">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('26')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-26"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films26">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('27')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-27"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films27">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('28')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-28"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films28">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('29')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-29"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films29">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('30')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-30"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films30">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('31')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-31"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films31">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('32')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-32"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films32">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('33')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-33"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films33">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('34')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-34"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films34">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('35')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-35"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films35">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('36')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-36"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films36">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('37')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-37"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films37">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('38')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-38"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films38">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('39')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-39"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films39">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('40')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-40"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films40">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('41')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-41"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films41">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('42')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-42"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films42">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('43')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-43"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films43">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('44')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-44"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films44">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('45')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-45"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films45">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('46')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-46"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films46">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('47')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-47"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films47">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('48')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-48"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films48">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev prevv_e_next" type="button"
+                        data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next prev_e_nextt" type="button"
+                        data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="topicos">
+                <div class="articles__menu articles__menu--hover">
+                    <h4>Filmes Recentes</h4>
+                </div>
+                <div id="carouselExampleControls3" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('49')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-49"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films49">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('50')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-50"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films50">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('51')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-51"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films51">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('52')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-52"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films52">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('53')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-53"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films53">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('54')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-54"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films54">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('55')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-55"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films55">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('56')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-56"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films56">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('57')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-57"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films57">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('58')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-58"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films58">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('59')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-59"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films59">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('60')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-60"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films60">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('61')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-61"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films61">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('62')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-62"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films62">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('63')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-63"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films63">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('64')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-64"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films64">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('65')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-65"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films65">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('66')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-66"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films66">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('67')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-67"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films67">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('68')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-68"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films68">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('69')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-69"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films69">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('70')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-70"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films70">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('71')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-71"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films71">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('72')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-72"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films72">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev prevv_e_next" type="button"
+                        data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next prev_e_nextt" type="button"
+                        data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="topicos">
+                <div class="articles__menu articles__menu--hover">
+                    <h4>Séries Recentes</h4>
+                </div>
+                <div id="carouselExampleControls4" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('73')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-73"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films73">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('74')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-74"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films74">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('75')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-75"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films75">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('76')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-76"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films76">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('77')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-77"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films77">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('78')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-78"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films78">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('79')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-79"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films79">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('80')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-80"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films80">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('81')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-81"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films81">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('82')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-82"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films82">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('83')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-83"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films83">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('84')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-84"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films84">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('85')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-85"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films85">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('86')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-86"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films86">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('87')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-87"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films87">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('88')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-88"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films88">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('89')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-89"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films89">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('90')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-90"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films90">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('91')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-91"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films91">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('92')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-92"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films92">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('93')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-93"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films93">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('94')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-94"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films94">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('95')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-95"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films95">
+
+                                    </ul>
+
+                                </div>
+                                <div class="card" style="width: 14.5rem;" onclick="showChild('96')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-96"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films96">
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev prevv_e_next" type="button"
+                        data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next prev_e_nextt" type="button"
+                        data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <script src="/js/movies.js"></script>
     </main>
     <footer>
         <section class="footer__flex">
-            <div class="footer__flex--1"><a class="linkStyle--modificado" href="#" target="_blank">Queremos a sua
-                    opinão!</a> | <a class="linkStyle--modificado" href="#" target="_blank">Sobre CritiCine</a> | <a
-                    class="linkStyle--modificado" href="#" target="_blank">Contato</a> | <a
-                    class="linkStyle--modificado" href="#" target="_blank">Termos e condições</a> |
-                <a class="linkStyle--modificado" href="#" target="_blank">Política de privacidade</a>
-            </div>
+            <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e condições |
+                Política de privacidade</section>
             <hr>
             <section class="footer__flex--2">
-                <div class="flex--2--1"><a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a></div>
+                <div class="flex--2--1"><img src="../assets/images/logo.png" class="header__div_logo--logo"></div>
                 <div class="flex--2--2">
                     <div>&copy; 2024 - CritiCine</div>
-                    <div><a href="#" class="voltar"><span class="linkStyle--modificado">Voltar ao topo</span></a></div>
+                    <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
                 </div>
                 <div class="flex--2--3">
                     <div>Siga a gente!</div>
                     <div>
                         <div class="div_social-medias">
-                            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/logo_facebook.png"
+                            <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
                                     class="social-medias"></a>
-                            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/logo_instagram.png"
+                            <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
                                     class="social-medias"></a>
-                            <a href="https://twitter.com/" target="_blank"><img src="../assets/images/logo_x.png"
+                            <a href="https://twitter.com/"><img src="../assets/images/logo_x.png"
                                     class="social-medias"></a>
                         </div>
                     </div>
