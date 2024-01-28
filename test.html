@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel with Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hover Effect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            margin: 0;
         }
-
+        
+        .container {
+            position: relative;
+        }
+        
+        .parent {
+            padding: 10px;
+            margin: 5px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .child {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: #2ecc71;
+            color: #fff;
+        }
         
     </style>
 </head>
-<body>
-    
 
-   
+<body>
+
+    <div class="container">
+        <div class="parent" onmouseover="showChild('child1')" onmouseout="hideChild('child1')">Hover me 1</div>
+        <div class="child" id="child1">Content for 1st div</div>
+    </div>
+
+    <div class="container">
+        <div class="parent" onmouseover="showChild('child2')" onmouseout="hideChild('child2')">Hover me 2</div>
+        <div class="child" id="child2">Content for 2nd div</div>
+    </div>
+
+    <div class="container">
+        <div class="parent" onmouseover="showChild('child3')" onmouseout="hideChild('child3')">Hover me 3</div>
+        <div class="child" id="child3">Content for 3rd div</div>
+    </div>
+    <script>
+
+        function showChild(childId) {
+            var childDiv = document.getElementById(childId);
+            childDiv.style.display = "block";
+        }
+
+        function hideChild(childId) {
+            var childDiv = document.getElementById(childId);
+            childDiv.style.display = "none";
+        }
+
+
+    </script>
+</body>
+
 </html>

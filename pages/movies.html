@@ -13,17 +13,12 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
     </link>
 
-    <!--FAVICON TEST-->
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
-    </link>
-
-
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
-
     <!--CDN do Boostrap do CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
 
     <!--CDN do JQUERY-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -35,6 +30,26 @@
 </head>
 
 <body>
+    <div id="child">
+        <div class="child-fechar" onclick="hideChild()"><img src="/assets/images/icone-fermer-et-x-rouge.png"
+                alt="fechar" width="25px"></div>
+        <div class="child-logo"><img class="child-logo--img" src="/assets/images/favicon.png" alt="Logo CritiCine - CC"
+                width="60px" height="60px"></div>
+        <div class="child-class">
+            <div id="child-foto">
+
+            </div>
+            <div id="child-conteudo">
+                <ul id="child-conteudo--ul">
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
     <header class="header">
         <section class="header__flex">
             <section class="flex__1">
@@ -48,214 +63,203 @@
                         <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
                         <a href="./login.html" class="header__nav--pages">Login</a>
                     </nav> -->
-                <!--MENU COM BOOSTRAP-->
-                <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                <a href="../pages/articles.html"><button type="button"
-                        class="btn btn-light btn-custom">Artigos</button></a>
-                <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                <a href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                <a href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-
-            </section>
-            <section class="flex__2">
-                <div class="api-form">
-                    <form class="search-box">
-                        <input name="pesquisa" placeholder="Pesquise aqui...">
-                        <button>
-                            <i class="fa-solid fa-film"></i>
-                        </button>
-                    </form>
+                    <!--MENU COM BOOSTRAP-->
+                    <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                    <a href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                    <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                    <a href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                    <a href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+    
+          </section>
+          <section class="flex__2">
+            <div class="api-form">
+              <form class="search-box">
+                <input name="pesquisa" placeholder="Pesquise aqui...">
+                <button>
+                  <i class="fa-solid fa-film"></i>
+                </button>
+              </form>
+              <!-- <div class="list">
+                <div class="item-api">
+    
                 </div>
-                <div class="div_social-medias">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/logo_facebook.png"
-                            class="social-medias"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/logo_instagram.png"
-                            class="social-medias"></a>
-                    <a href="https://twitter.com/" target="_blank"><img src="../assets/images/logo_x.png"
-                            class="social-medias"></a>
-                </div>
-            </section>
+              </div> -->
+            </div>
+            <div class="div_social-medias">
+              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
+              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
+              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+            </div>
+          </section>
         </section>
     </header>
     <main id="movies-main">
         <section id="movies-main__slide">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
+                        alt="killers of the moon banner">
                 </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
+                        alt="society of the snow">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100" alt="the nun II">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
+                        alt="indiana jones banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
+                        alt="haunted mansion">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <section id="movies-main__topicos">
+        <div class="topicos">
+            <div class="articles__menu">
+                <h4>Destaques</h4>
+            </div>
+            <div id="carouselExampleControls" class="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
-                            alt="killers of the moon banner">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
-                            alt="society of the snow">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100"
-                            alt="the nun II">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
-                            alt="indiana jones banner">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 4</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
-                            alt="haunted mansion">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 5</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 6</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 7</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 8</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title 9</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            </div>
-        </section>
-        <section id="movies-main__topicos">
-            <div class="topicos">
-                <div class="articles__menu">
-                    <h4>Destaques</h4>
-                </div>
-                <div id="carouselExampleControls" class="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 1</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 2</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 3</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 4</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 5</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 6</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 7</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 8</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title 9</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the
-                                        card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
         <script src="movies.js"></script>
     </main>
     <footer>
