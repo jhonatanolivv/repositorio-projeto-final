@@ -129,7 +129,7 @@ function exibirImagemInicial(json, index) {
 var filmes_escolhidoss = carregarImagemInicial();
 
 function showChild(childId) {
-  var childDiv = document.getElementById("child");
+  let childDiv = document.getElementById("child");
   childDiv.style.display = "block";
 
   function showChildInfos(json, filmes) {
@@ -150,6 +150,14 @@ function showChild(childId) {
 }
 
 function hideChild() {
-  var childDiv = document.getElementById('child');
+  let childDiv = document.getElementById('child');
   childDiv.style.display = "none";
+}
+
+function f_header() {
+  let btn_artigos = Document.getElementById('header-link-artigos'),
+  btn_movies = Document.getElementById('header-link-movies'),
+  btn_news = Document.getElementById('header-link-news'),
+  btn_login = Document.getElementById('header-link-artigos');
+  
 }

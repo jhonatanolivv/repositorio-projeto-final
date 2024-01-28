@@ -61,11 +61,12 @@
                         <a href="./login.html" class="header__nav--pages">Login</a>
                     </nav> -->
                     <!--MENU COM BOOSTRAP-->
-                    <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                    <a href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                    <a href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                    <a href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                    <a href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+                    <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                    <button type="button" id="header-botao-abrir" class="btn btn-light btn-custom" onclick="f_header(abrir)"></button>
+                    <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                    <a id="header-link-movies" href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                    <a id="header-link-news" href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                    <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
     
           </section>
           <section class="flex__2">
@@ -118,12 +119,12 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev" style="min-height: 450px; max-height: 500px;">
                     <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                     <span class="visually-hidden">Prev</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
+                    data-bs-slide="next" style="min-height: 450px; max-height: 500px;">
                     <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                     <span class="visually-hidden">Next</span>
                 </button>
