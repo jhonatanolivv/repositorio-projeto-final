@@ -962,18 +962,21 @@ body {
     height: auto;
     display: block;
     transition: all 40ms linear;
+    border-radius: 0 0 16px 16px;
 }
 
 .carousel-control-prev {
     background: transparent;
     border: none;
     height: 100%;
+    margin-top: 3rem;
 }
 
 .carousel-control-next {
     background: transparent;
     border: none;
     height: 100%;
+    margin-top: 3rem;
 }
 
 .visually-hidden {
@@ -984,12 +987,13 @@ body {
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 40ms ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 .visually-hidden:hover {
     scale: 1.1;
-    box-shadow: 0 3px 1px;
+    box-shadow: 0 3px .5px;
+    opacity: 1;
 }
 
 .visually-hidden:active {
@@ -1050,11 +1054,20 @@ body {
     padding-right: 4rem;
 }
 
-.carousel-indicators {
-    background-color: red;
-    position: absolute;
-    top: 26rem;
+#carouselExampleIndicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 28rem;
+    }
 
 .carousel-indicators button {
     padding: .3rem;
@@ -1064,6 +1077,7 @@ body {
     margin: .75rem;
     background-color: orangered;
     box-shadow: 0 3px 6px;
+    cursor: pointer;
     transition: all .1s ease-in-out;
 }
 .carousel-indicators button:hover {
@@ -1529,6 +1543,7 @@ body {
 
 .card-body p {
     text-align: center;
+    font-size: 14px;
 }
 
 .card__options {
@@ -1720,6 +1735,12 @@ body {
     transition: all .2s ease-in-out;
     background-color: whitesmoke;
     border: 1px solid #ccc;
+    box-shadow: 3px 3px 1px #ccc;
+}
+
+.card-unity--bottom:hover {
+    rotate: 4deg;
+    box-shadow: 12px 8px 10px #ccc;
 }
 
 .card-unity--bottom p {
@@ -1777,6 +1798,22 @@ body {
     padding: .75rem 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px #ccc;
+}
+
+.rating-box:hover {
+    animation: breath 2s ease infinite;
+}
+
+@keyframes breath {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.050;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .rating-box h4 {
