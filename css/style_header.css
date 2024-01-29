@@ -1931,6 +1931,13 @@ footer hr {
     #header-botao-fechar {
         display: none;
     }
+    .pag-movies-imagem {
+        height: 65%;
+        background-color: black;
+    }
+    .list-group {
+        max-height: 35%;
+    }
     
     /* #header-link-home */
     #header-link-artigos,
