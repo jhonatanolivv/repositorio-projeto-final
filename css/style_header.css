@@ -321,15 +321,11 @@ body {
 .prevv_e_next {
     transform: translate(-65%, 0);
     max-height: 500px;
-
-
-
 }
 
 .prev_e_nextt {
     transform: translate(65%, 0);
     max-height: 500px;
-
 }
 
 .barra_filmes {
@@ -1054,11 +1050,30 @@ body {
     padding-right: 4rem;
 }
 
+.carousel-indicators {
+    background-color: red;
+    position: absolute;
+    top: 26rem;
+}
+
 .carousel-indicators button {
     padding: .3rem;
     border: none;
-    border-radius: 50%;
-    margin: 1rem;
+    width: 4%;
+    border-radius: 4px;
+    margin: .75rem;
+    background-color: orangered;
+    box-shadow: 0 3px 6px;
+    transition: all .1s ease-in-out;
+}
+.carousel-indicators button:hover {
+    scale: 1.1;
+    transform: rotate(-8deg);
+    background-color: orange;
+}
+.carousel-indicators button:active {
+    scale: 1;
+    transform: rotate(0deg);
     background-color: orangered;
 }
 
@@ -1066,23 +1081,57 @@ body {
     margin-bottom: 1rem;
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .75rem;
+}
+
 .pagination a {
-    color: orangered;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.pagination a {
+    transition: all .1s ease-in-out;
+}
+.pagination li {
+    transition: all .1s ease-in-out;
 }
 
 .pagination a:hover {
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
     background-color: #FFA944;
+    box-shadow: 0 2px 3px #ccc;
+}
+
+.pagination li:hover {
+    scale: 1.2;
 }
 
 .pagination a:visited {
     color: black;
 }
+.pagination a:hover:not(.active) {
+    background-color: #ffae00;
+    border-radius: 50px;
+}
 
 .page-item--selected a {
-    background-color: orange;
+    background-color: #ff6600;
     color: #000000;
+}
+
+#previous {
+    border-radius: 50px;     
+}
+
+#next {
+    border-radius: 50px;
 }
 
 .top-info {
@@ -1109,7 +1158,7 @@ body {
     /* border-bottom: 2.5px #FF8c00 solid; */
     border-radius: 10px;
     background: linear-gradient(120deg, white, rgba(255, 184, 53, 0.13), white);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     transition: all .2s ease-in-out;
 }
 
@@ -1271,19 +1320,23 @@ body {
     height: 300px;
 }
 
-#indiana {
+#elemental {
     object-fit: cover;
-    object-position: 0 -4rem;
+    object-position: 0 -5.2rem;
 }
 
-#haunted {
+#dune {
     object-fit: cover;
-    object-position: 0 -9.5rem;
+    object-position: 0 -1.8rem;
 }
 
 #nun {
     object-fit: cover;
     object-position: 0 -1rem;
+}
+
+#killers {
+    object-fit: cover;
 }
 
 .card-text span {
@@ -1375,7 +1428,7 @@ body {
     line-height: .1px;
     background-color: #ff7b00;
     padding-top: .5rem;
-    margin: 1.5rem 3rem 0 3rem;
+    margin: 1.5rem 5.6rem;
     margin-top: 7.8rem;
     border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 6px #ccc;
@@ -1393,6 +1446,9 @@ body {
     font-weight: bold;
     color: white;
     height: 1.5rem;
+}
+.articles__menu--artigos span {
+    color: rgb(255, 217, 0);
 }
 
 .articles__menu--artigos p {
@@ -1475,27 +1531,6 @@ body {
     text-align: center;
 }
 
-.card-unity p {
-    position: absolute;
-    text-align: center;
-    width: 10rem;
-    margin-top: 15rem;
-    color: #000000;
-    border-radius: 8px 8px 38% 38%;
-    padding: .2rem auto;
-    font-size: 14px;
-    opacity: .8;
-    transition: all .2s ease-in-out;
-}
-
-.card-unity p:hover {
-    font-weight: bold;
-    text-shadow: 0 6px 8px #ccc;
-    scale: 1.1;
-    color: #ff7b00;
-    opacity: 1;
-}
-
 .card__options {
     display: flex;
     flex-direction: row;
@@ -1513,6 +1548,19 @@ body {
     width: 12rem;
     height: 14rem;
     border-radius: 10px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, .6);
+    transition: all .2s ease;
+    opacity: 0;
+}
+.card-content--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 12rem;
+    height: 14rem;
     color: whitesmoke;
     background: rgba(0, 0, 0, .6);
     transition: all .2s ease;
@@ -1604,6 +1652,15 @@ body {
     text-align: center;
     transition: all .2s ease;
 }
+.card-content--bottom h1 {
+    background-color: #ff7b00;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    transition: all .2s ease;
+}
 
 .card-content--faf h1 {
     background-color: #ff7b00;
@@ -1628,6 +1685,9 @@ body {
 .card-content:hover {
     opacity: 1;
 }
+.card-content--bottom:hover {
+    opacity: 1;
+}
 
 .card-content--faf:hover {
     opacity: 1;
@@ -1640,12 +1700,36 @@ body {
 .card-content h1:hover {
     color: whitesmoke;
 }
+.card-content--bottom h1:hover {
+    color: whitesmoke;
+}
 
 .card-unity {
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: all .2s ease-in-out;
+}
+.card-unity--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+}
+
+.card-unity--bottom p {
+    font-weight: 500;
+    font-family: 'Roboto';
+    width: 180px;
+    text-align: center;
+    background-color: #ff8c00;
+    width: 100%;
+    color: white;
 }
 
 .card-unity img {
@@ -1654,7 +1738,12 @@ body {
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
-    border: 2px #ccc outset;
+}
+.card-unity--bottom img {
+    width: 12rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .review-title {
@@ -1670,15 +1759,60 @@ body {
     text-align: center;
     border-radius: 4px;
     background-color: #ff7b00;
-    margin: 1.5rem 3rem 3.5rem 3rem;
+    margin: 1.5rem 5.6rem 3.5rem 5.6rem;
     color: white;
     padding: .75rem 0;
     box-shadow: 0 4px 6px #ccc;
-    transition: all 60ms linear;
+    transition: all .1s linear;
 }
 
 .review-title--artigos:hover {
     scale: 1.025;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+.rating-box {
+    position: relative;
+    background-color: #fff;
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #ccc;
+}
+
+.rating-box h4 {
+    text-align: center;
+    font-size: .80rem;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: .55rem;
+}
+
+.rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.stars i:hover {
+    color: orange;
+}
+
+.stars i {
+    color: #e6e6e6;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.stars i.active {
+    color: #ff6600;
+}
+
+.bottom-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: baseline;
 }
 
 /* -------------- LOGIN -------------- */
