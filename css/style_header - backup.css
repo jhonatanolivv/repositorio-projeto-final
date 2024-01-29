@@ -1104,9 +1104,10 @@ body {
 
 .article__container {
     display: flex;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     gap: 2rem;
-    /* border-bottom: 2.5px #FF8c00 solid; */
+    box-shadow: 0 2px 2px #ccc;
     border-radius: 10px;
     background: linear-gradient(120deg, white, rgba(255, 184, 53, 0.13), white);
     padding: 1.5rem 1rem;
@@ -1269,6 +1270,7 @@ body {
     width: 100%;
     overflow: hidden;
     height: 300px;
+    margin-top: 4rem;
 }
 
 #indiana {
@@ -1363,21 +1365,9 @@ body {
     line-height: .1px;
     background-color: #ff7b00;
     padding-top: .5rem;
-    box-shadow: 0 4px 6px #ccc;
-    transition: scale 250ms;
-}
-
-.articles__menu--artigos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: .1px;
-    background-color: #ff7b00;
-    padding-top: .5rem;
     margin: 1.5rem 3rem 0 3rem;
     margin-top: 7.8rem;
-    border-radius: 0 0 16px 16px;
+    /* border-radius: 0 0 16px 16px; */
     box-shadow: 0 4px 6px #ccc;
     transition: scale 250ms;
 }
@@ -1388,19 +1378,10 @@ body {
     color: #000000;
     height: 1.5rem;
 }
-.articles__menu--artigos h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    height: 1.5rem;
-}
 
-.articles__menu--artigos p {
-    color: white;
+.articles__menu p {
+    color: #000000;
     font-size: .8rem;
-}
-.articles__menu--artigos:hover {
-    scale: 1.025;
 }
 
 .articles__menu--hover:hover {
@@ -1454,6 +1435,11 @@ body {
     margin-bottom: 16rem;
 }
 
+.card-body hr {
+    color: #ccc;
+    max-width: 100%;
+}
+
 .card--top3 img {
     max-width: 60%;
     margin-top: 1.5rem;
@@ -1473,6 +1459,8 @@ body {
 
 .card-body p {
     text-align: center;
+    font-size: small;
+    width: 12rem;
 }
 
 .card-unity p {
@@ -1660,13 +1648,6 @@ body {
 .review-title {
     font-weight: bold;
     /* margin-left: 6rem; */
-    margin-bottom: 3.5rem;
-    text-align: center;
-}
-
-.review-title--artigos {
-    font-weight: bold;
-    /* margin-left: 6rem; */
     text-align: center;
     border-radius: 4px;
     background-color: #ff7b00;
@@ -1677,7 +1658,7 @@ body {
     transition: all 60ms linear;
 }
 
-.review-title--artigos:hover {
+.review-title:hover {
     scale: 1.025;
 }
 
@@ -1700,7 +1681,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 
 .cadastro-anuncio--1 {
