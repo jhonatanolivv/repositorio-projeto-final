@@ -1074,9 +1074,10 @@ body {
 
 .article__container {
     display: flex;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     gap: 2rem;
-    /* border-bottom: 2.5px #FF8c00 solid; */
+    box-shadow: 0 2px 2px #ccc;
     border-radius: 10px;
     background: linear-gradient(120deg, white, rgba(255, 184, 53, 0.13), white);
     padding: 1.5rem 1rem;
@@ -1239,6 +1240,7 @@ body {
     width: 100%;
     overflow: hidden;
     height: 300px;
+    margin-top: 4rem;
 }
 
 #indiana {
@@ -1333,6 +1335,9 @@ body {
     line-height: .1px;
     background-color: #ff7b00;
     padding-top: .5rem;
+    margin: 1.5rem 3rem 0 3rem;
+    margin-top: 7.8rem;
+    border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 6px #ccc;
     transition: scale 250ms;
 }
@@ -1400,14 +1405,32 @@ body {
     margin-bottom: 16rem;
 }
 
-.card--top3 img {
+.card-body hr {
+    color: #ccc;
     max-width: 100%;
+}
+
+.card--top3 img {
+    max-width: 60%;
+    margin-top: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 6px 8px #ccc;
 }
 
+.card--top3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px #ccc;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
 .card-body p {
     text-align: center;
+    font-size: small;
+    width: 12rem;
 }
 
 .card-unity p {
@@ -1595,9 +1618,18 @@ body {
 .review-title {
     font-weight: bold;
     /* margin-left: 6rem; */
-    margin-bottom: 3.5rem;
     text-align: center;
+    border-radius: 4px;
+    background-color: #ff7b00;
+    margin: 1.5rem 3rem 3.5rem 3rem;
+    color: white;
+    padding: .75rem 0;
+    box-shadow: 0 4px 6px #ccc;
+    transition: all 60ms linear;
+}
 
+.review-title:hover {
+    scale: 1.025;
 }
 
 /* -------------- LOGIN -------------- */
@@ -1619,7 +1651,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 
 .cadastro-anuncio--1 {
