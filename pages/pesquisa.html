@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style_header.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+
+
+    <!--CDN do Boostrap do CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
+
+    <!--CDN do JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+</head>
+<header class="header">
+    <section class="header__flex">
+        <section class="flex__1">
+            <div class="header__div_logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
+            </div>
+
+            <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+            <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
+            <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+            <a id="header-link-movies" href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+            <a id="header-link-news" href="#"><button type="button" class="btn btn-light btn-custom">News</button></a>
+            <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+            <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
+        </section>
+        <section class="flex__2">
+            <div class="api-form" id="search-box_header">
+                <form class="search-box" >
+                    <input name="pesquisa" placeholder="Pesquise aqui...">
+                    <button>
+                        <i class="fa-solid fa-film"></i>
+                    </button>
+                </form>
+                <!-- <div class="list">
+            <div class="item-api">
+
+            </div>
+          </div> -->
+            </div>
+            <div class="div_social-medias">
+                <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
+                        class="social-medias"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
+                        class="social-medias"></a>
+                <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+            </div>
+        </section>
+    </section>
+</header>
+<footer>
+    <section class="footer__flex">
+        <section class="footer__flex--1">Queremos a sua opinão! | Sobre CritiCine | Contato | Termos e condições |
+            Política de privacidade</section>
+        <hr>
+        <section class="footer__flex--2">
+            <div class="flex--2--1"><img src="../assets/images/logo.png" class="header__div_logo--logo"></div>
+            <div class="flex--2--2">
+                <div>&copy; 2024 - CritiCine</div>
+                <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
+            </div>
+            <div class="flex--2--3">
+                <div>Siga a gente!</div>
+                <div>
+                    <div class="div_social-medias">
+                        <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
+                                class="social-medias"></a>
+                        <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
+                                class="social-medias"></a>
+                        <a href="https://twitter.com/"><img src="../assets/images/logo_x.png"
+                                class="social-medias"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</footer>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="../js/api.js"></script>
+<script src="../js/articles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
