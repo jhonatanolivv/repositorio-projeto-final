@@ -1,3 +1,12 @@
+//* Dark Mode Toggle
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+
+});
+
 //* Rating Stars
 
 const stars = document.querySelectorAll(".stars i");
@@ -37,6 +46,3 @@ const slideSize = slides[0].getBoundingClientRect().width;
 slide[0].style.left = 0;
 slide[1].style.left = slideWidth + 'px';
 slide[2].style.left = slideWidth * 2 + 'px';
-
-
-
