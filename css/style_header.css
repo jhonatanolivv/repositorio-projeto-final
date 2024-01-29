@@ -126,7 +126,7 @@ body {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: #F4F4F4;
-    overflow: hidden;
+
 
 }
 
@@ -192,6 +192,11 @@ body {
 
 }
 
+#header-botao-abrir,
+#header-botao-fechar {
+    display: none;
+}
+
 .social-medias {
     width: 1.5rem;
     margin: 0.25rem 0.5rem 0rem;
@@ -201,6 +206,7 @@ body {
     border-radius: 30%;
 
 }
+
 
 /* Página index */
 
@@ -270,7 +276,7 @@ body {
     height: auto;
     padding: 0 5em;
     overflow: hidden;
-    
+
 }
 
 .topicos--nomes {
@@ -283,6 +289,7 @@ body {
     height: 600px;
     width: 100%;
     gap: 25px;
+    margin-bottom: -1vw;
 
 }
 
@@ -295,18 +302,26 @@ body {
     transition: all 0.25s;
     max-height: 500px;
 }
+
 .card:hover {
-    scale:0.93;
+    scale: 0.93;
     rotate: 2deg;
 }
 
 .carousel {
     height: 27vw;
-    max-width: auto;
+    width: 100%;
+    max-height: 500px;
 }
+
+.carousel-inner {
+    max-height: 500px;
+}
+
 .prevv_e_next {
     transform: translate(-65%, 0);
     max-height: 500px;
+
 
 
 }
@@ -369,7 +384,7 @@ body {
     /* Cor da barra de preenchimento */
 }
 
-#child{
+#child {
     display: none;
     position: fixed;
     top: 50%;
@@ -384,35 +399,39 @@ body {
     color: #000000;
     border-radius: 20px;
     box-shadow: 0px 0px 50px 10px black;
-    z-index: 1; 
+    z-index: 1;
 
 }
+
 .child-fechar {
     position: fixed;
     right: 10px;
     width: 25px;
     transition: scale, rotate 250ms;
 }
+
 .child-fechar:hover {
     scale: 1.1;
     rotate: 90deg;
 }
+
 .child-class {
     display: grid;
     width: 100%;
     height: 100%;
     max-height: 380px;
     max-width: 649px;
-    grid-template-columns: 5.9fr 10fr ;
+    grid-template-columns: 5.9fr 10fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "foto cont"    
-    ". cont";
+    grid-template-areas:
+        "foto cont"
+        ". cont";
     justify-content: center;
     align-items: center;
-    
+
 }
-.child-logo{
+
+.child-logo {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -426,56 +445,67 @@ body {
     0% {
         scale: 1.1;
     }
-    20%  {
+
+    20% {
         rotate: 30deg;
-    }   
+    }
+
     40% {
         rotate: -30deg;
         scale: 1.3;
     }
+
     50% {
         rotate: 30deg;
-    }   
+    }
+
     60% {
         rotate: -30deg;
         scale: 1.5;
     }
+
     65% {
         rotate: 30deg;
-    }   
+    }
+
     70% {
         rotate: -30deg;
         scale: 1.7;
     }
+
     75% {
         rotate: 30deg;
-    }   
+    }
+
     85% {
         rotate: 720deg;
         scale: 1.7;
     }
-    100%{
-        
-    }
+
+    100% {}
 }
-.child-class > #child-foto{
+
+.child-class>#child-foto {
     grid-area: foto;
     border: 5px solid orange;
     transition: scale, rotate 250ms;
 }
+
 #child-foto:hover {
     scale: 0.95;
     rotate: 0.5deg;
 }
 
-.child-class > #child-conteudo{
+.child-class>#child-conteudo {
     grid-area: cont;
     padding: 3% 5%;
 }
-#child-conteudo--ul li{
+
+#child-conteudo--ul li {
     margin-bottom: 5%
 }
-.tipo-child{
+
+.tipo-child {
     font-style: bold;
     color: #ff7b00;
 }
@@ -1836,6 +1866,21 @@ footer hr {
 /*media responsivo*/
 
 @media only screen and (max-width: 1117px) {
+    .child-conteudo {
+        font-size: 0.9vw;
+    }
+
+    .topicos {
+        height: 450px;
+    }
+    #header-botao-abrir {
+        display: inline-block;
+    }
+    
+    #header-botao-fechar {
+        display: none;
+    }
+    
     /* #header-link-home */
     #header-link-artigos,
     #header-link-movies,
@@ -1843,13 +1888,12 @@ footer hr {
     #header-link-login {
         display: none;
     }
-    #header-botao-abrir:onclick + #header-link-artigos +
-    #header-link-movies +
-    #header-link-news +
-    #header-link-login  {
-        display: inline-block;
+    footer hr {
+        width: 100%;
     }
+    
 }
+
+
 /* Estilos para telas pequenas (smartphones) */
-@media only screen and (max-width: 768px) {
-}
+@media only screen and (max-width: 807px) {}
