@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movies - Criticine</title>
     <link rel="stylesheet" href="../css/style_header.css">
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
@@ -24,14 +24,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+
+    <style>
+        .dark-mode body {
+            background-color: #fd0000;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="child">
+    <div id="child" class="">
         <div class="child-fechar" onclick="hideChild()"><img src="../assets/images/icone-fermer-et-x-rouge.png"
                 alt="fechar" width="25px"></div>
-        <div class="child-logo"><img class="child-logo--img" src="../assets/images/favicon.png" alt="Logo CritiCine - CC"
-                width="60px" height="60px"></div>
+        <div class="child-logo"><img class="child-logo--img" src="../assets/images/favicon.png"
+                alt="Logo CritiCine - CC" width="60px" height="60px"></div>
         <div class="child-class">
             <div id="child-foto">
 
@@ -47,24 +54,30 @@
 
     </div>
 
-    <header class="header">
+    <header class="header" id="header">
         <section class="header__flex">
             <section class="flex__1">
                 <div class="header__div_logo">
                     <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
                 </div>
 
-                <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                <a id="header-link-home" href="../index.html"><button type="button"
+                        class="btn btn-light btn-custom header-link">Home</button></a>
                 <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
-                <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                <a id="header-link-movies" href="#"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                <a id="header-link-news" href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
+                <a id="header-link-artigos" href="../pages/articles.html"><button type="button"
+                        class="btn btn-light btn-custom header-link">Artigos</button></a>
+                <a id="header-link-movies" href="#"><button type="button"
+                        class="btn btn-light btn-custom header-link">Movies</button></a>
+                <a id="header-link-news" href="../pages/news.html"><button type="button"
+                        class="btn btn-light btn-custom header-link">News</button></a>
+                <a id="header-link-login" href="../pages/login.html"><button type="button"
+                        class="btn btn-light btn-custom header-link">Login</button></a>
+                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
+                </button>
             </section>
             <section class="flex__2">
                 <div class="api-form" id="search-box_header">
-                    <form class="search-box" >
+                    <form class="search-box">
                         <input name="pesquisa" placeholder="Pesquise aqui...">
                         <button>
                             <i class="fa-solid fa-film"></i>
@@ -83,12 +96,20 @@
                             class="social-medias"></a>
                     <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
                 </div>
+                <div class="darkmode">
+                    <input type="checkbox" class="checkbox" id="chk">
+                    <label class="label" for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </section>
         </section>
     </header>
     <main id="movies-main">
         <section id="movies-main__slide">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleIndicators" class="carousel slide ">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
@@ -122,14 +143,13 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            </div>
         </section>
         <section id="movies-main__topicos">
             <div class="topicos">
                 <div class="articles__menu articles__menu--hover">
                     <h4>Melhores Filmes</h4>
                 </div>
-                <div id="carouselExampleControls" class="carousel">
+                <div id="carouselExampleControls" class="carousel ">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="barra_filmes">
@@ -1085,12 +1105,12 @@
             </section>
         </section>
     </footer>
+    <script src="../js/api.js"></script>
+    <script src="../js/articles.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="../js/api.js"></script>
-    <script src="../js/articles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

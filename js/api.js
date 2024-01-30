@@ -212,3 +212,5 @@ window.addEventListener("resize", ajustarLayout);
 
 // Chama ajustarLayout inicialmente para configurar o layout no carregamento da página
 ajustarLayout();
+
+  
