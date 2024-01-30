@@ -42,47 +42,53 @@
 <body>
   <header class="header">
     <section class="header__flex">
-      <section class="flex__1">
-        <div class="header__div_logo">
-          <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
-        </div>
-        <!-- MENU SEM BOOSTRAP <nav>
-                    <a href="/index.html" class="header__nav--pages">Home</a>
-                    <a href="./articles.html" class="header__nav--pages">Artigos</a>
-                    <a href="./movies.html" class="header__nav--pages">Movies</a>
-                    <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
-                    <a href="./login.html" class="header__nav--pages">Login</a>
-                </nav> -->
-                <!--MENU COM BOOSTRAP-->
-                <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                <a href="#"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                <a href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                <a href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                <a href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+        <section class="flex__1">
+            <div class="header__div_logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
+            </div>
 
-      </section>
-      <section class="flex__2">
-        <div class="api-form">
-          <form class="search-box">
-            <input name="pesquisa" placeholder="Pesquise aqui...">
-            <button>
-              <i class="fa-solid fa-film"></i>
-            </button>
-          </form>
-          <!-- <div class="list">
-                <div class="item-api">
-    
-                </div>
-              </div> -->
-        </div>
-        <div class="div_social-medias">
-          <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
-          <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
-          <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
-        </div>
-      </section>
+            <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+            <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
+            <a id="header-link-artigos" href="#"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+            <a id="header-link-movies" href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+            <a id="header-link-news" href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
+            <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+            <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
+        </section>
+        <section class="flex__2">
+            <div class="api-form" id="search-box_header">
+                <form class="search-box" >
+                    <input name="pesquisa" placeholder="Pesquise aqui...">
+                    <button>
+                        <i class="fa-solid fa-film"></i>
+                    </button>
+                </form>
+                <!-- <div class="list">
+            <div class="item-api">
+
+            </div>
+          </div> -->
+            </div>
+            <div class="div_social-medias">
+                <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
+                        class="social-medias"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
+                        class="social-medias"></a>
+                <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+            </div>
+
+            <div class="darkmode">
+              <input type="checkbox" class="checkbox" id="chk">
+              <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+
+        </section>
     </section>
-  </header>
+</header>
 
   <section id="article__section">
     <div class="banner">
@@ -101,9 +107,9 @@
       </div>
     </div>
     
-    <div class="articles__menu">
+    <!-- <div class="articles__menu">
       <h4>Novidades</h4>
-    </div>
+    </div> -->
 
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
@@ -146,9 +152,9 @@
       </a>
     </div> -->
 
-    <div class="articles__menu">
+    <div class="articles__menu--artigos">
       <h4>Todos os Artigos</h4>
-      <p class="page-info">Página 3/3 | Mostrando Resultados 13 - 18 de 18</p>
+      <p class="page-info">Página <span>3/3</span> | Mostrando Resultados <span>13 - 18 de 18</span></p>
     </div>
   </section>
 
@@ -302,7 +308,7 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <a id="previous" class="page-link" href="articles-page2.html" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
@@ -310,7 +316,7 @@
           <li class="page-item"><a class="page-link" href="articles-page2.html">2</a></li>
           <li class="page-item--selected"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <a id="next" class="page-link" href="articles.html" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
@@ -357,46 +363,46 @@
   </main>
 
   <section>
-    <h3 class="review-title">Reviews da Semana</h3>
+    <h3 class="review-title--artigos">Reviews da Semana</h3>
     <div class="cards">
-        <div class="card__options">
-          <div class="card-unity">
-            <img src="../assets/images/guardioes-da-galaxia.jpeg" alt="">
-            <div class="card-content">
-              <h1>Review</h1>
-            </div>
-            <p>Guardiões da Galaxia Vol.3</p>
+      <div class="card__options">
+        <div class="card-unity--bottom">
+          <img src="../assets/images/articles/dune.jpg" alt="dune poster">
+          <div class="card-content--bottom">
+            <h1>Review</h1>
           </div>
-          <div class="card-unity">
-            <img src="../assets/images/gato-de-botas.jpeg" alt="">
-            <div class="card-content">
-              <h1>Review</h1>
-            </div>
-            <p>Gato de Botas 2: O Último Pedido</p>
+          <p>Dune</p>
+        </div>
+        <div class="card-unity--bottom">
+          <img src="../assets/images/articles/happening.jpg" alt="">
+          <div class="card-content--bottom">
+            <h1>Review</h1>
           </div>
-          <div class="card-unity">
-            <img src="../assets/images/avatar-2.jpeg" alt="avatar o caminho da agua banner">
-            <div class="card-content">
-              <h1>Review</h1>
-            </div>
-            <p>Avatar: O Caminho da Água</p>
+          <p>O Acontecimento</p>
+        </div>
+        <div class="card-unity--bottom">
+          <img src="../assets/images/articles/indiana.jpg" alt="avatar o caminho da agua banner">
+          <div class="card-content--bottom">
+            <h1>Review</h1>
           </div>
-          <div class="card-unity">
-            <img class="card-img" src="../assets/images/TUDO-AO-MESMO-TEMPO.jpeg" alt="tudo ao mesmo tempo banner">
-            <div class="card-content">
-              <h1>Review</h1>
-            </div>
-            <p>Tudo em Todo o Lugar ao Mesmo Tempo</p>
+          <p>Indiana Jones</p>
+        </div>
+        <div class="card-unity--bottom">
+          <img class="card-img" src="../assets/images/articles/five nights.jpg" alt="tudo ao mesmo tempo banner">
+          <div class="card-content--bottom">
+            <h1>Review</h1>
           </div>
-          <div class="card-unity">
-            <img src="../assets/images/Oppenheimer.jpeg" alt="">
-            <div class="card-content">
-              <h1>Review</h1>
-            </div>
-            <p>Oppenheimer</p>
+          <p>Five Nights At Freddy's</p>
+        </div>
+        <div class="card-unity--bottom">
+          <img src="../assets/images/articles/oppenheimer.jpg" alt="">
+          <div class="card-content--bottom">
+            <h1>Review</h1>
           </div>
+          <p>Oppenheimer</p>
         </div>
       </div>
+    </div>
   </section>
 
   <footer>

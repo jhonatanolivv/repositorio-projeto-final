@@ -34,41 +34,37 @@
                 <div class="header__div_logo">
                     <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
                 </div>
-                <!-- MENU SEM BOOSTRAP <nav>
-                        <a href="/index.html" class="header__nav--pages">Home</a>
-                        <a href="./articles.html" class="header__nav--pages">Artigos</a>
-                        <a href="./movies.html" class="header__nav--pages">Movies</a>
-                        <a href="#" class="header__nav--pages"><span class="span--laranja">News</span></a>
-                        <a href="./login.html" class="header__nav--pages">Login</a>
-                    </nav> -->
-                    <!--MENU COM BOOSTRAP-->
-                    <a href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                    <a href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                    <a href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                    <a href="#"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                    <a href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-    
-          </section>
-          <section class="flex__2">
-            <div class="api-form">
-              <form class="search-box">
-                <input name="pesquisa" placeholder="Pesquise aqui...">
-                <button>
-                  <i class="fa-solid fa-film"></i>
-                </button>
-              </form>
-              <!-- <div class="list">
+
+                <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
+                <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
+                <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+                <a id="header-link-movies" href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
+                <a id="header-link-news" href="#"><button type="button" class="btn btn-light btn-custom">News</button></a>
+                <a id="header-link-login" href="../pages/login.html"><button type="button" class="btn btn-light btn-custom">Login</button></a>
+                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
+            </section>
+            <section class="flex__2">
+                <div class="api-form" id="search-box_header">
+                    <form class="search-box" >
+                        <input name="pesquisa" placeholder="Pesquise aqui...">
+                        <button>
+                            <i class="fa-solid fa-film"></i>
+                        </button>
+                    </form>
+                    <!-- <div class="list">
                 <div class="item-api">
     
                 </div>
               </div> -->
-            </div>
-            <div class="div_social-medias">
-              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
-              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
-              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
-            </div>
-          </section>
+                </div>
+                <div class="div_social-medias">
+                    <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
+                            class="social-medias"></a>
+                    <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
+                            class="social-medias"></a>
+                    <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+                </div>
+            </section>
         </section>
     </header>
     <div class="container">

@@ -22,6 +22,7 @@ frmPesquisa.onsubmit = (ev) => {
 
 const carregaLista = (json) => {
   const lista = document.querySelector("div.list");
+  console.log(json)
   lista.innerHTML = "";
 
   if (json.Response == 'False') {
@@ -105,7 +106,7 @@ function exibirImagemInicial(json, index) {
     return;
   }
 
-  console.log(json)
+  
   let primeiroFilme = json;
 
   if (primeiroFilme) {
