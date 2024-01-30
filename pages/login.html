@@ -24,47 +24,83 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 </head>
-
-<body>
+<body class="login--body">
     <header class="header">
         <section class="header__flex">
-            <section class="flex__1">
-                <div class="header__div_logo">
-                    <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
-                </div>
-
-                <a id="header-link-home" href="../index.html"><button type="button" class="btn btn-light btn-custom">Home</button></a>
-                <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
-                <a id="header-link-artigos" href="../pages/articles.html"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
-                <a id="header-link-movies" href="../pages/movies.html"><button type="button" class="btn btn-light btn-custom">Movies</button></a>
-                <a id="header-link-news" href="../pages/news.html"><button type="button" class="btn btn-light btn-custom">News</button></a>
-                <a id="header-link-login" href="#"><button type="button" class="btn btn-light btn-custom">Login</button></a>
-                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
-            </section>
-            <section class="flex__2">
-                <div class="api-form" id="search-box_header">
-                    <form class="search-box" >
-                        <input name="pesquisa" placeholder="Pesquise aqui...">
-                        <button>
-                            <i class="fa-solid fa-film"></i>
-                        </button>
-                    </form>
-                    <!-- <div class="list">
+          <section class="flex__1">
+            <div class="header__div_logo">
+              <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
+            </div>
+    
+            <a id="header-link-home" href="../index.html"><button type="button"
+                class="btn btn-light btn-custom">Home</button></a>
+            <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a id="header-link-artigos" href="#"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+            <a id="header-link-movies" href="../pages/movies.html"><button type="button"
+                class="btn btn-light btn-custom">Movies</button></a>
+            <a id="header-link-news" href="../pages/news.html"><button type="button"
+                class="btn btn-light btn-custom">News</button></a>
+            <a id="header-link-login" href="../pages/login.html"><button type="button"
+                class="btn btn-light btn-custom">Login</button></a>
+            <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </section>
+          <section class="flex__2">
+            <div class="api-form" id="search-box_header">
+              <form class="search-box">
+                <input name="pesquisa" placeholder="Pesquise aqui...">
+                <button>
+                  <i class="fa-solid fa-film"></i>
+                </button>
+              </form>
+              <!-- <div class="list">
                 <div class="item-api">
     
                 </div>
               </div> -->
-                </div>
-                <div class="div_social-medias">
-                    <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
-                            class="social-medias"></a>
-                    <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
-                            class="social-medias"></a>
-                    <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
-                </div>
-            </section>
+            </div>
+    
+            <!-- MOBILE SEARCH -->
+            <div class="class">
+              <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="input"></div>
+            </div>
+    
+            <div class="div_social-medias">
+              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
+              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
+              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+            </div>
+    
+            <!-- DROPDOWN MOBILE -->
+            <div class="dropdown">
+              <button>
+                <i class="fa-solid fa-users"></i>
+              </button>
+              <div class="content">
+                <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
+                <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
+                <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+              </div>
+            </div>
+    
+            <div class="darkmode">
+              <input type="checkbox" class="checkbox" id="chk">
+              <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+    
+          </section>
         </section>
-    </header>
+      </header>
 
     <main class="main-login">
         <div class="cadastro-anuncio">
@@ -98,10 +134,9 @@
                 <a href="#" target="_blank" class="criar-conta--a">Criar nova conta</a>
             </div>
         </div>
-
     </main>
-
-    <footer>
+    
+    <footer class="login-footer">
         <section class="footer__flex">
             <div class="footer__flex--1"><a class="linkStyle--modificado" href="#" target="_blank">Queremos a sua
                     opinão!</a> | <a class="linkStyle--modificado" href="#" target="_blank">Sobre CritiCine</a> | <a
