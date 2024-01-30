@@ -259,6 +259,27 @@ body {
 #header-botao-fechar {
     display: none;
 }
+#header-botao-abrir,
+#header-botao-fechar {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px 14px 14px 6px;
+    padding: .5rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+#header-botao-fechar {
+    border-radius: 14px 6px 6px 14px; 
+}
+
+#header-botao-abrir:hover,
+#header-botao-fechar:hover {
+    background: #e6e6e6;
+    box-shadow: 0 4px .2px #ccc;
+    scale: 1.1;
+}
 
 .social-medias {
     width: 1.5rem;
@@ -845,151 +866,6 @@ body {
 
 /*final página news*/
 
-/*filmesMaisBuscados pág News*/
-
-.container2 {
-    display: grid;
-    grid-template-columns: 0.75fr 0.75fr 0.75fr 1.2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "conteudoNews1 conteudoNews1 conteudoNews1 sideBarNews"
-        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
-        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
-        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews"
-        "conteudoNews2 conteudoNews2 conteudoNews2 sideBarNews";
-    padding: 5%;
-    gap: 10px;
-}
-
-.sideBarNews {
-    display: flex;
-    grid-area: sideBarNews;
-    background-color: lightsalmon;
-    height: 3624px;
-    width: 400px;
-    margin-left: 5%;
-}
-
-.trailer-tittle--md {
-    position: relative;
-    padding-left: 20px;
-    font-size: 30px;
-
-}
-
-.trailer-tittle--md::before {
-    content: '';
-    position: absolute;
-    left: 3%;
-    height: 100%;
-    width: 6px;
-    background-color: #FF8c00;
-    border-radius: 10%;
-    margin-top: 2%;
-}
-
-.trailer-flex {
-    display: flex;
-    gap: 3%;
-}
-
-.trailer-flex iframe {
-    border-radius: 5%;
-}
-
-.trailer-flex p {
-    font-size: 25px;
-}
-
-.conteudoNews1 {
-    display: grid;
-    grid-area: conteudoNews1;
-    /* background-color: lightcoral; */
-    height: 410px;
-    width: 720px;
-}
-
-.conteudoNews1 img {
-    height: 250px;
-    width: 720px;
-}
-
-.conteudoNews1 h3 {
-    font-size: 25px;
-    margin-top: 3%;
-}
-
-.conteudoNews1 p {
-    font-size: 20px;
-}
-
-.conteudoNews2 {
-    display: flex;
-    flex-direction: column;
-    grid-area: conteudoNews2;
-    background-color: lightgreen;
-    height: 3190px;
-    width: 720px;
-    margin-top: -40%;
-}
-
-.conteudoNews2 h3 {
-    font-size: 30px;
-    margin-top: 2%;
-}
-
-.conteudoNews2 h4 {
-    font-size: 20px;
-}
-
-.conteudoNews2 h6 {
-    font-size: 15px;
-    margin-top: 2%;
-}
-
-.conteudoNews2 img {
-    margin-top: 5%;
-}
-
-.conteudoNews2 p {
-    margin-top: 2%;
-    font-size: 22px;
-}
-
-.conteudoNews2--anuncio {
-    display: flex;
-    justify-content: center;
-}
-
-.conteudoNews2--anuncio img {
-    width: 350px;
-    height: auto;
-}
-
-.paragrafo-italic {
-    font-style: italic;
-    color: blueviolet;
-}
-
-.videoTrailer {
-    text-align: center;
-}
-
-.conteudoNews2--img {
-    width: 680px;
-    height: auto;
-    margin-left: 2.7%;
-}
-
-
-
-
-
-
-
-/*filmesMaisBuscados pág News*/
-
-
 
 
 .div_social-medias .social-medias:hover {
@@ -1013,6 +889,88 @@ body {
 }
 
 /*-------------- ARTICLES --------------*/
+@media only screen and (max-width: 1117px) {
+    .pagination {
+        justify-content: center;
+    }
+    .cards {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 23%;
+    }
+}
+
+@media only screen and (max-width: 1238px) {
+    #articles {
+        flex-direction: column;
+    }
+    .cards-container {
+        display: flex;
+        flex-flow: wrap row;
+        gap: 1.5rem;
+        overflow: hidden;
+    }
+    .aside__ads {
+        display: none;
+    }
+    .carousel-indicators {
+        visibility: hidden;
+    }
+}
+
+
+.dropdown button {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #ccc;
+}
+.fa-users {
+    color: black;
+}
+
+.dropdown {
+    display: none;
+    transition: all .1s ease
+}
+.dropdown:hover {
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dropdown {
+        display: block;
+    }
+    .div_social-medias {
+        display: none;
+    }
+}
+
+.dropdown button {
+    background-color: #e9e9e9;
+    color: #333;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 0 1rem;
+    box-shadow: 0 4px 6px hsl(0, 0%, 67%);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
 
 .darkmode {
     margin-top: .75rem;
@@ -1078,7 +1036,7 @@ body {
     overflow: hidden;
 }
 
-.carousel-item img {
+.carousel-item .poliap {
     max-width: 100%;
     height: auto;
     display: block;
@@ -1973,6 +1931,12 @@ body {
 }
 
 /* -------------- LOGIN -------------- */
+.login--body {
+    background-image: url(../assets/images/articles/login\ background.jpg);
+    background-position: 0 -4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .main-login {
     display: grid;
@@ -1983,58 +1947,62 @@ body {
 }
 
 .cadastro-anuncio {
-    display: flex;
-    flex-flow: row nowrap;
-    width: auto;
-    height: 100px;
-    background-image: linear-gradient(to bottom, #FFA944, rgb(248, 118, 67));
-    align-items: center;
-    justify-content: center;
+    padding-top: 1rem;
+    height: 3rem;
+    background: #ff7b00;
     color: white;
-
+    z-index: 1;
 }
 
 .cadastro-anuncio--1 {
-    padding-top: 0.5rem;
-    width: 375px;
-    height: auto;
-    font-size: x-large;
-
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
 .cadastro-anuncio--1 p {
-    height: 100%;
-
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    min-width: 55%;
+    animation: banner 6s linear infinite;
 }
 
 .cadastro-anuncio--2 {
     width: 375px;
     text-align: center;
-
 }
 
-.button-cadastrar-novo {
-    scale: 1.5;
-    padding: 0.2rem 1rem;
-    background-color: rgb(255, 136, 0);
-    border: 1px none;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.63);
-    color: white;
-    border-radius: 30px;
-    transition: scale 0.2s;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.button-cadastrar-novo:hover {
-    scale: 1.6;
-
+@keyframes banner {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .login-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+}
+
+.login-form h1 {
+    margin-bottom: 2rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    background-color: #e9e9e9;
+    border-radius: 26px;
+    padding: .55rem 2rem;
+    box-shadow: 0 2px 4px #333;
+    transition: all .3s ease-in-out;
+}
+
+.login-form h1:hover {
+    scale: 1.045;
 }
 
 .login-form--div {
@@ -2045,19 +2013,18 @@ body {
     width: 300px;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 5px 6px 10px rgb(99, 99, 99);
-    transition: all 0.1s;
+    transition: all .3s ease-in-out;
 }
 
 .login-form--div:hover {
-    scale: 1.005;
-    box-shadow: 5px 6px 15px rgb(99, 99, 99);
+    scale: 1.025;
 }
 
 #form-login {
     height: 70%;
     padding: 2rem;
     padding-top: 1.5rem;
+    font-family: 'Roboto';
 }
 
 #form-login input {
@@ -2073,8 +2040,6 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     transition: all 0.15s;
-
-
 }
 
 #form-login input::placeholder {
@@ -2088,7 +2053,7 @@ body {
 }
 
 #form-login button {
-    width: 100%;
+    width: 50%;
     height: 2rem;
     border-radius: 8px;
     border: none;
@@ -2097,13 +2062,14 @@ body {
     font-weight: bold;
     font-size: 1rem;
     margin-top: 0.5rem;
+    margin-left: 3.6rem;
     transition: all 0.15s;
+    cursor: pointer;
 }
 
 #form-login button:hover,
 #form-login input:hover {
     scale: 1.05;
-
 }
 
 /* #form-login--div input:focus {
@@ -2148,6 +2114,10 @@ body {
     color: white;
 }
 
+.login-footer {
+    z-index: 100000;
+}
+
 /* -------------- FOOTER -------------- */
 
 footer {
@@ -2156,7 +2126,7 @@ footer {
     width: 100%;
     height: 200px;
     min-width: 800px;
-
+    margin-top: 13px;
 }
 
 .footer__flex {
@@ -2235,7 +2205,9 @@ footer hr {
     footer hr {
         width: 100%;
     }
-    
+    .search-box {
+        display: none;
+    }
 }
 
 

@@ -42,16 +42,19 @@
 
         <a id="header-link-home" href="../index.html"><button type="button"
             class="btn btn-light btn-custom">Home</button></a>
-        <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
-        <a id="header-link-artigos" href="#"><button type="button" class="btn btn-light btn-custom">Artigos</button></a>
+        <button type="button" id="header-botao-abrir header-link" onclick="f_header_abrir()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <a id="header-link-artigos" href="#"><button type="button" class="btn btn-light btn-custom header-link">Artigos</button></a>
         <a id="header-link-movies" href="../pages/movies.html"><button type="button"
-            class="btn btn-light btn-custom">Movies</button></a>
+            class="btn btn-light btn-custom header-link">Movies</button></a>
         <a id="header-link-news" href="../pages/news.html"><button type="button"
-            class="btn btn-light btn-custom">News</button></a>
+            class="btn btn-light btn-custom header-link">News</button></a>
         <a id="header-link-login" href="../pages/login.html"><button type="button"
-            class="btn btn-light btn-custom">Login</button></a>
+            class="btn btn-light btn-custom header-link">Login</button></a>
         <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
-          << /button>
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
       </section>
       <section class="flex__2">
         <div class="api-form" id="search-box_header">
@@ -67,10 +70,31 @@
             </div>
           </div> -->
         </div>
+
+        <!-- MOBILE SEARCH -->
+        <div class="class">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="input"></div>
+        </div>
+
         <div class="div_social-medias">
           <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
           <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
           <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+        </div>
+
+        <!-- DROPDOWN MOBILE -->
+        <div class="dropdown">
+          <button>
+            <i class="fa-solid fa-users"></i>
+          </button>
+          <div class="content">
+            <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
+            <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+          </div>
         </div>
 
         <div class="darkmode">
@@ -564,6 +588,7 @@
     </section>
   </footer>
 
+  <script src="../js/api.js" defer></script>
   <script src="../js/articles.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
