@@ -22,6 +22,24 @@ html.dark ::-webkit-scrollbar{
 body.dark {
     background: #2a2825;
 }
+html.dark body .item {
+    color: #fff;
+}
+html.dark body .sideBar1 {
+    color: #fff;
+}
+html.dark body .sideBar2 {
+    color: #fff;
+}
+html.dark body .conteudo4 {
+    color: #fff;
+}
+html.dark body .card-body {
+    color: #fff;
+}
+html.dark body .card1 p {
+    color: #fff;
+}
 html.dark body header, body.dark footer {
     background-color: #11100f;
     color: rgb(209, 205, 199);
