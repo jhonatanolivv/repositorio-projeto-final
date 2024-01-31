@@ -984,9 +984,6 @@ html body .card:hover {
         grid-auto-flow: column;
         grid-auto-columns: 23%;
     }
-    .search-box {
-        visibility: hidden;
-    }
 }
 
 @media only screen and (max-width: 1238px) {
@@ -1005,6 +1002,10 @@ html body .card:hover {
     .carousel-indicators {
         visibility: hidden;
     }
+    .articles__menu--artigos {
+        border-radius: 10px 10px 10px 10px;
+    }
+
 }
 
 
@@ -1350,6 +1351,16 @@ html body .card:hover {
     scale: 1.02;
 }
 
+@media only screen and (max-width: 1238px) {
+    .article__container {
+        flex-direction: column;
+    }
+    .footer__flex--1 {
+        position: absolute;
+        bottom: 1;
+    }
+}
+
 .article__content {
     overflow: hidden;
     height: 100%;
@@ -1384,6 +1395,16 @@ html body .card:hover {
 
 .posted span:hover {
     text-shadow: 0 1px 10px;
+}
+
+@media only screen and (max-width: 543px) {
+    .bottom-body {
+        flex-direction: column;
+    }
+    .top-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .banner--articles {
@@ -1495,6 +1516,33 @@ html body .card:hover {
 
 .search-box button:active {
     opacity: .4;
+}
+
+@media only screen and (max-width: 1117px) {
+    .search-box {
+        display: none;
+    }
+    .cards-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__flex {
+        overflow: hidden;
+        max-width: 100%;
+        bottom: 1;
+    }
+    .footer__flex--1 {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .header__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex__2 {
+        position: absolute;
+    } */
 }
 
 .aside__ads {
@@ -2219,7 +2267,7 @@ footer {
 }
 
 .footer__flex {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     width: 85%;
     height: 100%;
