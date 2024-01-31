@@ -103,8 +103,9 @@ html.dark body .footer__flex hr {
 html.dark body .darkmode label {
     box-shadow: 0 1px 8px #ff9900;
 }
-html.dark body .card {
-    background-color: black;
+html.dark body .card, html.dark body .list-group li, html.dark #child {
+    background-color: rgb(46, 46, 46);
+    color: white;
 }
 body.dark footer a  {
     color: rgb(209, 205, 199);
@@ -522,13 +523,13 @@ body {
 
 .list-group-item1 {
     padding: 1;
-    min-height: 50%;
+    min-height: 45%;
     text-align: center;
 }
 
 .list-group-item2 {
     display: flex;
-    height: 50%;
+    height: 55%;
     text-align: center;
 }
 
@@ -652,6 +653,7 @@ html body .card:hover {
 }
 
 .child-class>#child-foto {
+    height: 100%;
     grid-area: foto;
     border: 5px solid orange;
     transition: scale, rotate 250ms;
@@ -665,6 +667,7 @@ html body .card:hover {
 .child-class>#child-conteudo {
     grid-area: cont;
     padding: 3% 5%;
+    height: 100%;
 }
 
 #child-conteudo--ul li {
