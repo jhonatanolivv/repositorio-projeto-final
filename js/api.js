@@ -106,14 +106,14 @@ function exibirImagemInicial(json, index) {
     return;
   }
 
-  
+
   let primeiroFilme = json;
 
   if (primeiroFilme) {
     let imagemInicial = document.querySelector(".pag-movies-imagem-" + index);
     imagemInicial.innerHTML = `<img src="${primeiroFilme.Poster}" alt="${primeiroFilme.Title}" width="100%">`;
     let nomesInicial = document.getElementById("lista-de-films" + index);
-    nomesInicial.innerHTML = `<li class="list-group-item list-group-item1" style="padding: 0px 0px 0px 0px">${primeiroFilme.Title}</li><li class="list-group-item list-group-item2" style="padding-top: 5px"><div>Rating: ${primeiroFilme.imdbRating}</div><div class="barra-avaliacao" ><div class="barra-avaliacaoo" id="barraAvaliacao-${index}"></div><div></li>`;
+    nomesInicial.innerHTML = `<li class="list-group-item list-group-item1" style="padding: 0px 0px 0px 0px; border-bottom: 2px solid orange">${primeiroFilme.Title}</li><li class="list-group-item list-group-item2" style="padding-top: 5px"><div>Rating: ${primeiroFilme.imdbRating}</div><div class="barra-avaliacao" ><div class="barra-avaliacaoo" id="barraAvaliacao-${index}"></div><div></li>`;
 
     function criarBarraAvaliacao(avaliacao) {
       let escala05 = (avaliacao / 10) * 100;
@@ -129,20 +129,47 @@ function exibirImagemInicial(json, index) {
 
 // Chama a função para carregar a imagem inicial ao abrir a página  
 var filmes_escolhidoss = carregarImagemInicial();
+function f_traduzir(textToTranslate, callback) {
+  const fromLanguage = 'en';
+  const toLanguage = 'pt';
+
+  // Construir o URL da requisição
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(textToTranslate)}&langpair=${fromLanguage}|${toLanguage}`;
+
+  // Fazer a requisição HTTP
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // A resposta contém a tradução
+      const translation = data.responseData.translatedText;
+      callback(null, translation);
+    })
+    .catch(error => {
+      console.error('Erro na tradução:', error);
+      callback(error, null);
+    });
+}
 
 function showChild(childId) {
   let childDiv = document.getElementById("child");
   childDiv.style.display = "block";
 
   function showChildInfos(json, filmes) {
-    let fotoChild = document.getElementById("child-foto")
-    let infoChild = document.getElementById("child-conteudo--ul")
+    let fotoChild = document.getElementById("child-foto");
+    let infoChild = document.getElementById("child-conteudo--ul");
+
     if (json.Type == "movie") {
       fotoChild.innerHTML = `<img src="${json.Poster}" alt="${json.Title}" width="100%">`;
-      infoChild.innerHTML = `<li><span class="tipo-child">Nome:</span>  ${json.Title}.</li><li><span class="tipo-child">Data de lançamento:</span> ${json.Released}.</li><li><span class="tipo-child">Duração do filme:</span> ${json.Runtime}.</li><li><span class="tipo-child">Rating MetaCritic/Imdb:</span> ${json.Metascore}/100. | ${json.imdbRating}/10.0.</li><li><span class="tipo-child">Bilheteria em dólares (U$):</span> ${json.BoxOffice}.</li><li><span class="tipo-child">Premiações:</span> ${json.Awards}.</li><li><span class="tipo-child">Diretor:</span> ${json.Director}.</li>`
+      infoChild.innerHTML = `<li><span class="tipo-child">Nome:</span>  ${json.Title}.</li><li><span class="tipo-child">Data de lançamento:</span> ${json.Released}.</li><li><span class="tipo-child">Duração do filme:</span> ${json.Runtime}.</li><li><span class="tipo-child">Rating MetaCritic/Imdb:</span> ${json.Metascore}/100. | ${json.imdbRating}/10.0.</li><li><span class="tipo-child">Bilheteria em dólares (U$):</span> ${json.BoxOffice}.</li><li><span class="tipo-child">Premiações:</span> ${json.Awards}.</li><li><span class="tipo-child">Diretor:</span> ${json.Director}.</li>`;
     } else if (json.Type == "series") {
-      fotoChild.innerHTML = `<img src="${json.Poster}" alt="${json.Title}" width="100%">`;
-      infoChild.innerHTML = `<li><span class="tipo-child">Nome:</span>  ${json.Title}.</li><li><span class="tipo-child">Data de lançamento:</span> ${json.Released}.</li><li><span class="tipo-child">Duração do filme:</span> ${json.Runtime}.</li><li><span class="tipo-child">Rating Imdb:</span>  ${json.imdbRating}/10.0.</li><li><span class="tipo-child">Total de temporadas:</span> ${json.totalSeasons}.</li><li><span class="tipo-child">Gênero:</span> ${json.Genre}.</li><li><span class="tipo-child">Diretor:</span> ${json.Director}.</li>`
+      f_traduzir(json.Plot, function (error, resposta) {
+        if (!error) {
+          fotoChild.innerHTML = `<img src="${json.Poster}" alt="${json.Title}" width="100%">`;
+          infoChild.innerHTML = `<li><span class="tipo-child">Nome:</span>  ${json.Title}.</li><li><span class="tipo-child">Data de lançamento:</span> ${json.Released}.</li><li><span class="tipo-child">Rating Imdb:</span>  ${json.imdbRating}/10.0.</li><li><span class="tipo-child">Total de temporadas:</span> ${json.totalSeasons}.</li><li><span class="tipo-child">Gênero:</span> ${json.Genre}.</li><li><span class="tipo-child">Plot da série:</span> ${resposta}.</li>`;
+        } else {
+          console.error('Erro na tradução do Plot:', error);
+        }
+      });
     }
   }
 
@@ -156,12 +183,12 @@ function hideChild() {
   childDiv.style.display = "none";
 }
 var btn_artigos = document.getElementById("header-link-artigos"),
-    btn_movies = document.getElementById("header-link-movies"),
-    btn_news = document.getElementById("header-link-news"),
-    btn_login = document.getElementById("header-link-login"),
-    btn_abrir = document.getElementById("header-botao-abrir"),
-    btn_fechar = document.getElementById("header-botao-fechar"),
-    search_bar = document.getElementById("search-box_header");
+  btn_movies = document.getElementById("header-link-movies"),
+  btn_news = document.getElementById("header-link-news"),
+  btn_login = document.getElementById("header-link-login"),
+  btn_abrir = document.getElementById("header-botao-abrir"),
+  btn_fechar = document.getElementById("header-botao-fechar"),
+  search_bar = document.getElementById("search-box_header");
 
 function ajustarLayout() {
   var larguraTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -213,4 +240,3 @@ window.addEventListener("resize", ajustarLayout);
 // Chama ajustarLayout inicialmente para configurar o layout no carregamento da página
 ajustarLayout();
 
-  
