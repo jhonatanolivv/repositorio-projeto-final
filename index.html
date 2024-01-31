@@ -27,7 +27,24 @@
 </head>
 
 <body>
+    <div id="child">
+        <div class="child-fechar" onclick="hideChild()"><img src="../assets/images/icone-fermer-et-x-rouge.png"
+                alt="fechar" width="25px"></div>
+        <div class="child-logo"><img class="child-logo--img" src="../assets/images/favicon.png"
+                alt="Logo CritiCine - CC" width="60px" height="60px"></div>
+        <div class="child-class">
+            <div id="child-foto">
 
+            </div>
+            <div id="child-conteudo">
+                <ul id="child-conteudo--ul">
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
     <header class="header">
         <section class="header__flex">
             <section class="flex__1">
@@ -47,7 +64,7 @@
                 <a id="header-link-login" href="pages/login.html"><button type="button"
                         class="btn btn-light btn-custom">Login</button></a>
                 <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
-                    << /button>
+                    </button>
             </section>
             <section class="flex__2">
                 <div class="api-form" id="search-box_header">
@@ -70,6 +87,14 @@
                             class="social-medias"></a>
                     <a href="https://twitter.com/"><img src="assets/images/logo_x.png" class="social-medias"></a>
                 </div>
+                <div class="darkmode">
+                    <input type="checkbox" class="checkbox" id="chk">
+                    <label class="label" for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </section>
         </section>
     </header>
@@ -77,18 +102,7 @@
         <section class="home-main--esquerda">
             <div class="home-main--esquerda--carousel">
                 <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
-                    </div>
+
                     <div class="carousel-inner">
                         <div></div>
                         <div class="carousel-item active">
@@ -123,15 +137,130 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+
             </div>
+            <div class="home-main--esquerda--filmes">
+                <h2 class="cor-dos-filmes-index">Filmes em cartaz</h2>
+                <div id="carouselExampleControls" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="barra_filmes">
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('1')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-1" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films1" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('2')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-2" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films2" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('3')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-3" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films3" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('4')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-4" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films4" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('5')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-5" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films5" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card" style="width: 11.5rem; height:450px;" onclick="showChild('6')">
+                                    <div class="pag-movies-imagem pag-movies-imagem-6" style="height: 60%;"></div>
+
+                                    <ul class="list-group list-group-flush" id="lista-de-films6" style="height: 40%;">
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="home-main--esquerda--filmes"></div>
-            <div class="home-main--esquerda--criticas"></div>
+
+            <div class="home-main--esquerda--criticas">
+                <h2 class="cor-das-criticas">Críticas</h2>
+                <h4>Kong: A Ilha da Caveira</h4>
+                <div class="foto_com_img_index">
+                    <p style="width: 40%;">Um caçador de monstros fracassado convence o governo
+                        dos Estados Unidos a financiar uma viagem a uma ilha inexplorada no Pacífico Sul. Sob o disfarce
+                        de pesquisa geológica, a equipe viaja para a "Ilha da Caveira". Ao chegar, o grupo descobre que
+                        sua missão pode ser complicada pela vida selvagem que habita a ilha. As belas paisagens e
+                        criaturas mortais criam uma experiência visualmente deslumbrante que certamente vai prender sua
+                        atenção.</p>
+                    <img src="../assets/images/kong index.jpg" id="img-das-criticas1"
+                        height="350px" width="55%">
+                </div>
+                <button class="botão-criticas">Ler agora</button>
+                <h4>O Hobbit: Uma Jornada Inesperada</h4>
+
+                <div class="foto_com_img_index2">
+                    <p style="width: 40%; text-justify: justify;"> Bilbo Bolseiro é arrastado para uma missão para
+                        recuperar o perdido Reino dos Anões de Erebor do temível dragão Smaug. Abordado de repente pelo
+                        mago Gandalf, o Cinzento, Bilbo se vê juntando-se a uma companhia de treze anões liderados pelo
+                        lendário guerreiro, Thorin Escudo de Carvalho. Sua jornada os levará para o Selvagem; por terras
+                        traiçoeiras infestadas de Goblins e Orcs, Wargs mortais e Aranhas Gigantes, Metamorfos e
+                        Feiticeiros. Embora seu objetivo esteja a leste e nas terras áridas da Montanha Solitária,
+                        primeiro eles devem escapar dos túneis dos goblins, onde Bilbo encontra a criatura que mudará
+                        sua vida para sempre... Gollum. Aqui, sozinho com Gollum, às margens de um lago subterrâneo, o
+                        modesto Bilbo Bolseiro não só descobre profundidades de astúcia e coragem que o surpreendem até
+                        mesmo a ele, como também ganha posse do "precioso" anel de Gollum que possui qualidades
+                        inesperadas e úteis... Um simples anel de ouro que está ligado ao destino de toda a Terra-média
+                        de maneiras que Bilbo não pode começar a conhecer.</p>
+                    <img src="../assets/images/hobbit index.jpg" id="img-das-criticas2"
+                        height="350" width="55%">
+                </div>
+                <button class="botão-criticas2">Ler agora</button>
+
+            </div>
         </section>
         <section class="home-main--direita">
-
-        </section>
+            <h5>Notícias</h5>
+            <img src="../assets/images/invencivel index.jpeg" id="invencivel">
+            <h5>Invencível:</h5>
+            <p>Invencível: novos episódios da 2ª temporada ganham data de lançamento</p>
+            <img src="../assets/images/liga index.jpeg" id="liga">
+            <h5>Liga da Justiça:</h5>
+            <p>Blu-Ray de Liga da Justiça de Zack Snyder lidera vendas nos EUA</p>
+            <img src="../assets/images/panico index.jpeg" id="panico" width="300px">
+            <h5>Pânico:</h5>
+            <p>Pânico 7 foi confirmado? Tudo que sabemos sobre a continuação</p>
+            <img src="../assets/images/john index.jpeg" id="john">
+            <h5>John Wick:</h5>
+            <p>John Wick 5 já está sendo escrito, diz chefe da Lionsgate</p>
+            <img src="../assets/images/vingadores index.jpeg" id="vingadores">
+            <h5>Vingadores:</h5>
+            <p>Marvel considera trazer de volta os Vingadores originais em novo filme</p>
     </main>
+
+    
     <footer>
         <section class="footer__flex">
             <div class="footer__flex--1"><a class="linkStyle--modificado" href="#" target="_blank">Queremos a sua
@@ -166,6 +295,18 @@
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/api.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/articles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
 
