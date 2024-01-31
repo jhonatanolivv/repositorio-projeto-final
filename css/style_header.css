@@ -22,6 +22,24 @@ html.dark ::-webkit-scrollbar{
 body.dark {
     background: #2a2825;
 }
+html.dark body .item {
+    color: #fff;
+}
+html.dark body .sideBar1 {
+    color: #fff;
+}
+html.dark body .sideBar2 {
+    color: #fff;
+}
+html.dark body .conteudo4 {
+    color: #fff;
+}
+html.dark body .card-body {
+    color: #fff;
+}
+html.dark body .card1 p {
+    color: #fff;
+}
 html.dark body header, body.dark footer {
     background-color: #11100f;
     color: rgb(209, 205, 199);
@@ -103,8 +121,9 @@ html.dark body .footer__flex hr {
 html.dark body .darkmode label {
     box-shadow: 0 1px 8px #ff9900;
 }
-html.dark body .card {
-    background-color: black;
+html.dark body .card, html.dark body .list-group li, html.dark #child {
+    background-color: rgb(46, 46, 46);
+    color: white;
 }
 body.dark footer a  {
     color: rgb(209, 205, 199);
@@ -600,13 +619,13 @@ body {
 
 .list-group-item1 {
     padding: 1;
-    min-height: 50%;
+    min-height: 45%;
     text-align: center;
 }
 
 .list-group-item2 {
     display: flex;
-    height: 50%;
+    height: 55%;
     text-align: center;
 }
 
@@ -730,6 +749,7 @@ html body .card:hover {
 }
 
 .child-class>#child-foto {
+    height: 100%;
     grid-area: foto;
     border: 5px solid orange;
     transition: scale, rotate 250ms;
@@ -743,6 +763,7 @@ html body .card:hover {
 .child-class>#child-conteudo {
     grid-area: cont;
     padding: 3% 5%;
+    height: 100%;
 }
 
 #child-conteudo--ul li {
@@ -1062,9 +1083,6 @@ html body .card:hover {
         grid-auto-flow: column;
         grid-auto-columns: 23%;
     }
-    .search-box {
-        visibility: hidden;
-    }
 }
 
 @media only screen and (max-width: 1238px) {
@@ -1083,6 +1101,10 @@ html body .card:hover {
     .carousel-indicators {
         visibility: hidden;
     }
+    .articles__menu--artigos {
+        border-radius: 10px 10px 10px 10px;
+    }
+
 }
 
 
@@ -1428,6 +1450,16 @@ html body .card:hover {
     scale: 1.02;
 }
 
+@media only screen and (max-width: 1238px) {
+    .article__container {
+        flex-direction: column;
+    }
+    .footer__flex--1 {
+        position: absolute;
+        bottom: 1;
+    }
+}
+
 .article__content {
     overflow: hidden;
     height: 100%;
@@ -1462,6 +1494,16 @@ html body .card:hover {
 
 .posted span:hover {
     text-shadow: 0 1px 10px;
+}
+
+@media only screen and (max-width: 543px) {
+    .bottom-body {
+        flex-direction: column;
+    }
+    .top-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .banner--articles {
@@ -1573,6 +1615,33 @@ html body .card:hover {
 
 .search-box button:active {
     opacity: .4;
+}
+
+@media only screen and (max-width: 1117px) {
+    .search-box {
+        display: none;
+    }
+    .cards-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__flex {
+        overflow: hidden;
+        max-width: 100%;
+        bottom: 1;
+    }
+    .footer__flex--1 {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .header__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex__2 {
+        position: absolute;
+    } */
 }
 
 .aside__ads {
@@ -2297,7 +2366,7 @@ footer {
 }
 
 .footer__flex {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     width: 85%;
     height: 100%;
