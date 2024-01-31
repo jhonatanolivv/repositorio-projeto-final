@@ -463,12 +463,12 @@ body {
     padding: 15px;
     text-align: justify;
     text-justify: inter-word;
-
+    width: 80vw;
 }
 
 .foto_com_img_index {
     display: flex;
-    width: 1250px;
+    width: 95%;
     margin: 40px;
     justify-content: space-between;
     
@@ -476,17 +476,20 @@ body {
 
 .foto_com_img_index2 {
     display: flex;
-    width: 1250px;
+    width: 95%;
     margin: 40px;
     justify-content: space-between;
 }
 
 .img-das-criticas1 {
-    width: 450px;
+    max-width: 450px;
     height: 350px;
 }
 
-.img-das-criticas2 {}
+.img-das-criticas2 {
+    max-width: 450px;
+    height: 350px;
+}
 
 .home-main--direita {
     width: 20%;
