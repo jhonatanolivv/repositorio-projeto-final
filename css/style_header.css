@@ -136,6 +136,12 @@ html.dark body header .header__flex .flex__1 a button:hover {
 html.dark body header .header__flex .flex__2 #search-box_header button{
     background-color: #e67a00;
 }
+html.dark body .home-main--esquerda--criticas, html.dark body .home-main--direita{
+    color: white;
+}
+html.dark body .home-main--esquerda--criticas button  {
+    border: 1px  solid black;
+}
 .header-link.dark {
     color: rgb(161, 153, 141)
 }
