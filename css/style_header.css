@@ -192,7 +192,7 @@ body {
     display: flex;
     top: 0px;
     max-width: 100vw;
-    min-width: 800px;
+    /* min-width: 800px; */
     height: 90px;
     justify-content: center;
     position: sticky;
@@ -2371,7 +2371,6 @@ footer {
     background-color: #F4F4F4;
     width: 100%;
     height: 200px;
-    min-width: 800px;
 }
 
 .footer__flex {
@@ -2454,5 +2453,212 @@ footer hr {
 }
 
 
-/* Estilos para telas pequenas (smartphones) */
-@media only screen and (max-width: 807px) {}
+/* MEDIA QUERY MOBILE PÁGINA NEWS*/
+@media only screen and (max-width: 768px) {
+
+    .header {
+        display: block;
+        width: 375vw;
+    }
+
+    .container {
+        display: block;
+        width: 95vw;
+    }
+
+    .flex__1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .flex__2 {
+        display: flex;
+        align-items: stretch;
+        width: 20vw;
+    }
+
+    .header__div_logo--logo {
+        width: 20vw;
+        align-items: end;
+    }
+
+    .btn.btn-light.btn-custom {
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .img__anuncio {
+        display: flex;
+        width: 93vw;
+        height: auto ;
+    }
+
+    .conteudo1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        width: 96vw;
+    }
+    .conteudo1 p {
+        display: flex;
+        width: 98vw;
+        text-align: left;
+        font-size: 15px;
+        margin-left: -3%;
+        margin-top: 2%;
+    }
+
+    .conteudo1 img {
+        display: flex;
+        margin-left: 8%;
+    }
+
+    .conteudo1 h3 {
+        display: flex;
+        font-size: 25px;
+        margin-left: -3%;
+    }
+
+    .conteudo2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100%;
+        width: 93vw;
+    }
+
+    .conteudo2 p {
+        display: flex;
+        width: 98vw;
+        text-align: left;
+        font-size: 15px;
+        margin-left: -5%;
+    }
+
+    .conteudo2 img {
+        display: flex;
+        margin-left: 7%;
+        
+    }
+
+    .item {
+        width: 94vw;
+    }
+
+    .item p {
+        margin-top: 4%;
+    }
+
+    .conteudo2 h3 {
+        display: flex;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 15%;
+        width: 80vw;
+    }
+
+    .conteudo2 a {
+        display: block;
+        width: 90vw;
+    }
+
+    .conteudo3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 75%;
+        margin-left: 0%;
+        height: auto;
+        row-gap: 2%;
+        width: 98vw;
+    }
+
+    .card {
+        margin-top: 2%;
+    }
+
+    .card1 {
+        display: flex;
+        width: 95vw;
+    }
+
+    .card1 p {
+        margin-top: 5%;
+    }
+
+    .conteudo4 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        width: 95vw;
+    }
+
+    .conteudo4 h3 {
+        display: flex;
+        font-size: 22px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .conteudo4--row {
+        display: flex;
+        justify-content: center;
+        width: 95vw;
+    }
+
+    .conteudo4 img {
+        margin: 0%;
+        margin-left: 2%;
+        width: 45vw;
+        height: 230px;
+    
+    }
+
+    .ocultar-responsivo {
+        display: none;
+    }
+
+    .sideBar {
+        display: none;
+    }
+
+    footer {
+        width: 99vw; 
+    }
+
+
+    .footer__flex {
+        display: flex;
+        width: 95vw;
+        height: 310px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+
+    .footer__flex--1 {
+        display: flex;
+        width: 93vw;
+        height: 15vw;
+        align-items: flex-end;
+        margin-left: 3%;
+    }
+
+    .flex--2--3{
+        display: flex;
+        width: 10vw;
+    }
+}
+/*MEDIA QUERY MOBILE FINAL PÁGINA NEWS*/
+
+
+/* MEDIA QUERY TABLET PÁGINA NEWS*/
+
+@media only screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        width: 100vw;
+    }
+}
