@@ -30,14 +30,14 @@
 </head>
 
 <body>
-    <div id="voltar"></div>
+    <!-- <div id="voltar"></div> -->
     <header class="header">
         <section class="header__flex">
             <section class="flex__1">
                 <div class="header__div_logo">
                     <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
                 </div>
-
+                <div class="menu-responsivo">
                 <a id="header-link-home" href="../index.html"><button type="button"
                         class="btn btn-light btn-custom">Home</button></a>
                 <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
@@ -49,10 +49,11 @@
                         class="btn btn-light btn-custom">News</button></a>
                 <a id="header-link-login" href="../pages/login.html"><button type="button"
                         class="btn btn-light btn-custom">Login</button></a>
-                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
-                </button>
+                <button type="button" id="header-botao-fechar" onclick="f_header_fechar()"><</button>
+            </div> 
+
             </section>
-            <section class="flex__2">
+            <div class="flex__2">
                 <div class="api-form" id="search-box_header">
                     <form class="search-box">
                         <input name="pesquisa" placeholder="Pesquise aqui...">
@@ -78,145 +79,144 @@
                     </label>
                 </div>
 
-            </section>
-        </section>
+            </div>
+        </sectio>
     </header>
-        <div class="container">
-            <div class="card1">
-                <div><a href="https://www.youtube.com/embed/h2lVX71L_3A?si=9xgVI7_Vyspi3hZZ" target="_blank"><img
-                            class="img__anuncio" src="../assets/images/news1.png" alt="FIVE NIGHTS"></a>
-                    <p><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembro de 2023</p>
-                    <a class="linkStyle" href="https://www.youtube.com/embed/h2lVX71L_3A?si=9xgVI7_Vyspi3hZZ"
-                        target="_blank ">
-                        <p><strong>FIVE NIGHTS AT FREDDY'S - O PESADELO SEM FIM</strong></p>
-                    </a>
-                    <p>Five Nights At Freddy's - O Pesadelo Sem Fim é a primeira adaptação
-                        cinematográfica da famosa franquia
-                        homônima de jogos lançada em 2014 e criada por Scott Cawthon
-                    </p>
-                </div>
+    <div class="container">
+        <div class="card1">
+            <div><a href="https://www.youtube.com/embed/h2lVX71L_3A?si=9xgVI7_Vyspi3hZZ" target="_blank"><img
+                        class="img__anuncio" src="../assets/images/news1.png" alt="FIVE NIGHTS"></a>
+                <p><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembro de 2023</p>
+                <a class="linkStyle" href="https://www.youtube.com/embed/h2lVX71L_3A?si=9xgVI7_Vyspi3hZZ"
+                    target="_blank ">
+                    <p><strong>FIVE NIGHTS AT FREDDY'S - O PESADELO SEM FIM</strong></p>
+                </a>
+                <p>Five Nights At Freddy's - O Pesadelo Sem Fim é a primeira adaptação
+                    cinematográfica da famosa franquia
+                    homônima de jogos lançada em 2014 e criada por Scott Cawthon
+                </p>
             </div>
-            <div class="sideBar">
-                <div>
-                    <a href="https://play.hbomax.com/signUp" target="_blank"><img class="img__hbo"
-                            src="../assets/images/hbomax.png" alt="ANUNCIO DEADPOOL"></a>
-                </div>
-                <div class="sideBar1">
-                    <h4><strong>Filmes Mais Esperados do ano</strong></h4>
-                    <div class="sidebBar--row">
-                        <div>
-                            <a href="https://www.oppenheimerfilme.com.br/" target="_blank"><img
-                                    src="../assets/images/Oppenheimer.jpeg" alt="Oppenheimer"></a>
-                        </div>
-                        <div class="text_conteudo">
-                            <a class="linkStyle" href="https://www.oppenheimerfilme.com.br/" target="_blank">
-                                <h3><strong>Oppenheimer</strong></h3>
-                            </a>
-                            <p class="text__conteudo">O físico J. Robert Oppenheimer trabalha com uma equipe de
-                                cientistas
-                                durante o Projeto Manhattan,
-                                levando ao desenvolvimento da bomba atômica.</p>
-                            <a href="https://www.oppenheimerfilme.com.br/?t=true&st=%22trailer1%22" target="_blank">
-                                <button class="color__buttom">Ver trailer</button>
-                            </a>
-                        </div>
+        </div>
+        <div class="sideBar">
+            <div>
+                <a href="https://play.hbomax.com/signUp" target="_blank"><img class="img__hbo"
+                        src="../assets/images/hbomax.png" alt="ANUNCIO DEADPOOL"></a>
+            </div>
+            <div class="sideBar1">
+                <h4><strong>Filmes Mais Esperados do ano</strong></h4>
+                <div class="sidebBar--row">
+                    <div>
+                        <a href="https://www.oppenheimerfilme.com.br/" target="_blank"><img
+                                src="../assets/images/Oppenheimer.jpeg" alt="Oppenheimer"></a>
                     </div>
-                </div>
-                <div class="sideBar2">
-                    <div class="sidebBar--row">
-                        <div>
-                            <a href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ"
-                                title="YouTube video player" target="_blank"><img
-                                    src="../assets/images/meu-nome-é-gal.jpeg" alt="Meu nome é Gal"></a>
-                        </div>
-                        <div class="text_conteudo">
-                            <a class="linkStyle" href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ"
-                                target="_blank">
-                                <h3><strong>Meu nome é Gal</strong></h3>
-                            </a>
-                            <p class="text__conteudo">Meu Nome é Gal é uma cinebiografia da cantora Gal Costa (Sophie
-                                Charlotte). O filme acompanha a trajetória de Maria da Graça Costa Penna Burgos antes de
-                                se
-                                tornar a famosa cantora.</p>
-                            <a href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ" target="_blank">
-                                <button class="color__buttom">Ver trailer</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sideBar3">
-                        <div>
-                            <a href="https://www.disneyplus.com/pt-br" target="_blank"><img
-                                    src="../assets/images/disney+.png" alt="Anuncio Disney+"></a>
-                        </div>
+                    <div class="text_conteudo">
+                        <a class="linkStyle" href="https://www.oppenheimerfilme.com.br/" target="_blank">
+                            <h3><strong>Oppenheimer</strong></h3>
+                        </a>
+                        <p class="text__conteudo">O físico J. Robert Oppenheimer trabalha com uma equipe de
+                            cientistas
+                            durante o Projeto Manhattan,
+                            levando ao desenvolvimento da bomba atômica.</p>
+                        <a href="https://www.oppenheimerfilme.com.br/?t=true&st=%22trailer1%22" target="_blank">
+                            <button class="color__buttom">Ver trailer</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="conteudo1">
-                <div class="item">
-                    <a href="https://www.youtube.com/embed/WHs6z9RPGtA?si=KRRMGtCHg_r_Y5Uc" target="_blank"><img
-                            src="../assets/images/escape.jpeg" alt="MISSÃO DE SOBREVIVÊNCIA"></a>
+            <div class="sideBar2">
+                <div class="sidebBar--row">
+                    <div>
+                        <a href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ"
+                            title="YouTube video player" target="_blank"><img src="../assets/images/meu-nome-é-gal.jpeg"
+                                alt="Meu nome é Gal"></a>
+                    </div>
+                    <div class="text_conteudo">
+                        <a class="linkStyle" href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ"
+                            target="_blank">
+                            <h3><strong>Meu nome é Gal</strong></h3>
+                        </a>
+                        <p class="text__conteudo">Meu Nome é Gal é uma cinebiografia da cantora Gal Costa (Sophie
+                            Charlotte). O filme acompanha a trajetória de Maria da Graça Costa Penna Burgos antes de
+                            se
+                            tornar a famosa cantora.</p>
+                        <a href="https://www.youtube.com/embed/eV1cJ560K2E?si=VB0R-bHNL4t1yOPZ" target="_blank">
+                            <button class="color__buttom">Ver trailer</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="item">
-                    <p><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembro de 2023</p>
-                    <a class="linkStyle" href="https://www.youtube.com/embed/WHs6z9RPGtA?si=KRRMGtCHg_r_Y5Uc"
-                        target="_blank ">
-                        <h3><strong>MISSÃO DE SOBREVIVÊNCIA</strong></h3>
-                    </a>
-                    <p>Missão de Sobrevivêncdia é um filme de ação e suspense dirigido por Ric Roman
-                        Waugh,
-                        que acompanha o agente secreto Tom Harris (Gerard Butler).<br>Durante uma de suas missões no
-                        Afeganistão,
-                        Harris se vê encurralado em meio a um território hostil após ter sua identidade revelada.</p>
+                <div class="sideBar3">
+                    <div>
+                        <a href="https://www.disneyplus.com/pt-br" target="_blank"><img
+                                src="../assets/images/disney+.png" alt="Anuncio Disney+"></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="conteudo2">
+        <div class="conteudo1">
             <div class="item">
-                <a href="https://www.youtube.com/embed/jsgd_jVH834?si=x7R2OCcqz-ggL7SP" target="_blank"><img
-                        src="../assets/images/uncharted2.webp" alt="UNCHARTED"></a>
+                <a href="https://www.youtube.com/embed/WHs6z9RPGtA?si=KRRMGtCHg_r_Y5Uc" target="_blank"><img
+                        src="../assets/images/escape.jpeg" alt="MISSÃO DE SOBREVIVÊNCIA"></a>
             </div>
             <div class="item">
                 <p><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembro de 2023</p>
-                <a class="linkStyle" href="https://www.youtube.com/embed/jsgd_jVH834?si=x7R2OCcqz-ggL7SP"
+                <a class="linkStyle" href="https://www.youtube.com/embed/WHs6z9RPGtA?si=KRRMGtCHg_r_Y5Uc"
                     target="_blank ">
-                    <h3><strong>UNCHARTED</strong></h3>
+                    <h3><strong>MISSÃO DE SOBREVIVÊNCIA</strong></h3>
                 </a>
-                <p>Baseado em uma das séries de videogame mais vendidas e aclamadas pela crítica
+                <p>Missão de Sobrevivêncdia é um filme de ação e suspense dirigido por Ric Roman
+                    Waugh,
+                    que acompanha o agente secreto Tom Harris (Gerard Butler).<br>Durante uma de suas missões no
+                    Afeganistão,
+                    Harris se vê encurralado em meio a um território hostil após ter sua identidade revelada.</p>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo2">
+        <div class="item">
+            <a href="https://www.youtube.com/embed/jsgd_jVH834?si=x7R2OCcqz-ggL7SP" target="_blank"><img
+                    src="../assets/images/uncharted2.webp" alt="UNCHARTED"></a>
+        </div>
+        <div class="item">
+            <p><strong class="color__anuncio">Notícia</strong> Domingo 19 de novembro de 2023</p>
+            <a class="linkStyle" href="https://www.youtube.com/embed/jsgd_jVH834?si=x7R2OCcqz-ggL7SP" target="_blank ">
+                <h3><strong>UNCHARTED</strong></h3>
+            </a>
+            <p>Baseado em uma das séries de videogame mais vendidas e aclamadas pela crítica
+                de
+                todos os tempos, Uncharted: Fora do Mapa serve como uma prequela para os jogos, seguindo o jovem
+                explorador Nathan "Nate" Drake (Tom Holland), descendente do grande explorador Francis Drake,
+                antes de ser conhecido como um famoso explorador.</p>
+        </div>
+    </div>
+    <div class="conteudo3">
+        <div class="card" style="width: 22rem; height: 350px;">
+            <a href="https://www.youtube.com/embed/YxL9wTkEgSY?si=mfbsx8gu5vHZLxgy" target="_blank"><img
+                    src="../assets/images/marvels.jpeg" class="card-img-top" alt="Marvels"></a>
+            <div class="card-body">
+                <p class="card-text">Capitã Marvel, Ms. Marvel e Monica Rambeau estão envolvidas em um misterioso
+                    fenômeno em que seus poderes estão interligados, fazendo com que elas troquem de lugar sem
+                    entender
+                    a causa para tal.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 22rem; height: 350px;">
+            <a href="https://www.youtube.com/embed/6jIz_8tokvg?si=HS5SZot5AOpLH07l" target="_blank"><img
+                    src="../assets/images/quantumania.jpeg" class="card-img-top--modificada" alt="Quantumania"></a>
+            <div class="card-body">
+                <p class="card-text">Em Homem-Formiga e a Vespa: Quantumania, quando Cassie (Kathryn Newton), filha
                     de
-                    todos os tempos, Uncharted: Fora do Mapa serve como uma prequela para os jogos, seguindo o jovem
-                    explorador Nathan "Nate" Drake (Tom Holland), descendente do grande explorador Francis Drake,
-                    antes de ser conhecido como um famoso explorador.</p>
+                    Scott Lang (Paul Rudd), desenvolve um dispositivo que permitiria a comunicação com o reino
+                    quântico,
+                    o experimento termina em desastre:</p>
             </div>
         </div>
-        <div class="conteudo3">
-            <div class="card" style="width: 22rem; height: 350px;">
-                <a href="https://www.youtube.com/embed/YxL9wTkEgSY?si=mfbsx8gu5vHZLxgy" target="_blank"><img
-                        src="../assets/images/marvels.jpeg" class="card-img-top" alt="Marvels"></a>
-                <div class="card-body">
-                    <p class="card-text">Capitã Marvel, Ms. Marvel e Monica Rambeau estão envolvidas em um misterioso
-                        fenômeno em que seus poderes estão interligados, fazendo com que elas troquem de lugar sem
-                        entender
-                        a causa para tal.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 22rem; height: 350px;">
-                <a href="https://www.youtube.com/embed/6jIz_8tokvg?si=HS5SZot5AOpLH07l" target="_blank"><img
-                        src="../assets/images/quantumania.jpeg" class="card-img-top--modificada" alt="Quantumania"></a>
-                <div class="card-body">
-                    <p class="card-text">Em Homem-Formiga e a Vespa: Quantumania, quando Cassie (Kathryn Newton), filha
-                        de
-                        Scott Lang (Paul Rudd), desenvolve um dispositivo que permitiria a comunicação com o reino
-                        quântico,
-                        o experimento termina em desastre:</p>
-                </div>
-            </div>
+    </div>
+    <div class="conteudo4">
+        <div>
+            <h3>Filmes mais buscados da semana</h3>
         </div>
-        <div class="conteudo4">
-            <div>
-                <h3>Filmes mais buscados da semana</h3>
-            </div>
-            <div class="conteudo4--row">
-                <ul class="conteudo4--row">
+        <div class="conteudo4--row">
+            <ul class="conteudo4--row">
                 <li>
                     <a href="https://www.youtube.com/embed/kULcXm9V7aY?si=GMCJQYQh0YEBTwBR" target="_blank"><img
                             src="../assets/images/TUDO-AO-MESMO-TEMPO.jpeg" alt="TUDO-AO-MESMO-TEMPO"></a>
@@ -238,8 +238,8 @@
                             src="../assets/images/rainha-charlotte.jpeg" alt="rainha-charlotte"></a>
                 </li>
             </ul>
-            </div>
         </div>
+    </div>
     <footer>
         <section class="footer__flex">
             <div class="footer__flex--1"><a class="linkStyle--modificado" href="#" target="_blank">Queremos a sua
@@ -276,6 +276,7 @@
 
     <script src="../js/api.js"></script>
     <script src="../js/articles.js"></script>
+    <script src="../js/news.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
