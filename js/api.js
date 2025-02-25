@@ -1,3 +1,6 @@
+import { inject } from "@vercel/analytics"
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 const apiKey = '8167cc74';
 const frmPesquisa = document.querySelector(".search-box");
 
@@ -240,3 +243,4 @@ window.addEventListener("resize", ajustarLayout);
 // Chama ajustarLayout inicialmente para configurar o layout no carregamento da página
 ajustarLayout();
 
+injectSpeedInsights();
