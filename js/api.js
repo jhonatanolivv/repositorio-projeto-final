@@ -244,3 +244,4 @@ window.addEventListener("resize", ajustarLayout);
 ajustarLayout();
 
 injectSpeedInsights();
+inject();
