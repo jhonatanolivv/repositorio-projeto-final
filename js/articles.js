@@ -14,7 +14,7 @@ function aplicarModoEscuro(elementos) {
     elementos.classList.toggle('dark');
   }
   document.body.classList.toggle('dark');
-  
+
 }
 
 // Função para salvar o estado no localStorage
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', carregarEstadoModoEscuro);
 
 // Criar a lista de elementos escuros
 const elementoHtml = document.documentElement, btnSelects = document.getElementsByClassName('header-link'), headerInput = document.getElementsByClassName('search-box');
-  
+
 const itensEscuros = [elementoHtml, ...Array.from(btnSelects), ...Array.from(headerInput)];
 
 // Adiciona um listener para a mudança no checkbox
@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', carregarEstadoModoEscuro);
 //* Rating Stars
 
 const stars = document.querySelectorAll(".stars i");
-console.log(stars);
 
 stars.forEach((star, index1) => {
   star.addEventListener("click", () => {
@@ -88,7 +87,7 @@ const prevButton = document.querySelector('.carousel-control-prev');
 const dotsNav = document.querySelector('.carousel-indicators');
 const dots = Array.from(dotsNav.children);
 
-const slideSize = slides[0].getBoundingClientRect().width;
+const slideSize = slide[0].getBoundingClientRect().width;
 
 // * Slides
 slide[0].style.left = 0;

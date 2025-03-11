@@ -52,7 +52,7 @@ function randomico_inteiro(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === 'Escape') { // Tecla Esc
     const lista = document.querySelector("#list");
     if (lista) {
@@ -66,10 +66,10 @@ function carregarImagemInicial() {
   let lista_series_destaques_intime = [...lista_series_destaques];
   let lista_melhores_filmes_intime = [...lista_filmes_2023];
   let lista_melhores_series_intime = [...lista_series_2023];
-  
+
   let filmes_escolhidos = [];
   let index_filme_escolhido, filme_escolhido, index_serie_escolhida, serie_escolhida;
-  
+
   // Selecionando filmes e séries aleatoriamente e exibindo
   for (let i = 1; i < 25; i++) {
     index_filme_escolhido = randomico_inteiro(0, lista_filmes_destaques_intime.length - 1);
@@ -249,8 +249,7 @@ function f_header_fechar() {
   btn_login.style.display = "none";
 }
 
-// Adiciona um ouvinte de evento para redimensionamento da janela
-window.addEventListener("resize", ajustarLayout);
+
 
 // Chama ajustarLayout inicialmente para configurar o layout no carregamento da página
 ajustarLayout();

@@ -120,8 +120,8 @@ html.dark body .footer__flex hr {
 html.dark body .darkmode label {
   box-shadow: 0 1px 8px #ff9900;
 }
-html.dark body .card,
-html.dark body .list-group li,
+html.dark body,
+html.dark body,
 html.dark #child {
   background-color: rgb(46, 46, 46);
   color: white;
@@ -393,7 +393,7 @@ body {
 .home-main--esquerda {
   display: flex;
   flex-flow: column nowrap;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -404,6 +404,8 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding: 0 17px;
+  overflow: hidden;
 }
 
 .home-main--esquerda--filmes {
@@ -417,7 +419,7 @@ body {
   }
 }
 
-.botão-criticas {
+/* .botão-criticas {
   height: 40px;
   width: 75px;
   background-color: #ff7b00;
@@ -425,18 +427,18 @@ body {
   border-color: white;
   margin-left: 40px;
   margin-bottom: 40px;
-}
+} */
 
-.botão-criticas2 {
+/* .botão-criticas2 {
   height: 40px;
   width: 75px;
   background-color: #ff7b00;
   color: white;
   border-color: white;
   margin-left: 40px;
-}
+} */
 
-.home-main--esquerda--criticas {
+.main-criticas {
   height: auto;
   padding: 28px;
   text-align: justify;
@@ -447,9 +449,14 @@ body {
   }
 
   h4 {
-    width: 40%;
-    margin: 2.5rem;
+    width: auto;
+    margin: 1.5rem;
   }
+}
+
+.main-criticas h4:hover {
+  color: #ff7b00;
+  cursor: pointer;
 }
 
 .container-critica {
@@ -461,34 +468,44 @@ body {
   p {
     width: auto;
     font-size: 17px;
-    padding: 1.5rem;
   }
+}
 
-  img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-  }
+.container-critica--img1 {
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+}
+.container-critica--img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
 .container-criticatexto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .container-main-critica {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .container-criticatexto button {
-        justify-content: end;
-        height: 40px;
-        width: auto;
-        background-color: #ff7b00;
-        color: white;
-        border-color: white;
-        margin: 0px 151px;
-}0,
+  justify-content: end;
+  height: 40px;
+  width: 50%;
+  background-color: #ff7b00;
+  color: white;
+  border-color: white;
+  margin: 0px 151px;
+}
+
+.container-criticatexto button:hover {
+  background-color: #ff9900;
+  cursor: pointer;
+}
 
 .img-das-criticas2 {
   max-width: 450px;
@@ -496,8 +513,8 @@ body {
 }
 
 .main-container-right {
-  width: auto;
-  margin: 42px 0 0 0;
+  width: 370px;
+  margin: 74px 0 0 0;
 }
 
 .main-container-right--item {
@@ -536,32 +553,123 @@ body {
 }
 
 /* Página movies */
+.container-best-movies {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
 
-#movies-main {
+.container-best-movies-index {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+  height: auto;
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+.container-best-movies-index h3:hover{
+  color: #ff7b00;
+  cursor: pointer;
+}
+.container-best-movies-index p:hover{
+  color: #ff7b00;
+  cursor: pointer;
+}
+
+.movie-card {
+  width: 200px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 83%);
+  text-align: center;
+}
+
+.movie-image {
+  position: relative;
+  display: inline-block;
+}
+
+.movie-image img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.movie-image img:hover {
+  transform: scale(1.05);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  opacity: 0.3; /* Transparente inicialmente */
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.play-button:hover {
+  opacity: 1; /* Mais visível quando passar o mouse */
+  color: #ff7b00;
+}
+
+.play-button i {
+  color: white;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #111111;
+}
+
+.movie-card h3:hover {
+  color: #ff7b00;
+  cursor: pointer;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.movie-card p:hover {
+  color: #ff7b00;
+  cursor: pointer;
+}
+
+/**/
+
+.movies-main {
   display: flex;
   flex-flow: column nowrap;
   height: auto;
-  padding: 1em 1em;
-  gap: 150px;
-  width: 99.2vw;
-}
-
-#movies-main__slide {
   width: 100%;
-  min-height: 385px;
-  max-height: 475px;
 }
 
-.d-block {
-  border: 1px solid transparent;
-  border-radius: 20px;
-  max-height: 495px;
-}
-
-#movies-main__topicos {
-  flex-flow: column nowrap;
+.section-movies {
+  width: 100%;
   height: auto;
-  padding: 0 5em;
+}
+
+.movies-main__categories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -572,30 +680,26 @@ body {
 .topicos {
   display: flex;
   flex-flow: column nowrap;
-  height: 600px;
+  height: auto;
   width: 100%;
   gap: 25px;
-  margin-bottom: -1vw;
-}
-
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(15, 15, 15, 0.18);
-  border: 1px solid transparent;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 0.25s;
-  max-height: 500px;
 }
 
 .carousel {
-  display: flex;
   height: auto;
   width: 100%;
 }
 
 .carousel-inner {
   height: 100%;
+}
+
+.barra_filmes {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .prevv_e_next {
@@ -608,25 +712,9 @@ body {
   max-height: 500px;
 }
 
-.barra_filmes {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  font-size: 0.9vw;
-}
-
-.pag-movies-imagem {
-  display: flex;
-  background-color: black;
-}
-
 .lista-group-foto {
   width: 100%;
   height: 100%;
-}
-
-.list-group {
-  height: 50%;
 }
 
 .barra-avaliacao {
@@ -894,7 +982,6 @@ html body .card:hover {
 .conteudo1 {
   display: flex;
   grid-area: conteudo1;
-  background-color: lightsalmon;
   margin-top: 40px;
   height: 320px;
 }
@@ -965,6 +1052,7 @@ html body .card:hover {
 
 .card-img-top {
   transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .card-img-top:hover {
@@ -1219,6 +1307,7 @@ html body .card:hover {
   img {
     height: 100%;
     object-fit: cover;
+    border-radius: 0;
   }
 }
 
@@ -1257,36 +1346,13 @@ html body .card:hover {
   color: #683200;
 }
 
-.banner {
-  display: flex;
-  height: 2.5rem;
-  flex-wrap: nowrap;
-  font-family: "Roboto", Arial, sans-serif;
-  background-color: #ff8c00;
-  transition: all 0.4s ease;
-}
 
-.banner:hover {
-  box-shadow: 0 2px 6px #ccc;
-}
 
-.banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
 
-.banner h4 {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #000000;
-}
 
-.banner i {
-  font-size: 1.1rem;
-  color: #000000;
-}
+
+
+
 
 .movie-name {
   display: flex;
@@ -1309,21 +1375,11 @@ html body .card:hover {
   padding-right: 4rem;
 }
 
-#carouselExampleIndicators {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 90%;
-}
-
 .carousel-indicators {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 28rem;
 }
 
 .carousel-indicators button {
@@ -1495,26 +1551,6 @@ html body .card:hover {
   }
 }
 
-.banner--articles {
-  width: 100%;
-  height: 495px;
-  overflow: hidden;
-}
-
-.banner--articles img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: all 40ms linear;
-}
-
-.banner--articles img:hover {
-  opacity: 0.8;
-}
-
-.banner--articles img:active {
-  opacity: 0.4;
-}
 
 .page-info {
   background-color: #ff7b00;
@@ -1742,6 +1778,8 @@ html body .card:hover {
   padding-top: 0.5rem;
   box-shadow: 0 4px 6px #ccc;
   transition: scale 250ms;
+  width: 100%;
+  height: 100%;
 }
 
 .articles__menu--artigos {
@@ -1751,9 +1789,6 @@ html body .card:hover {
   align-items: center;
   line-height: 0.1px;
   background-color: #ff7b00;
-  padding-top: 0.5rem;
-  margin: 1.5rem 5.6rem;
-  margin-top: 7.8rem;
   border-radius: 0 0 16px 16px;
   box-shadow: 0 4px 6px #ccc;
   transition: scale 250ms;
@@ -2206,14 +2241,6 @@ html body .card:hover {
   text-align: center;
 }
 
-@keyframes banner {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 .login-form {
   display: flex;
@@ -2411,13 +2438,6 @@ footer hr {
 
   #header-botao-fechar {
     display: none;
-  }
-  .pag-movies-imagem {
-    height: 65%;
-    background-color: black;
-  }
-  .list-group {
-    height: 35%;
   }
 
   #header-link-home */ #header-link-artigos,

@@ -160,9 +160,24 @@
     <main class="home-main">
       <section class="home-main--esquerda">
         <div class="home-main--esquerda--carousel">
+
           <div id="carouselExampleIndicators" class="carousel slide">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            </div>
+
             <div class="carousel-inner">
-              <div></div>
+              
               <div class="carousel-item active">
                 <img
                   src="assets/images/articles/Killers of the Flower Moon banner.jpg"
@@ -203,142 +218,28 @@
               </div>
             </div>
 
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-              <span class="visually-hidden">Prev</span>
-            </button>
-
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
 
         <div class="home-main--esquerda--filmes">
           <h2>Filmes em cartaz</h2>
 
-          <div id="carouselExampleControls" class="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
                 <div class="barra_filmes">
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('1')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-1"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films1"
-                    ></ul>
-                  </div>
-
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('2')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-2"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films2"
-                    ></ul>
-                  </div>
-
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('3')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-3"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films3"
-                    ></ul>
-                  </div>
-
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('4')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-4"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films4"
-                    ></ul>
-                  </div>
-
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('5')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-5"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films5"
-                    ></ul>
-                  </div>
-
-                  <div
-                    class="card"
-                    style="width: 12.5rem; height: 450px"
-                    onclick="showChild('6')"
-                  >
-                    <div
-                      class="pag-movies-imagem pag-movies-imagem-6"
-                      style="height: 60%"
-                    ></div>
-
-                    <ul
-                      class="list-group list-group-flush"
-                      id="lista-de-films6"
-                    ></ul>
+                  <div class="topicos">
+                    <div class="container-best-movies-index" id="popular-movieshome"></div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="home-main--esquerda--criticas">
+              </div>
+
+
+        <div class="main-criticas">
           <h2>Críticas</h2>
 
           <h4>Kong: A Ilha da Caveira</h4>
+
           <div class="container-critica">
-            <img src="assets/images/kong index.jpg" id="img-das-criticas1" />
+            <img class="container-critica--img1" src="./assets/images/kong.webp"/>
 
             <div class="container-criticatexto">
               <p>
@@ -357,9 +258,9 @@
           <h4 style="margin-top: 60px">O Hobbit: Uma Jornada Inesperada</h4>
 
           <div class="container-critica">
-            <img
-              src="./assets/O-Hobbit-–-Uma-Jornada-Inesperada-1024x576.jpeg"
-              id="img-das-criticas2"
+
+            <img class="container-critica--img"
+              src="./assets/images/hobbit.jpg"
             />
 
             <div class="container-criticatexto">
@@ -375,7 +276,7 @@
                 saber que esse objeto está ligado ao destino de toda a
                 Terra-média.
               </p>
-              <button class="botão-criticas2">Ler agora</button>
+              <button>Ler agora</button>
             </div>
           </div>
         </div>
@@ -484,6 +385,9 @@
         </section>
       </section>
     </footer>
+
+    <script src="./js/index.js"></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
