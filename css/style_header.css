@@ -55,15 +55,19 @@ html.dark body .article__container {
   color: #fff;
 }
 html.dark body .card--top3 {
-  box-shadow: 0 6px 6px hsla(0, 0%, 8%, 0.8);
-  background: #ab6616;
+  box-shadow: 0 6px 6px hsl(0, 0.00%, 7.80%);
   border: none;
   color: #fff;
 }
 html.dark body .card--top3 span {
-  color: #663804;
+  color: #fff;
   font-weight: bold;
 }
+html.dark body .card--top3 p {
+  color: #fff;
+  font-weight: light;
+}
+
 html.dark body .rating-box {
   box-shadow: 0 6px 6px hsla(0, 0%, 8%, 0.8);
   background: #ab6616;
@@ -148,6 +152,14 @@ html.dark body .home-main--esquerda--criticas button {
   color: rgb(161, 153, 141);
 }
 
+
+html.dark .article-info p {
+  color: #fff;
+}
+
+html.dark .card-body {
+  color: #333;
+}
 .header-link.dark:hover {
   color: #000000;
 }
@@ -416,14 +428,20 @@ body {
 }
 
 .main-criticas {
+  width: 100%;
+  height: auto;
   text-align: center;
-  padding: 20px;
 }
 
-h2 {
+.main-criticas h2 {
   margin-bottom: 20px;
+  color: #ff7b00;
 }
 
+.main-criticas h2:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
 
 .container-main-criticas {
   display: flex;
@@ -440,7 +458,6 @@ h2 {
   border-radius: 10px;
   padding: 20px;
   width: 45%; 
-  min-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -457,7 +474,6 @@ h2 {
 }
 
 .container-criticatexto {
-  flex: 1;
   text-align: left;
 }
 
@@ -466,7 +482,7 @@ h4 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
 }
 
@@ -508,13 +524,13 @@ button:hover {
 }
 
 .container-criticatexto button {
-  justify-content: end;
   height: 40px;
   width: 50%;
   background-color: #ff7b00;
   color: white;
   border-color: white;
   margin: 0px 151px;
+  border-radius: 10px;
 }
 
 .container-criticatexto button:hover {
@@ -570,22 +586,20 @@ button:hover {
 /* Página movies */
 .container-best-movies {
   display: flex;
-  gap: 10px;
   justify-content: center;
   margin-bottom: 24px;
+  gap: 1%;
 }
 
 .container-best-movies-index {
   display: flex;
-  gap: 10px;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
   width: 100%;
   height: auto;
 
   h3 {
     font-size: 16px;
+    width: 70%;
   }
 }
 
@@ -613,7 +627,7 @@ button:hover {
 }
 
 .movie-image img {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
   border-radius: 5px;
@@ -701,7 +715,7 @@ button:hover {
 }
 
 .carousel {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -727,24 +741,6 @@ button:hover {
   max-height: 500px;
 }
 
-.lista-group-foto {
-  width: 100%;
-  height: 100%;
-}
-
-.barra-avaliacao {
-  scale: 1;
-  width: 100%;
-  height: 20px;
-  background-color: #e0e0e0;
-  margin-top: 10px;
-}
-
-.barra-avaliacaoo {
-  background-color: #ff9900;
-  height: 20px;
-  /* Cor da barra de preenchimento */
-}
 
 html body .card:hover {
   box-shadow: 1px 1px 15px rgb(255, 136, 0);
@@ -1280,9 +1276,17 @@ html body .card:hover {
 #articles {
   display: flex;
   justify-content: space-between;
-  padding: 0 8%;
+  padding: 3%;
   margin-top: 4rem;
   padding-right: 4rem;
+}
+
+.cards-container {
+  cursor: pointer;
+}
+
+.card--top3:hover {
+  transform: scale(1.02);
 }
 
 .carousel-indicators {
@@ -1486,12 +1490,16 @@ html body .card:hover {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  justify-content: space-evenly;
-  top: 8.5rem;
+  justify-content: center;
   left: 0;
-  gap: 2rem;
+  top: 64px;
   width: 100%;
-  padding: 0 20px;
+  background-color:rgba(17, 17, 17, 0.42);
+  gap: 1rem;
+}
+
+.api-form .list:hover {
+  cursor: pointer;
 }
 
 .list div {
@@ -1500,7 +1508,7 @@ html body .card:hover {
   height: auto;
   align-items: center;
   border-radius: 10px;
-  background-color: rgba(245, 245, 245, 0.829);
+  background-color:rgba(17, 17, 17, 0.64);
   padding: 1rem;
   width: 210px;
 
@@ -1520,7 +1528,7 @@ html body .card:hover {
   text-align: center;
   font-size: 1.25rem;
   width: 12rem;
-  color: orangered;
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
 }
@@ -2290,17 +2298,23 @@ footer {
   background-color: #f4f4f4;
   width: 100%;
   height: 200px;
+
+  a {
+    text-decoration: none;
+    color: #111111;
+  }
 }
 
 .footer__flex {
-  margin: 0 auto;
+  margin-top: 5%;
   display: flex;
-  width: 85%;
+  width: 100%;
   height: 100%;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   gap: 8%;
+  
 }
 
 footer hr {

@@ -54,12 +54,19 @@ function randomico_inteiro(min, max) {
 
 document.addEventListener("keydown", function (event) {
   if (event.key === 'Escape') { 
-    const lista = document.querySelector("#list");
-    if (lista) {
-      lista.innerHTML = ""; 
+    const inputPesquisa = document.querySelector("#search-box input"); 
+    const listaFilmes = document.querySelector("#list");
+
+    if (inputPesquisa) {
+      inputPesquisa.value = ""; 
+    }
+    
+    if (listaFilmes) {
+      listaFilmes.innerHTML = ""; 
     }
   }
 });
+
 
 function carregarImagemInicial() {
   let lista_filmes_destaques_intime = [...lista_filmes_destaques_intime];
