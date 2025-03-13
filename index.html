@@ -36,22 +36,6 @@
   </head>
 
   <body>
-    <!-- <div id="child">
-        <div class="child-fechar" onclick="hideChild()"><img src="assets/images/icone-fermer-et-x-rouge.png"
-                alt="fechar" width="25px"></div>
-        <div class="child-logo"><img class="child-logo--img" src="assets/images/favicon.png"
-                alt="Logo CritiCine - CC" width="60px" height="60px"></div>
-        <div class="child-class">
-            <div id="child-foto">
-
-            </div>
-            <div id="child-conteudo">
-                <ul id="child-conteudo--ul">
-
-                </ul>
-            </div>
-        </div>
-    </div> -->
 
     <header class="header">
       <section class="header__flex">
@@ -112,6 +96,7 @@
         </div>
 
         <div class="flex__2">
+
           <div class="api-form" id="search-box_header">
             <form class="search-box" id="search-box">
               <input name="pesquisa" placeholder="Pesquise aqui..." />
@@ -123,6 +108,7 @@
             <div class="list" id="list">
               <!-- Os itens dos filmes serão inseridos aqui -->
             </div>
+
           </div>
 
           <div class="div_social-medias">
@@ -233,99 +219,50 @@
               </div>
 
 
-        <div class="main-criticas">
-          <h2>Críticas</h2>
-
-          <h4>Kong: A Ilha da Caveira</h4>
-
-          <div class="container-critica">
-            <img class="container-critica--img1" src="./assets/images/kong.webp"/>
-
-            <div class="container-criticatexto">
-              <p>
-                Um caçador de monstros fracassado convence o governo dos Estados
-                Unidos a financiar uma viagem a uma ilha inexplorada no Pacífico
-                Sul. Sob o disfarce de pesquisa geológica, a equipe viaja para a
-                "Ilha da Caveira". Ao chegar, o grupo descobre que sua missão
-                pode ser complicada pela vida selvagem que habita a ilha. As
-                belas paisagens e criaturas mortais criam uma experiência
-                visualmente deslumbrante que certamente vai prender sua atenção.
-              </p>
-              <button>Ler agora</button>
-            </div>
-          </div>
-
-          <h4 style="margin-top: 60px">O Hobbit: Uma Jornada Inesperada</h4>
-
-          <div class="container-critica">
-
-            <img class="container-critica--img"
-              src="./assets/images/hobbit.jpg"
-            />
-
-            <div class="container-criticatexto">
-              <p>
-                Bilbo Bolseiro, um hobbit pacato, é inesperadamente recrutado
-                pelo mago Gandalf para ajudar um grupo de treze anões, liderados
-                por Thorin Escudo de Carvalho, a recuperar o Reino dos Anões de
-                Erebor do dragão Smaug. Durante a perigosa jornada pela
-                Terra-média, enfrentam goblins, orcs, wargs, aranhas gigantes e
-                outras ameaças. Nos túneis dos goblins, Bilbo encontra Gollum e,
-                ao desafiá-lo em enigmas, descobre sua própria coragem e
-                astúcia. Ele também se apossa de um misterioso anel de ouro, sem
-                saber que esse objeto está ligado ao destino de toda a
-                Terra-média.
-              </p>
-              <button>Ler agora</button>
-            </div>
-          </div>
-        </div>
+              <div class="main-criticas">
+                <h2>Críticas</h2>
+              
+                <div class="container-main-criticas">
+                  
+                  <!-- Crítica 1 -->
+                  <div class="container-critica">
+                    <img class="container-critica--img" src="./assets/images/kong.webp" alt="Kong: A Ilha da Caveira" />
+                    <div class="container-criticatexto">
+                      <h4>Kong: A Ilha da Caveira</h4>
+                      <p>
+                        Um caçador de monstros fracassado convence o governo dos Estados Unidos a financiar uma 
+                        viagem a uma ilha inexplorada no Pacífico Sul. Sob o disfarce de pesquisa geológica, a equipe viaja 
+                        para a "Ilha da Caveira". Ao chegar, o grupo descobre que sua missão pode ser complicada pela 
+                        vida selvagem que habita a ilha. As belas paisagens e criaturas mortais criam uma experiência 
+                        visualmente deslumbrante que certamente vai prender sua atenção.
+                      </p>
+                      <button>Ler agora</button>
+                    </div>
+                  </div>
+              
+                  <!-- Crítica 2 -->
+                  <div class="container-critica">
+                    <img class="container-critica--img" src="./assets/images/hobbit.jpg" alt="O Hobbit: Uma Jornada Inesperada" />
+                    <div class="container-criticatexto">
+                      <h4>O Hobbit: Uma Jornada Inesperada</h4>
+                      <p>
+                        Bilbo Bolseiro, um hobbit pacato, é inesperadamente recrutado pelo mago Gandalf para ajudar um 
+                        grupo de treze anões, liderados por Thorin Escudo de Carvalho, a recuperar o Reino dos Anões de 
+                        Erebor do dragão Smaug. Durante a perigosa jornada pela Terra-média, enfrentam goblins, orcs, wargs, 
+                        aranhas gigantes e outras ameaças. Nos túneis dos goblins, Bilbo encontra Gollum e, ao desafiá-lo 
+                        em enigmas, descobre sua própria coragem e astúcia. Ele também se apossa de um misterioso anel de 
+                        ouro, sem saber que esse objeto está ligado ao destino de toda a Terra-média.
+                      </p>
+                      <button>Ler agora</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              
       </section>
 
-      <section class="main-container-right">
 
-        <div class="main-container-right--item">
-          <h4>Notícias</h4>
-          <img src="assets/images/invencivel index.jpeg" id="invencivel" />
-          <h4>Invencível:</h4>
-          <p>
-            Invencível: novos episódios da 2ª temporada ganham data de
-            lançamento
-          </p>
-        </div>
-
-        <div class="main-container-right--item">
-          <img src="assets/images/liga index.jpeg" id="liga" />
-          <h4>Liga da Justiça:</h4>
-          <p>Blu-Ray de Liga da Justiça de Zack Snyder lidera vendas nos EUA</p>
-        </div>
-
-        <div class="main-container-right--item">
-          <img
-            src="assets/images/panico index.jpeg"
-            id="panico"
-            width="300px"
-          />
-          <h4>Pânico:</h4>
-          <p>Pânico 7 foi confirmado? Tudo que sabemos sobre a continuação</p>
-        </div>
-
-        <div class="main-container-right--item">
-          <img src="assets/images/john index.jpeg" id="john" />
-          <h4>John Wick:</h4>
-          <p>John Wick 5 já está sendo escrito, diz chefe da Lionsgate</p>
-        </div>
-
-        <div class="main-container-right--item">
-          <img src="assets/images/vingadores index.jpeg" id="vingadores" />
-          <h4>Vingadores:</h4>
-          <p>
-            Marvel considera trazer de volta os Vingadores originais em novo
-            filme
-          </p>
-        </div>
-
-      </section>
     </main>
 
     <footer>

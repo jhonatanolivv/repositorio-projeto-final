@@ -10,25 +10,25 @@ function resetForm() {
 }
 
 formPesquisa.onsubmit = (ev) => {
-  ev.preventDefault(); // Evita o carregamento padrão da página
+  ev.preventDefault(); 
 
-  const pesquisa = ev.target.pesquisa.value; // Obtendo o valor da pesquisa feita pelo usuário
+  const pesquisa = ev.target.pesquisa.value; 
 
   if (pesquisa === "") {
     alert('Preencha o campo!');
     return;
   }
 
-  // Fazer a requisição na API
+
   fetch(`https://www.omdbapi.com/?s=${pesquisa}&apikey=${apiKey}`)
     .then(result => result.json())
     .then(json => carregaLista(json));
 }
 
-// Função para carregar a lista de filmes
+
 const carregaLista = (json) => {
   const lista = document.querySelector("#list");
-  lista.innerHTML = ""; // Isso limpa a lista 
+  lista.innerHTML = ""; 
 
   if (json.Response === 'False') {
     alert('Nenhum filme encontrado.');
@@ -45,7 +45,7 @@ const carregaLista = (json) => {
   });
 }
 
-// Função de randomização para seleção de filmes e séries
+
 function randomico_inteiro(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -53,27 +53,27 @@ function randomico_inteiro(min, max) {
 }
 
 document.addEventListener("keydown", function (event) {
-  if (event.key === 'Escape') { // Tecla Esc
+  if (event.key === 'Escape') { 
     const lista = document.querySelector("#list");
     if (lista) {
-      lista.innerHTML = ""; // Limpa a lista
+      lista.innerHTML = ""; 
     }
   }
 });
 
 function carregarImagemInicial() {
-  let lista_filmes_destaques_intime = [...lista_filmes_destaques];
-  let lista_series_destaques_intime = [...lista_series_destaques];
+  let lista_filmes_destaques_intime = [...lista_filmes_destaques_intime];
+  let lista_series_destaques_intime = [...lista_series_destaques_intime];
   let lista_melhores_filmes_intime = [...lista_filmes_2023];
   let lista_melhores_series_intime = [...lista_series_2023];
 
   let filmes_escolhidos = [];
   let index_filme_escolhido, filme_escolhido, index_serie_escolhida, serie_escolhida;
 
-  // Selecionando filmes e séries aleatoriamente e exibindo
+
   for (let i = 1; i < 25; i++) {
     index_filme_escolhido = randomico_inteiro(0, lista_filmes_destaques_intime.length - 1);
-    filme_escolhido = lista_filmes_destaques_intime.splice(index_filme_escolhido, 1)[0];  // Remove e seleciona
+    filme_escolhido = lista_filmes_destaques_intime.splice(index_filme_escolhido, 1)[0];  
     filmes_escolhidos.push(filme_escolhido);
     fetch(`https://www.omdbapi.com/?t=${filme_escolhido}&apikey=${apiKey}`)
       .then(result => result.json())
@@ -92,7 +92,7 @@ function carregarImagemInicial() {
   return filmes_escolhidos;
 }
 
-// Função para exibir a imagem inicial
+
 function exibirImagemInicial(json, index) {
   if (json.Response === 'False') {
     console.error('Erro na resposta da API ao carregar a imagem inicial.');

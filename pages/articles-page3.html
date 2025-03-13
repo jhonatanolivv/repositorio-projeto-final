@@ -1,565 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="Author" content="Group Five" />
+    <meta name="Description" content="Articles Page" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article - Criticine</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style_header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta name="Author" content="Group Five">
-  <meta name="Description" content="Articles Page">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article - Criticine</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style_header.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!--FAVICON TEST-->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap"
-    rel="stylesheet">
-  <!--FAVICON TEST-->
-  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/590d27de59.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/590d27de59.js" crossorigin="anonymous"></script>
+    <!--CDN do Boostrap do CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--CDN do Boostrap do CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+    <!--CDN do JQUERY-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!--CDN do JQUERY-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
+  <body>
+    <header class="header">
+      <section class="header__flex">
+        <section class="flex__1">
+          <div class="header__div_logo">
+            <a href="../index.html"
+              ><img
+                src="../assets/images/logo.png"
+                class="header__div_logo--logo"
+            /></a>
+          </div>
 
-</head>
-
-<body>
-  <header class="header">
-    <section class="header__flex">
-      <section class="flex__1">
-        <div class="header__div_logo">
-          <a href="../index.html"><img src="../assets/images/logo.png" class="header__div_logo--logo"></a>
-        </div>
-
-        <a id="header-link-home" href="../index.html"><button type="button"
-            class="btn btn-light btn-custom header-link">Home</button></a>
-        <button type="button" id="header-botao-abrir" onclick="f_header_abrir()">></button>
-        <a id="header-link-artigos" href="#"><button type="button"
-            class="btn btn-light btn-custom header-link">Artigos</button></a>
-        <a id="header-link-movies" href="../pages/movies.html"><button type="button"
-            class="btn btn-light btn-custom header-link">Movies</button></a>
-        <a id="header-link-news" href="../pages/news.html"><button type="button"
-            class="btn btn-light btn-custom header-link">News</button></a>
-        <a id="header-link-login" href="../pages/login.html"><button type="button"
-            class="btn btn-light btn-custom header-link">Login</button></a>
-        <button type="button" id="header-botao-fechar" onclick="f_header_fechar()">
-          <</button>
-      </section>
-      <section class="flex__2">
-        <div class="api-form" id="search-box_header">
-          <form class="search-box">
-            <input name="pesquisa" placeholder="Pesquise aqui...">
-            <button>
-              <i class="fa-solid fa-film"></i>
-            </button>
-          </form>
-          <!-- <div class="list">
+          <a id="header-link-home" href="../index.html"
+            ><button type="button" class="btn btn-light btn-custom header-link">
+              Home
+            </button></a
+          >
+          <button
+            type="button"
+            id="header-botao-abrir"
+            onclick="f_header_abrir()"
+          >
+            >
+          </button>
+          <a id="header-link-artigos" href="#"
+            ><button type="button" class="btn btn-light btn-custom header-link">
+              Artigos
+            </button></a
+          >
+          <a id="header-link-movies" href="../pages/movies.html"
+            ><button type="button" class="btn btn-light btn-custom header-link">
+              Movies
+            </button></a
+          >
+          <a id="header-link-news" href="../pages/news.html"
+            ><button type="button" class="btn btn-light btn-custom header-link">
+              News
+            </button></a
+          >
+          <a id="header-link-login" href="../pages/login.html"
+            ><button type="button" class="btn btn-light btn-custom header-link">
+              Login
+            </button></a
+          >
+          <button
+            type="button"
+            id="header-botao-fechar"
+            onclick="f_header_fechar()"
+          >
+            <
+          </button>
+        </section>
+        <section class="flex__2">
+          <div class="api-form" id="search-box_header">
+            <form class="search-box">
+              <input name="pesquisa" placeholder="Pesquise aqui..." />
+              <button>
+                <i class="fa-solid fa-film"></i>
+              </button>
+            </form>
+            <!-- <div class="list">
             <div class="item-api">
 
             </div>
           </div> -->
-        </div>
-        <div class="div_social-medias">
-          <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png" class="social-medias"></a>
-          <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png" class="social-medias"></a>
-          <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
-        </div>
+          </div>
+          <div class="div_social-medias">
+            <a href="https://www.facebook.com/"
+              ><img
+                src="../assets/images/logo_facebook.png"
+                class="social-medias"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="../assets/images/logo_instagram.png"
+                class="social-medias"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img src="../assets/images/logo_x.png" class="social-medias"
+            /></a>
+          </div>
 
-        <div class="darkmode">
-          <input type="checkbox" class="checkbox" id="chk">
-          <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-          </label>
-        </div>
-
+          <div class="darkmode">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </section>
       </section>
+    </header>
+
+    <section id="article__section">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../assets/images/articles/indiana-jones.jpg"
+              id="indiana"
+              class="d-block w-100"
+              alt="indiana jones banner"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/articles/Killers of the Flower Moon banner.jpg"
+              class="d-block w-100"
+              alt="killers of the moon banner"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg"
+              class="d-block w-100"
+              alt="society of the snow"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/articles/the nun.jpg"
+              id="nun"
+              class="d-block w-100"
+              alt="the nun II"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/images/articles/haunted mansion.jpg"
+              id="haunted"
+              class="d-block w-100"
+              alt="haunted mansion"
+            />
+          </div>
+        </div>
+      </div>
     </section>
-  </header>
 
-  <section id="article__section">
-    <div class="banner">
-      <i class="fa-solid fa-newspaper"></i>
-      <h4>Artigos</h4>
-    </div>
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-          aria-label="Slide 5"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../assets/images/articles/indiana-jones.jpg" id="indiana" class="d-block w-100"
-            alt="indiana jones banner">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" class="d-block w-100"
-            alt="killers of the moon banner">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/articles/SocietyoftheSnow_WebBanner.jpg" class="d-block w-100"
-            alt="society of the snow">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/articles/the nun.jpg" id="nun" class="d-block w-100" alt="the nun II">
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/articles/haunted mansion.jpg" id="haunted" class="d-block w-100"
-            alt="haunted mansion">
-        </div>
-      </div>
-      
-    </div>
-
-    <!-- <div class="banner--articles">
-      <a href="https://www.netflix.com/" target="_blank">
-        <img src="../assets/images/articles/Killers of the Flower Moon banner.jpg" alt="killers of the flower moon">
-      </a>
-    </div> -->
-
-    <div class="articles__menu--artigos">
-      <h4>Todos os Artigos</h4>
-      <p class="page-info">Página <span>3/3</span> | Mostrando Resultados <span>13 - 18 de 18</span></p>
-    </div>
-  </section>
-
-  <main id="articles">
-    <article class="article-flex">
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/shang shi.jpg" alt="">
-          <div class="card-content">
-            <h1>Shang-Shi</h1>
-            <a href="https://youtu.be/AfHiUtxrmiY" target="_blank">
-              <button>Trailer</button>
-            </a>
+    <main id="articles">
+      <article class="article-flex">
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/shang shi.jpg" alt="" />
+            <div class="card-content">
+              <h1>Shang-Shi</h1>
+              <a href="https://youtu.be/AfHiUtxrmiY" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://en.wikipedia.org/wiki/Destin_Daniel_Cretton"
-                target="_blank">Destin Daniel Cretton</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "Shang-Chi e a Lenda dos Dez Anéis" (2021), dirigido por Destin Daniel Cretton, é uma adição marcante ao
-              Universo Cinematográfico da Marvel. O filme segue Shang-Chi, interpretado por Simu Liu, em uma jornada que
-              explora sua família, identidade e habilidades marciais contra a ameaça dos Dez Anéis. Com sequências de
-              luta espetaculares e uma representação positiva da cultura asiática, o filme destaca-se pela ação
-              envolvente, performances cativantes, e sua contribuição para a expansão do MCU. "Shang-Chi" é uma
-              celebração da diversidade e mitologia, deixando uma marca duradoura no universo cinematográfico da Marvel.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
+          <div class="article-info">
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <div class="info-director">
+              <strong>Dirigido por: </strong>
+              <a
+                href="https://en.wikipedia.org/wiki/Destin_Daniel_Cretton"
+                target="_blank"
+                >Destin Daniel Cretton</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/luca.jpg" alt="">
-          <div class="card-content">
-            <h1>Luca</h1>
-            <a href="https://youtu.be/E7_4ZUpyoWM" target="_blank">
-              <button>Trailer</button>
-            </a>
-          </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://en.wikipedia.org/wiki/Enrico_Casarosa"
-                target="_blank">Enrico Casarosa</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "Luca" (2021), da Pixar e dirigido por Enrico Casarosa, é uma encantadora animação que se passa na cidade
-              costeira italiana fictícia de Portorosso. A história segue Luca, um jovem monstro marinho, e seu amigo
-              Alberto, enquanto exploram a superfície do oceano. O filme captura a beleza do litoral italiano com uma
-              animação deslumbrante, abordando temas de amizade, aceitação e quebra de estereótipos. A relação entre
-              Luca e Alberto, a mensagem emotiva sobre ser verdadeiro consigo mesmo, e a atmosfera alegre fazem de
-              "Luca" um tesouro cinematográfico, celebrando o verão e a diversidade de maneira autêntica.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/coded bias.jpg" alt="">
-          <div class="card-content">
-            <h1>Coded Bias</h1>
-            <a href="https://youtu.be/jZl55PsfZJQ" target="_blank">
-              <button>Trailer</button>
-            </a>
-          </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://en.wikipedia.org/wiki/Shalini_Kantayya"
-                target="_blank">Shalini Kantayya</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "Coded Bias" (2021), dirigido por Shalini Kantayya, é um documentário que explora as complexidades éticas
-              das tecnologias de reconhecimento facial. A história segue Joy Buolamwini, pesquisadora do MIT, que
-              descobre viés racial nesses algoritmos. O filme destaca preocupações sobre discriminação, vigilância em
-              massa e a falta de regulamentação. Ao apresentar depoimentos de especialistas, acadêmicos e ativistas,
-              "Coded Bias" ressalta a necessidade de uma abordagem ética no desenvolvimento de inteligência artificial.
-              O documentário é um chamado à ação para a sociedade abordar as implicações sociais e éticas dessas
-              tecnologias.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/mass.jpg" alt="">
-          <div class="card-content">
-            <h1>Mass</h1>
-            <a href="https://youtu.be/oU56Ns1nXsE" target="_blank">
-              <button>Trailer</button>
-            </a>
-          </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://pt.wikipedia.org/wiki/Frank_Franz" target="_blank">Fran
-                Kranz</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "Mass" (2021), dirigido por Fran Kranz, é um filme que explora as complexidades emocionais em torno de um
-              evento traumático. O enredo se concentra em dois casais que se reúnem para discutir a perda de um filho em
-              um ato de violência escolar. Com diálogos intensos e atuações poderosas de Jason Isaacs, Martha Plimpton,
-              Ann Dowd e Reed Birney, o filme examina temas como luto, culpa e reconciliação. A narrativa, centrada em
-              uma única sala, destaca a tensão emocional, enquanto a direção sensível de Kranz e a cinematografia
-              contribuem para uma experiência cinematográfica profunda e reflexiva. "Mass" provoca reflexões sobre
-              compaixão e perdão diante de tragédias.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/in the heights.jpg" alt="">
-          <div class="card-content--faf">
-            <h1>In The Heights</h1>
-            <a href="https://youtu.be/U0CL-ZSuCrQ" target="_blank">
-              <button>Trailer</button>
-            </a>
-          </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://en.wikipedia.org/wiki/Jon_M._Chu" target="_blank">Jon M.
-                Chu</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "In the Heights" (2021), dirigido por Jon M. Chu, é uma adaptação cinematográfica do musical de Lin-Manuel
-              Miranda e Quiara Alegría Hudes. O filme explora as histórias entrelaçadas da vibrante comunidade latina de
-              Washington Heights, Nova York. Com uma trilha sonora cativante que mistura salsa e hip-hop, o filme
-              celebra a vida, a identidade e os sonhos dos moradores. O elenco diversificado, as performances
-              emocionantes e a abordagem de questões sociais como imigração e gentrificação contribuem para uma
-              experiência cinematográfica autêntica e envolvente. "In the Heights" é uma celebração vibrante da cultura
-              latina e uma reflexão sobre desafios urbanos contemporâneos.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="article__container">
-        <div class="card-unity">
-          <img src="../assets/images/articles/dune.jpg" alt="">
-          <div class="card-content">
-            <h1>Duna</h1>
-            <a href="https://youtu.be/U2Qp5pL3ovA" target="_blank">
-              <button>Trailer</button>
-            </a>
-          </div>
-        </div>
-        <div class="article-info">
-          <div class="top-info">
-            <p>Sobre o filme</p>
-            <p><strong>Dirigido por: </strong><a href="https://en.wikipedia.org/wiki/Denis_Villeneuve"
-                target="_blank">Denis Villeneuve</p></a>
-          </div>
-          <div class="article-text">
-            <p>
-              "Duna" (2021), dirigido por Denis Villeneuve, é uma adaptação épica da obra de Frank Herbert. A história
-              segue Paul Atreides em sua jornada no deserto planeta Arrakis, repleto de intrigas políticas e culturas
-              alienígenas. Com cinematografia deslumbrante, efeitos visuais impressionantes e uma trilha sonora
-              monumental de Hans Zimmer, o filme oferece uma imersão total no universo de "Duna." O elenco estelar,
-              incluindo Timothée Chalamet, contribui para performances cativantes, enquanto o filme aborda temas
-              profundos como poder, religião e ecologia. "Duna" é uma obra-prima que transcende as expectativas,
-              proporcionando uma experiência cinematográfica envolvente e épica.
-            </p>
-            <div class="bottom-body">
-              <p class="posted"><i>Publicado por <span>CritiCine</span></i></p>
-              <!-- RATING -->
-              <div class="rating-box">
-                <h4>Gostou deste artigo?</h4>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a id="previous" class="page-link" href="articles-page2.html" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="articles.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="articles-page2.html">2</a></li>
-          <li class="page-item--selected"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a id="next" class="page-link" href="articles.html" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-    </article>
-
-    <aside>
-      <div class="aside__ads">
-        <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=atv_hom_offers_c_9zZ8D2_hom" target="_blank">
-          <img src="../assets/images/articles/ad1.PNG" alt="prime video ad">
-        </a>
-        <div class="sponsor">
-          <p>Sponsored by CritiCine.</p>
-        </div>
-      </div>
-
-      <div class="top-3">
-        <h3>Top 3 - 2023</h3>
-        <div class="cards-container">
-          <div class="card--top3" style="width: 18rem;">
-            <img src="../assets/images/articles/poster-homem-aranha-atraves-do-aranhaverso-b-f528852f.webp"
-              class="card-img-top" alt="home aranha banner">
-            <div class="card-body">
-              <p class="card-text"><span>Miles Morales</span>, o Homem-Aranha do Brooklyn, encara seu maior desafio no
-                Aranhaverso ao confrontar um poderoso inimigo.</p>
-            </div>
-          </div>
-          <div class="card--top3" style="width: 18rem;">
-            <img src="../assets/images/articles/oppenheimer.jpg" class="card-img-top" alt="oppenheimer banner">
-            <div class="card-body">
-              <p class="card-text"><span>Cientistas</span> participam de um projeto secreto durante a Segunda Guerra
-                Mundial para desenvolver as primeiras bombas atômicas.</p>
-            </div>
-          </div>
-          <div class="card--top3" style="width: 18rem;">
-            <img src="../assets/images/articles/guardioes.jpg" class="card-img-top" alt="guardioes da galaxia banner">
-            <div class="card-body">
-              <p class="card-text"><span>Os Guardiões da Galáxia</span>, na última parte da trilogia, unem-se para
-                proteger o universo, enfrentando o risco de encerramento da equipe se não tiverem êxito em sua missão.
+            <div class="article-text">
+              <p>
+                "Shang-Chi e a Lenda dos Dez Anéis" (2021), dirigido por Destin
+                Daniel Cretton, é uma adição marcante ao Universo
+                Cinematográfico da Marvel. O filme segue Shang-Chi, interpretado
+                por Simu Liu, em uma jornada que explora sua família, identidade
+                e habilidades marciais contra a ameaça dos Dez Anéis. Com
+                sequências de luta espetaculares e uma representação positiva da
+                cultura asiática, o filme destaca-se pela ação envolvente,
+                performances cativantes, e sua contribuição para a expansão do
+                MCU. "Shang-Chi" é uma celebração da diversidade e mitologia,
+                deixando uma marca duradoura no universo cinematográfico da
+                Marvel.
               </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-    </aside>
-  </main>
-
-  <section>
-    <h3 class="review-title--artigos">Reviews da Semana</h3>
-    <div class="cards">
-      <div class="card__options">
-        <div class="card-unity--bottom">
-          <img src="../assets/images/articles/dune.jpg" alt="dune poster">
-          <div class="card-content--bottom">
-            <h1>Review</h1>
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/luca.jpg" alt="" />
+            <div class="card-content">
+              <h1>Luca</h1>
+              <a href="https://youtu.be/E7_4ZUpyoWM" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
           </div>
-          <p>Dune</p>
-        </div>
-        <div class="card-unity--bottom">
-          <img src="../assets/images/articles/happening.jpg" alt="">
-          <div class="card-content--bottom">
-            <h1>Review</h1>
-          </div>
-          <p>O Acontecimento</p>
-        </div>
-        <div class="card-unity--bottom">
-          <img src="../assets/images/articles/indiana.jpg" alt="avatar o caminho da agua banner">
-          <div class="card-content--bottom">
-            <h1>Review</h1>
-          </div>
-          <p>Indiana Jones</p>
-        </div>
-        <div class="card-unity--bottom">
-          <img class="card-img" src="../assets/images/articles/five nights.jpg" alt="tudo ao mesmo tempo banner">
-          <div class="card-content--bottom">
-            <h1>Review</h1>
-          </div>
-          <p>Five Nights At Freddy's</p>
-        </div>
-        <div class="card-unity--bottom">
-          <img src="../assets/images/articles/oppenheimer.jpg" alt="">
-          <div class="card-content--bottom">
-            <h1>Review</h1>
-          </div>
-          <p>Oppenheimer</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <section class="footer__flex">
-      <div class="footer__flex--1"><a class="linkStyle--modificado" href="#" target="_blank">Queremos a sua
-          opinão!</a> | <a class="linkStyle--modificado" href="#" target="_blank">Sobre CritiCine</a> | <a
-          class="linkStyle--modificado" href="#" target="_blank">Contato</a> | <a class="linkStyle--modificado" href="#"
-          target="_blank">Termos e condições</a> |
-        <a class="linkStyle--modificado" href="#" target="_blank">Política de privacidade</a>
-      </div>
-      <hr>
-      <section class="footer__flex--2">
-        <div class="flex--2--1"><img src="../assets/images/logo.png" class="header__div_logo--logo"></div>
-        <div class="flex--2--2">
-          <div>&copy; 2024 - CritiCine</div>
-          <div><a href="#voltar" class="voltar"><span class="span--laranja">Voltar ao topo</span></a></div>
-        </div>
-        <div class="flex--2--3">
-          <div>Siga a gente!</div>
-          <div>
-            <div class="div_social-medias">
-              <a href="https://www.facebook.com/"><img src="../assets/images/logo_facebook.png"
-                  class="social-medias"></a>
-              <a href="https://www.instagram.com/"><img src="../assets/images/logo_instagram.png"
-                  class="social-medias"></a>
-              <a href="https://twitter.com/"><img src="../assets/images/logo_x.png" class="social-medias"></a>
+          <div class="article-info">
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <div class="info-director">
+              <strong>Dirigido por: </strong
+              ><a
+                href="https://en.wikipedia.org/wiki/Enrico_Casarosa"
+                target="_blank"
+                >Enrico Casarosa</a>
+              </div>
+            </div>
+            <div class="article-text">
+              <p>
+                "Luca" (2021), da Pixar e dirigido por Enrico Casarosa, é uma
+                encantadora animação que se passa na cidade costeira italiana
+                fictícia de Portorosso. A história segue Luca, um jovem monstro
+                marinho, e seu amigo Alberto, enquanto exploram a superfície do
+                oceano. O filme captura a beleza do litoral italiano com uma
+                animação deslumbrante, abordando temas de amizade, aceitação e
+                quebra de estereótipos. A relação entre Luca e Alberto, a
+                mensagem emotiva sobre ser verdadeiro consigo mesmo, e a
+                atmosfera alegre fazem de "Luca" um tesouro cinematográfico,
+                celebrando o verão e a diversidade de maneira autêntica.
+              </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/coded bias.jpg" alt="" />
+            <div class="card-content">
+              <h1>Coded Bias</h1>
+              <a href="https://youtu.be/jZl55PsfZJQ" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
+          </div>
+          <div class="article-info">
+
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <div class="info-director">
+              <p><strong>Dirigido por:</strong></p>
+              <a
+                href="https://en.wikipedia.org/wiki/Shalini_Kantayya"
+                target="_blank"
+                >Shalini Kantayya</a>
+              </div>
+            </div>
+            <div class="article-text">
+              <p>
+                "Coded Bias" (2021), dirigido por Shalini Kantayya, é um
+                documentário que explora as complexidades éticas das tecnologias
+                de reconhecimento facial. A história segue Joy Buolamwini,
+                pesquisadora do MIT, que descobre viés racial nesses algoritmos.
+                O filme destaca preocupações sobre discriminação, vigilância em
+                massa e a falta de regulamentação. Ao apresentar depoimentos de
+                especialistas, acadêmicos e ativistas, "Coded Bias" ressalta a
+                necessidade de uma abordagem ética no desenvolvimento de
+                inteligência artificial. O documentário é um chamado à ação para
+                a sociedade abordar as implicações sociais e éticas dessas
+                tecnologias.
+              </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/mass.jpg" alt="" />
+            <div class="card-content">
+              <h1>Mass</h1>
+              <a href="https://youtu.be/oU56Ns1nXsE" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
+          </div>
+          <div class="article-info">
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <strong>Dirigido por: </strong
+              ><a
+                href="https://pt.wikipedia.org/wiki/Frank_Franz"
+                target="_blank"
+                >Fran Kranz</a
+              >
+            </div>
+            <div class="article-text">
+              <p>
+                "Mass" (2021), dirigido por Fran Kranz, é um filme que explora
+                as complexidades emocionais em torno de um evento traumático. O
+                enredo se concentra em dois casais que se reúnem para discutir a
+                perda de um filho em um ato de violência escolar. Com diálogos
+                intensos e atuações poderosas de Jason Isaacs, Martha Plimpton,
+                Ann Dowd e Reed Birney, o filme examina temas como luto, culpa e
+                reconciliação. A narrativa, centrada em uma única sala, destaca
+                a tensão emocional, enquanto a direção sensível de Kranz e a
+                cinematografia contribuem para uma experiência cinematográfica
+                profunda e reflexiva. "Mass" provoca reflexões sobre compaixão e
+                perdão diante de tragédias.
+              </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/in the heights.jpg" alt="" />
+            <div class="card-content--faf">
+              <h1>In The Heights</h1>
+              <a href="https://youtu.be/U0CL-ZSuCrQ" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
+          </div>
+          <div class="article-info">
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <strong>Dirigido por: </strong
+              ><a
+                href="https://en.wikipedia.org/wiki/Jon_M._Chu"
+                target="_blank"
+                >Jon M. Chu</a
+              >
+            </div>
+            <div class="article-text">
+              <p>
+                "In the Heights" (2021), dirigido por Jon M. Chu, é uma
+                adaptação cinematográfica do musical de Lin-Manuel Miranda e
+                Quiara Alegría Hudes. O filme explora as histórias entrelaçadas
+                da vibrante comunidade latina de Washington Heights, Nova York.
+                Com uma trilha sonora cativante que mistura salsa e hip-hop, o
+                filme celebra a vida, a identidade e os sonhos dos moradores. O
+                elenco diversificado, as performances emocionantes e a abordagem
+                de questões sociais como imigração e gentrificação contribuem
+                para uma experiência cinematográfica autêntica e envolvente. "In
+                the Heights" é uma celebração vibrante da cultura latina e uma
+                reflexão sobre desafios urbanos contemporâneos.
+              </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article__container">
+          <div class="card-unity">
+            <img src="../assets/images/articles/dune.jpg" alt="" />
+            <div class="card-content">
+              <h1>Duna</h1>
+              <a href="https://youtu.be/U2Qp5pL3ovA" target="_blank">
+                <button>Trailer</button>
+              </a>
+            </div>
+          </div>
+          <div class="article-info">
+            <div class="top-info">
+              <p>Sobre o filme</p>
+              <strong>Dirigido por: </strong
+              ><a
+                href="https://en.wikipedia.org/wiki/Denis_Villeneuve"
+                target="_blank"
+                >Denis Villeneuve</a
+              >
+            </div>
+            <div class="article-text">
+              <p>
+                "Duna" (2021), dirigido por Denis Villeneuve, é uma adaptação
+                épica da obra de Frank Herbert. A história segue Paul Atreides
+                em sua jornada no deserto planeta Arrakis, repleto de intrigas
+                políticas e culturas alienígenas. Com cinematografia
+                deslumbrante, efeitos visuais impressionantes e uma trilha
+                sonora monumental de Hans Zimmer, o filme oferece uma imersão
+                total no universo de "Duna." O elenco estelar, incluindo
+                Timothée Chalamet, contribui para performances cativantes,
+                enquanto o filme aborda temas profundos como poder, religião e
+                ecologia. "Duna" é uma obra-prima que transcende as
+                expectativas, proporcionando uma experiência cinematográfica
+                envolvente e épica.
+              </p>
+              <div class="bottom-body">
+                <p class="posted">
+                  <i>Publicado por <span>CritiCine</span></i>
+                </p>
+                <!-- RATING -->
+                <div class="rating-box">
+                  <h4>Gostou deste artigo?</h4>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="articles.html">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="articles-page2.html">2</a>
+            </li>
+            <li class="page-item--selected">
+              <a class="page-link" href="#">3</a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <aside>
+        <div class="aside__ads">
+          <a
+            href="https://www.primevideo.com/offers/nonprimehomepage/ref=atv_hom_offers_c_9zZ8D2_hom"
+            target="_blank"
+          >
+            <img src="../assets/images/articles/ad1.PNG" alt="prime video ad" />
+          </a>
+          <div class="sponsor">
+            <p>Sponsored by CritiCine.</p>
+          </div>
+        </div>
+
+        <div class="top-3">
+          <h3>Top 3 - 2023</h3>
+          <div class="cards-container">
+            <div class="card--top3" style="width: 18rem">
+              <img
+                src="../assets/images/articles/poster-homem-aranha-atraves-do-aranhaverso-b-f528852f.webp"
+                class="card-img-top"
+                alt="home aranha banner"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  <span>Miles Morales</span>, o Homem-Aranha do Brooklyn, encara
+                  seu maior desafio no Aranhaverso ao confrontar um poderoso
+                  inimigo.
+                </p>
+              </div>
+            </div>
+            <div class="card--top3" style="width: 18rem">
+              <img
+                src="../assets/images/articles/oppenheimer.jpg"
+                class="card-img-top"
+                alt="oppenheimer banner"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  <span>Cientistas</span> participam de um projeto secreto
+                  durante a Segunda Guerra Mundial para desenvolver as primeiras
+                  bombas atômicas.
+                </p>
+              </div>
+            </div>
+            <div class="card--top3" style="width: 18rem">
+              <img
+                src="../assets/images/articles/guardioes.jpg"
+                class="card-img-top"
+                alt="guardioes da galaxia banner"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  <span>Os Guardiões da Galáxia</span>, na última parte da
+                  trilogia, unem-se para proteger o universo, enfrentando o
+                  risco de encerramento da equipe se não tiverem êxito em sua
+                  missão.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <section>
+      <h3 class="review-title--artigos">Reviews da Semana</h3>
+      <div class="cards">
+        <div class="card__options">
+          <div class="card-unity--bottom">
+            <img src="../assets/images/articles/dune.jpg" alt="dune poster" />
+            <div class="card-content--bottom">
+              <h1>Review</h1>
+            </div>
+            <p>Dune</p>
+          </div>
+          <div class="card-unity--bottom">
+            <img src="../assets/images/articles/happening.jpg" alt="" />
+            <div class="card-content--bottom">
+              <h1>Review</h1>
+            </div>
+            <p>O Acontecimento</p>
+          </div>
+          <div class="card-unity--bottom">
+            <img
+              src="../assets/images/articles/indiana.jpg"
+              alt="avatar o caminho da agua banner"
+            />
+            <div class="card-content--bottom">
+              <h1>Review</h1>
+            </div>
+            <p>Indiana Jones</p>
+          </div>
+          <div class="card-unity--bottom">
+            <img
+              class="card-img"
+              src="../assets/images/articles/five nights.jpg"
+              alt="tudo ao mesmo tempo banner"
+            />
+            <div class="card-content--bottom">
+              <h1>Review</h1>
+            </div>
+            <p>Five Nights At Freddy's</p>
+          </div>
+          <div class="card-unity--bottom">
+            <img src="../assets/images/articles/oppenheimer.jpg" alt="" />
+            <div class="card-content--bottom">
+              <h1>Review</h1>
+            </div>
+            <p>Oppenheimer</p>
+          </div>
+        </div>
+      </div>
     </section>
-  </footer>
 
-  <script src="../js/api.js"></script>
-  <script src="../js/articles.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-</body>
+    <footer>
+      <section class="footer__flex">
+        <div class="footer__flex--1">
+          <a class="linkStyle--modificado" href="#" target="_blank"
+            >Queremos a sua opinão!</a
+          >
+          |
+          <a class="linkStyle--modificado" href="#" target="_blank"
+            >Sobre CritiCine</a
+          >
+          |
+          <a class="linkStyle--modificado" href="#" target="_blank">Contato</a>
+          |
+          <a class="linkStyle--modificado" href="#" target="_blank"
+            >Termos e condições</a
+          >
+          |
+          <a class="linkStyle--modificado" href="#" target="_blank"
+            >Política de privacidade</a
+          >
+        </div>
+        <hr />
+        <section class="footer__flex--2">
+          <div class="flex--2--1">
+            <img
+              src="../assets/images/logo.png"
+              class="header__div_logo--logo"
+            />
+          </div>
+          <div class="flex--2--2">
+            <div>&copy; 2024 - CritiCine</div>
+            <div>
+              <a href="#voltar" class="voltar"
+                ><span class="span--laranja">Voltar ao topo</span></a
+              >
+            </div>
+          </div>
+          <div class="flex--2--3">
+            <div>Siga a gente!</div>
+            <div>
+              <div class="div_social-medias">
+                <a href="https://www.facebook.com/"
+                  ><img
+                    src="../assets/images/logo_facebook.png"
+                    class="social-medias"
+                /></a>
+                <a href="https://www.instagram.com/"
+                  ><img
+                    src="../assets/images/logo_instagram.png"
+                    class="social-medias"
+                /></a>
+                <a href="https://twitter.com/"
+                  ><img src="../assets/images/logo_x.png" class="social-medias"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </footer>
 
+    <script src="../js/api.js"></script>
+    <script src="../js/articles.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

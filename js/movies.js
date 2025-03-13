@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    // Função para buscar o trailer
+    
     async function fetchTrailer(id, type) {
         const trailerUrl = `https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}&language=pt-BR`;
         try {
